@@ -1,0 +1,115 @@
+# Gold chunk 16/25   chunk_id: a9c488820a62ac4adcd9d66c_0000   source: rss
+# title: Greptile takes bug detection beyond code review with GPT-6 Astra
+# url: https://openai.com/index/greptile-code-review-codex-astra
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; GPT-6 Astra / Codex developer not stated explicitly in this chunk
+
+=== TEXT (read only) ===
+October 26, 2026
+Startup
+Greptile takes bug detection beyond code review with GPT‐6 Astra
+How Greptile uses GPT‐6 Astra to test user workflows, Daybreak to strengthen security, and Codex to
+reduce rework.
+Start building with OpenAI
+Company size: Startup
+Region: North America
+Industry: Technology
+Products: API, Codex
+Loading...
+Greptile⁠(opens in a new window) builds AI agents that review and test code changes with full
+context of the codebase. “We are in the business of reducing bugs and making the world’s software
+more reliable,” says Co-founder and CEO Daksh Gupta.
+For Daksh, that mission requires testing an application’s behavior as well as reading its code, and
+GPT‐6 Astra’s computer use gives Greptile a way to automate testing at scale.
+Testing applications at scale with GPT‐6 Astra
+Validating a pull request involves checking whether the code is logically correct, does what the
+developer intended, is secure, and avoids breaking existing functionality. For some of that testing,
+you need to actually run the application because reading the code alone might not reveal the
+problem.
+Daksh gives the example of a button that disappears when a website is viewed on an iPhone. With
+GPT‐6 Astra, Greptile can start a development server for a pull request, resize the browser to an
+iPhone-sized viewport, and simulate a user moving through the application. The model’s visual
+understanding lets it inspect the screen and spot the hidden button.
+“A QA firm testing all of your changes is just impractically slow considering how fast we’re able to
+ship code with these models,” he says. With GPT‐6 Astra, Greptile can automate this kind of
+application testing at scale.
+Strengthening customers’ defenses with Daybreak
+Daksh says more powerful models also make it easier for attackers to exploit applications, putting
+companies at risk, even those that previously would not have been typical targets.
+“We want to make it very easy for even a startup to secure their systems,” says Daksh. “With
+Daybreak, we’re able to do this in a way that is very safe, and we can ensure that our customers
+have more sophisticated defense mechanisms than the adversaries have offense mechanisms.”
+Reducing bugs and rework with Codex
+Greptile’s Knowledge Base indexes a company’s codebase and documents how it works in a form people
+and agents can read. The company makes that documentation available to Codex through a Model Context
+Protocol (MCP) server.
+This allows Codex to write code that follows the customer’s existing patterns, and thousands of
+customers have connected Codex to Greptile’s knowledge base, according to Daksh.
+To measure the impact, the team tracks how often AI-generated code is reverted. “When we provide
+agents with context, fewer reverts happen and customers save time and save inference,” Daksh says.
+Customers can put those savings toward new work instead of reworking the same changes.
+Greptile also uses Codex to build its own software and agents. “We are massive users of Codex,”
+Daksh says. “We have enormous amounts of usage across every single function, engineering in
+particular.”
+Looking ahead to faster development with Ultrafast
+For Greptile, Daksh explains, the only real bottleneck is how quickly the team can turn ideas into
+working software. He says model intelligence is already sufficient for many tasks, so he sees
+Ultrafast as a way to speed up development.
+His longer-term goal is to make changing and shipping critical enterprise software as easy as
+shipping a side project, with OpenAI helping Greptile build the validation that requires.
+Join the new era of work
+More than 1 million businesses around the world are achieving meaningful results with OpenAI.
+Contact sales
+Keep reading
+View all
+Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live
+StartupOct 23, 2026
+Terminal X matches senior investor judgment 88.6% with GPT-6.1
+StartupOct 20, 2026
+Stack Overflow for Agents triples signups with ChatGPT plugin
+StartupOct 16, 2026
+
+=== ENTITIES ===
+Organization | Greptile
+Organization | OpenAI
+Organization | Anima
+Organization | Terminal X
+Person | Daksh Gupta
+AIModel | GPT-6 Astra
+AIModel | GPT-6
+AIModel | GPT-6.1
+AIModel | GPT-Live
+Product | Daybreak
+Product | Codex
+Product | Ultrafast
+Product | Knowledge Base
+Product | ChatGPT
+Product | Stack Overflow for Agents
+Product | iPhone
+Technology | Model Context Protocol
+
+=== RELATIONS ===
+Greptile | USES | GPT-6 Astra
+Greptile | USES | Daybreak
+Greptile | USES | Codex
+Greptile | USES | Ultrafast
+Greptile | USES | Model Context Protocol
+Greptile | DEVELOPED_BY | Daksh Gupta
+Daksh Gupta | WORKS_AT | Greptile
+Knowledge Base | DEVELOPED_BY | Greptile
+Greptile | PARTNERS_WITH | OpenAI
+Anima | USES | GPT-6
+Anima | USES | GPT-Live
+Terminal X | USES | GPT-6.1
+
+=== END ===

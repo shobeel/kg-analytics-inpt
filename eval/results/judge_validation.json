@@ -1,0 +1,243 @@
+{
+ "kind": "inter-model agreement, not human validation",
+ "judge_model": "openai/gpt-oss-120b",
+ "second_model": "qwen/qwen3.8-27b",
+ "n_sampled": 15,
+ "errors": 1,
+ "correctness": {
+  "n": 14,
+  "exact": 1.0,
+  "within_1": 1.0,
+  "weighted_kappa": 1.0,
+  "spearman": 0.9999999999999999,
+  "mean_human": 3.7142857142857144,
+  "mean_judge": 3.7142857142857144,
+  "disagreements": []
+ },
+ "faithfulness": {
+  "n": 12,
+  "binary_agreement": 0.9166666666666666,
+  "mean_abs_diff": 0.13194444444444445
+ },
+ "citation_precision": {
+  "n": 11,
+  "binary_agreement": 0.9090909090909091,
+  "mean_abs_diff": 0.09090909090909091
+ },
+ "rows": [
+  {
+   "key": "G06|C|resolved|8e4213aa0c",
+   "system": "C",
+   "category": "aggregation",
+   "judge": {
+    "correctness": 4,
+    "faithfulness": 0.5,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 4,
+    "faithfulness": 0.75,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "S02|A|resolved|f0ddaeef20",
+   "system": "A",
+   "category": "semantic",
+   "judge": {
+    "correctness": 4,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 4,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "M08|B|raw|5d0d76556b",
+   "system": "B",
+   "category": "multi-hop",
+   "judge": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   }
+  },
+  {
+   "key": "G06|A|raw|8e4213aa0c",
+   "system": "A",
+   "category": "aggregation",
+   "judge": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   }
+  },
+  {
+   "key": "M05|C|raw|47a0d8f89d",
+   "system": "C",
+   "category": "multi-hop",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 0.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 0.3333333333333333,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "S03|C|raw|b126acac14",
+   "system": "C",
+   "category": "semantic",
+   "judge": {
+    "correctness": 3,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 3,
+    "faithfulness": null,
+    "citation_precision": null
+   }
+  },
+  {
+   "key": "L06|C|resolved|26214de218",
+   "system": "C",
+   "category": "lookup",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 0.5,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 0.5,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "L03|B|resolved|6f86ca1db5",
+   "system": "B",
+   "category": "lookup",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 0.0,
+    "citation_precision": null
+   }
+  },
+  {
+   "key": "G01|B|resolved|b9441291b9",
+   "system": "B",
+   "category": "aggregation",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "L02|A|resolved|cbac528680",
+   "system": "A",
+   "category": "lookup",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": null,
+    "citation_precision": null
+   }
+  },
+  {
+   "key": "S05|B|raw|67e0955f37",
+   "system": "B",
+   "category": "semantic",
+   "judge": {
+    "correctness": 3,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 3,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   }
+  },
+  {
+   "key": "G03|C|resolved|d247fd6606",
+   "system": "C",
+   "category": "aggregation",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 1.0,
+    "citation_precision": 1.0
+   }
+  },
+  {
+   "key": "S02|A|raw|f0ddaeef20",
+   "error": "'correctness'"
+  },
+  {
+   "key": "M03|B|resolved|53b3a9121e",
+   "system": "B",
+   "category": "multi-hop",
+   "judge": {
+    "correctness": 5,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 5,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   }
+  },
+  {
+   "key": "G06|A|resolved|8e4213aa0c",
+   "system": "A",
+   "category": "aggregation",
+   "judge": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   },
+   "second": {
+    "correctness": 1,
+    "faithfulness": 0.0,
+    "citation_precision": 0.0
+   }
+  }
+ ]
+}

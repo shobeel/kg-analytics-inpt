@@ -1,0 +1,102 @@
+# Gold chunk 22/25   chunk_id: dcc1964c3e148c5f6378688d_0004   source: wikipedia
+# title: Large language model
+# url: https://en.wikipedia.org/wiki/Large_language_model
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+Masked models, such as BERT, are trained to guess parts that are missing from a sequence, such as
+whether the missing word in "I like to ___ roses" is more likely to be the word "smell" or the word
+"eat". The model's predictions are based on the properties of sequences within its training dataset.
+Mixture of experts
+A mixture of experts (MoE) is a machine learning architecture in which multiple specialized neural
+networks ("experts") work together, with a gating mechanism that routes each input to the most
+appropriate expert(s). Mixtures of experts can reduce inference costs, as only a fraction of the
+parameters are used for each input.
+Parameter size
+Typically, LLMs are trained with single or half-precision floating point numbers (float32 and
+float16). One float16 has 16 bits, or 2 bytes, and so one billion parameters require 2 gigabytes.
+The largest models typically have more than 100 billion parameters, which places them outside the
+range of most consumer electronics.
+In 2021, Google Brain released Switch Transformer, one of the first natural language processing
+(NLP) models to cross one trillion parameters. As of July 2026, the largest open weight frontier
+model is Kimi K3, developed by Moonshot AI, at 2.8 trillion parameters. According to industry
+estimates reported by the Financial Times, Anthropic's Claude Mythos, its most powerful model,
+restricted from public access, has approximately 8 trillion parameters, while its public 'Mythos-
+class' model Fable 5 has approximately 5 trillion parameters.
+Quantization
+Post-training quantization aims to decrease the space requirement by lowering precision of the
+parameters of a trained model, while preserving most of its performance. Quantization can be further
+classified as static quantization if the quantization parameters are determined beforehand
+(typically during a calibration phase), and dynamic quantization if the quantization is applied
+during inference. The simplest form of quantization simply truncates all the parameters to a given
+number of bits: this is applicable to static as well as dynamic quantization, but loses much
+precision. Dynamic quantization allows for the use of a different quantization codebook per layer,
+either a lookup table of values or a linear mapping (scaling factor and bias), at the cost of
+foregoing the possible speed improvements from using lower-precision arithmetic.
+It is possible to fine-tune quantized models using low-rank adaptation.
+Extensibility
+Beyond basic text generation, various techniques have been developed to extend LLM capabilities,
+including the use of external tools and data sources, improved reasoning on complex problems, and
+enhanced instruction-following or autonomy through prompting methods.
+Prompt engineering
+In 2020, OpenAI researchers demonstrated that their new model GPT-3 could understand what format to
+use given a few rounds of Q and A (or other type of task) in the input data as example. This
+technique, called few-shot prompting, allows LLMs to be adapted to any task without requiring fine-
+tuning. Also in 2022, it was found that the base GPT-3 model can generate an instruction based on
+user input. The generated instruction along with user input is then used as input to another
+instance of the model under a "Instruction: [...], Input: [...], Output:" format. The other instance
+is able to complete the output and often produces the correct answer in doing so. The ability to
+"self-instruct" makes LLMs able to bootstrap themselves toward a correct answer.
+Dialogue processing (chatbot)
+An LLM can be turned into a chatbot by specializing it for conversation. User input is prefixed with
+a marker such as "Q:" or "User:" and the LLM is asked to predict the output after a fixed "A:" or
+"Assistant:". This type of model became commercially available in 2022 with ChatGPT, a sibling model
+of InstructGPT fine-tuned to accept and produce dialog-formatted text based on GPT-3.5. It could
+similarly follow user instructions. Before the stream of User and Assistant lines, a chat context
+usually starts with a few lines of overarching instructions, from a role called "developer" or
+"system" to convey a higher authority than the user's input. This is called a "system prompt".
+Retrieval-augmented generation
+
+=== ENTITIES ===
+AIModel | BERT
+Technology | Mixture of experts
+Technology | Natural language processing
+Technology | Low-rank adaptation
+Technology | Quantization
+Technology | Few-shot prompting
+Technology | Retrieval-augmented generation
+Organization | Google Brain
+Organization | Moonshot AI
+Organization | Financial Times
+Organization | Anthropic
+Organization | OpenAI
+AIModel | Switch Transformer
+AIModel | Kimi K3
+AIModel | Claude Mythos
+AIModel | Fable 5
+AIModel | GPT-3
+AIModel | InstructGPT
+AIModel | GPT-3.5
+Product | ChatGPT
+
+=== RELATIONS ===
+Switch Transformer | DEVELOPED_BY | Google Brain
+Kimi K3 | DEVELOPED_BY | Moonshot AI
+Claude Mythos | DEVELOPED_BY | Anthropic
+Fable 5 | DEVELOPED_BY | Anthropic
+GPT-3 | DEVELOPED_BY | OpenAI
+GPT-3 | USES | Few-shot prompting
+ChatGPT | BASED_ON | GPT-3.5
+
+=== END ===

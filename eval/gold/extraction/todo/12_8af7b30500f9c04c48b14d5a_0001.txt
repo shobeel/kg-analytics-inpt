@@ -1,0 +1,37 @@
+# Gold chunk 12/25   chunk_id: 8af7b30500f9c04c48b14d5a_0001   source: rss
+# title: Cohere says Alibaba’s Qwen model tried to send a file to Beijing
+# url: https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; the article title (Alibaba, Qwen, Beijing) is not part of the chunk text; Zhang's employer is not stated in this chunk
+
+=== TEXT (read only) ===
+The incident lands as governments are deciding how far to push back on Chinese AI. Last week, the
+Department of Homeland Security ordered federal civilian agencies to remove the Chinese AI developer
+DeepSeek’s products from their systems.
+In its blog post, Cohere called on governments to clarify whether their restrictions on Chinese AI
+also apply to models running on government computers.
+“I’m not asking for full regulation of these open-weights models,” Zhang told TechCrunch, adding
+that companies should treat open models like any program downloaded from the internet.
+Cohere, which sells its own AI models to governments, stands to benefit if officials grow warier of
+free Chinese alternatives.
+
+=== ENTITIES ===
+Organization | Department of Homeland Security
+Organization | DeepSeek
+Organization | Cohere
+Organization | TechCrunch
+Person | Zhang
+
+=== RELATIONS ===
+
+=== END ===

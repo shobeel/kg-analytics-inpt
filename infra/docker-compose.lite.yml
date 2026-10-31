@@ -1,0 +1,48 @@
+# Lite profile for an 8 GB Mac (Docker capped at 6 GB). Applied on top of docker-compose.yml
+# by `make up` (default STACK=lite). Same services, names, network, volumes and ports;
+# only the scale-out nodes are switched off and memory limits shrink.
+#
+# Container memory limits (sum ~6.1 GiB):
+#   namenode 640m | datanode1 512m | spark-master 384m | spark-worker1 1536m (1 GB for executors)
+#   neo4j 2g (heap 1g + pagecache 512m) | jupyter 1152m (driver 512m)
+# To scale back up: `make up STACK=full` (adds datanode2 + spark-worker2, larger limits).
+
+services:
+  # Scale-out nodes: only start under the full stack. The "scale-out" profile is never
+  # enabled in lite mode.
+  datanode2:
+    profiles: [scale-out]
+  spark-worker2:
+    profiles: [scale-out]
+
+  namenode:
+    mem_limit: 640m
+    environment:
+      HDFS_CONF_dfs_replication: "1"   # only 1 datanode
+  datanode1:
+    mem_limit: 512m
+  spark-master:
+    mem_limit: 384m
+  spark-worker1:
+    mem_limit: 1536m
+  neo4j:
+    mem_limit: 2g
+  jupyter:
+    mem_limit: 1152m
+    environment:
+      DFS_REPLICATION: "1"
+      SPARK_DRIVER_MEMORY: 512m
+      SPARK_EXECUTOR_MEMORY: 768m
+      SPARK_CORES_MAX: "2"
+
+  # App services (profile "apps", started by `make up-apps`): crawler 384m, extraction 1536m (one-off runs), api 1g, ui 512m.
+  crawler:    {mem_limit: 384m}
+  extraction:                     # local Spark driver + fastembed ONNX model
+    mem_limit: 1536m
+    environment: {DFS_REPLICATION: "1"}
+  loader:                         # local Spark driver (512m) + fastembed; batches of 500 rows
+    mem_limit: 1536m
+    environment: {DFS_REPLICATION: "1", LOADER_SPARK_DRIVER_MEMORY: 512m}
+  graphrag:   {mem_limit: 1g}        # fastembed query embedding + neo4j driver; no Spark
+  api:        {mem_limit: 1g}         # Phase 7 API: engine + fastembed query embedding
+  ui:         {mem_limit: 512m}       # Phase 7 Streamlit UI

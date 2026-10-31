@@ -1,0 +1,1456 @@
+{
+ "by_system_version": {
+  "A|raw": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 2.1666666666666665,
+   "correct_ge4": 0.26666666666666666,
+   "entity_recall": 0.2,
+   "entity_precision": 0.7135416666666666,
+   "entity_f1": 0.18136390358612578,
+   "faithfulness": 0.5833333333333333,
+   "citation_precision": 0.625,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.7037037037037037,
+   "latency_median_s": 4.387499999999999,
+   "latency_p95_s": 4.6341,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1292.4,
+   "tokens_out_per_q": 39.5,
+   "cost_usd_per_q": 0.00048647,
+   "cost_usd_total": 0.0145941,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "A|resolved": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 2.1666666666666665,
+   "correct_ge4": 0.26666666666666666,
+   "entity_recall": 0.2074074074074074,
+   "entity_precision": 0.7559523809523809,
+   "entity_f1": 0.18518518518518515,
+   "faithfulness": 0.6666666666666666,
+   "citation_precision": 0.6666666666666666,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.6666666666666666,
+   "latency_median_s": 4.951499999999999,
+   "latency_p95_s": 7.021299999999999,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1292.4,
+   "tokens_out_per_q": 40.86666666666667,
+   "cost_usd_per_q": 0.0004898866666666667,
+   "cost_usd_total": 0.014696599999999999,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "B|raw": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 3.1333333333333333,
+   "correct_ge4": 0.43333333333333335,
+   "entity_recall": 0.4888888888888889,
+   "entity_precision": 0.7334415584415584,
+   "entity_f1": 0.45483652150318826,
+   "faithfulness": 0.4329545454545455,
+   "citation_precision": 0.4696969696969697,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.18518518518518517,
+   "latency_median_s": 4.67,
+   "latency_p95_s": 5.06515,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 2793.6,
+   "tokens_out_per_q": 61.833333333333336,
+   "cost_usd_per_q": 0.0009926633333333331,
+   "cost_usd_total": 0.02977989999999999,
+   "invalid_citations_removed": 1,
+   "judge_pending": 0
+  },
+  "B|resolved": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 3.7666666666666666,
+   "correct_ge4": 0.6333333333333333,
+   "entity_recall": 0.5842592592592593,
+   "entity_precision": 0.7922705314009661,
+   "entity_f1": 0.5808962642295976,
+   "faithfulness": 0.5398550724637681,
+   "citation_precision": 0.6086956521739131,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.14814814814814814,
+   "latency_median_s": 5.609999999999999,
+   "latency_p95_s": 7.391549999999998,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 2951.5333333333333,
+   "tokens_out_per_q": 65.86666666666666,
+   "cost_usd_per_q": 0.0010501266666666667,
+   "cost_usd_total": 0.0315038,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "C|raw": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 3.033333333333333,
+   "correct_ge4": 0.4666666666666667,
+   "entity_recall": 0.4537037037037037,
+   "entity_precision": 0.8666666666666668,
+   "entity_f1": 0.4606701940035273,
+   "faithfulness": 0.6208333333333333,
+   "citation_precision": 0.825,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.25925925925925924,
+   "latency_median_s": 8.753,
+   "latency_p95_s": 9.630549999999998,
+   "llm_calls_per_q": 1.7,
+   "tokens_in_per_q": 1351.1333333333334,
+   "tokens_out_per_q": 183.36666666666667,
+   "cost_usd_per_q": 0.0008637566666666665,
+   "cost_usd_total": 0.025912699999999993,
+   "invalid_citations_removed": 1,
+   "judge_pending": 0
+  },
+  "C|resolved": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": 3.6,
+   "correct_ge4": 0.6333333333333333,
+   "entity_recall": 0.5740740740740741,
+   "entity_precision": 0.8730158730158731,
+   "entity_f1": 0.5654320987654321,
+   "faithfulness": 0.7301587301587301,
+   "citation_precision": 0.8174603174603173,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.2222222222222222,
+   "latency_median_s": 9.03,
+   "latency_p95_s": 13.841399999999998,
+   "llm_calls_per_q": 1.8,
+   "tokens_in_per_q": 1437.5666666666666,
+   "tokens_out_per_q": 202.86666666666667,
+   "cost_usd_per_q": 0.0009384366666666666,
+   "cost_usd_total": 0.028153099999999997,
+   "invalid_citations_removed": 1,
+   "judge_pending": 0
+  },
+  "direct|raw": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 0.7444444444444445,
+   "entity_precision": 0.8311594202898552,
+   "entity_f1": 0.7098471487360376,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.14814814814814814,
+   "latency_median_s": 0.002,
+   "latency_p95_s": 0.004,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "direct|resolved": {
+   "answers": 30,
+   "questions": 30,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 1.0,
+   "entity_precision": 0.9061728395061728,
+   "entity_f1": 0.9431350542461655,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 0.002,
+   "latency_p95_s": 0.007099999999999994,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  }
+ },
+ "by_category_system": {
+  "aggregation|A": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 1.0,
+   "correct_ge4": 0.0,
+   "entity_recall": 0.16666666666666666,
+   "entity_precision": 1.0,
+   "entity_f1": 0.16666666666666666,
+   "faithfulness": 0.0,
+   "citation_precision": 0.0,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.8333333333333334,
+   "latency_median_s": 5.9245,
+   "latency_p95_s": 7.0385,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1272.8333333333333,
+   "tokens_out_per_q": 33.5,
+   "cost_usd_per_q": 0.0004656,
+   "cost_usd_total": 0.0027936,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "aggregation|B": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 3.6666666666666665,
+   "correct_ge4": 0.6666666666666666,
+   "entity_recall": 0.6666666666666666,
+   "entity_precision": 1.0,
+   "entity_f1": 0.6666666666666666,
+   "faithfulness": 0.875,
+   "citation_precision": 1.0,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.3333333333333333,
+   "latency_median_s": 6.688000000000001,
+   "latency_p95_s": 7.4565,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 2382.0,
+   "tokens_out_per_q": 48.5,
+   "cost_usd_per_q": 0.00083585,
+   "cost_usd_total": 0.0050151,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "aggregation|C": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 4.833333333333333,
+   "correct_ge4": 1.0,
+   "entity_recall": 1.0,
+   "entity_precision": 1.0,
+   "entity_f1": 1.0,
+   "faithfulness": 0.9166666666666666,
+   "citation_precision": 1.0,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 12.6845,
+   "latency_p95_s": 14.010000000000002,
+   "llm_calls_per_q": 2.1666666666666665,
+   "tokens_in_per_q": 1877.3333333333333,
+   "tokens_out_per_q": 239.66666666666666,
+   "cost_usd_per_q": 0.0011623666666666667,
+   "cost_usd_total": 0.006974200000000001,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "aggregation|direct": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 1.0,
+   "entity_precision": 1.0,
+   "entity_f1": 1.0,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 0.005,
+   "latency_p95_s": 0.0075,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "lookup|A": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 3.0,
+   "correct_ge4": 0.5,
+   "entity_recall": 0.5,
+   "entity_precision": 0.8333333333333334,
+   "entity_f1": 0.4444444444444444,
+   "faithfulness": 1.0,
+   "citation_precision": 1.0,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.5,
+   "latency_median_s": 3.9865,
+   "latency_p95_s": 4.489,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1311.1666666666667,
+   "tokens_out_per_q": 35.333333333333336,
+   "cost_usd_per_q": 0.00048168333333333327,
+   "cost_usd_total": 0.0028900999999999996,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "lookup|B": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 5.0,
+   "correct_ge4": 1.0,
+   "entity_recall": 1.0,
+   "entity_precision": 1.0,
+   "entity_f1": 1.0,
+   "faithfulness": 0.5,
+   "citation_precision": 0.5,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 4.6274999999999995,
+   "latency_p95_s": 4.6635,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 3548.8333333333335,
+   "tokens_out_per_q": 54.0,
+   "cost_usd_per_q": 0.00119965,
+   "cost_usd_total": 0.0071979,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "lookup|C": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 3.6666666666666665,
+   "correct_ge4": 0.6666666666666666,
+   "entity_recall": 0.6666666666666666,
+   "entity_precision": 1.0,
+   "entity_f1": 0.6666666666666666,
+   "faithfulness": 0.875,
+   "citation_precision": 1.0,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.3333333333333333,
+   "latency_median_s": 6.896,
+   "latency_p95_s": 8.957749999999999,
+   "llm_calls_per_q": 1.6666666666666667,
+   "tokens_in_per_q": 1216.5,
+   "tokens_out_per_q": 157.0,
+   "cost_usd_per_q": 0.0007574499999999999,
+   "cost_usd_total": 0.0045447,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "lookup|direct": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 1.0,
+   "entity_precision": 0.9166666666666666,
+   "entity_f1": 0.9444444444444445,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 0.0035,
+   "latency_p95_s": 0.044750000000000005,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "multi-hop|A": {
+   "answers": 9,
+   "questions": 9,
+   "correctness": 1.0,
+   "correct_ge4": 0.0,
+   "entity_recall": 0.0,
+   "entity_precision": null,
+   "entity_f1": 0.0,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": null,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 1.0,
+   "latency_median_s": 5.74,
+   "latency_p95_s": 6.8504,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1294.111111111111,
+   "tokens_out_per_q": 27.444444444444443,
+   "cost_usd_per_q": 0.00045684444444444433,
+   "cost_usd_total": 0.004111599999999999,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "multi-hop|B": {
+   "answers": 9,
+   "questions": 9,
+   "correctness": 2.888888888888889,
+   "correct_ge4": 0.4444444444444444,
+   "entity_recall": 0.4027777777777778,
+   "entity_precision": 0.6071428571428571,
+   "entity_f1": 0.41464646464646465,
+   "faithfulness": 0.5119047619047619,
+   "citation_precision": 0.5714285714285714,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.2222222222222222,
+   "latency_median_s": 6.075,
+   "latency_p95_s": 8.3248,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 2793.5555555555557,
+   "tokens_out_per_q": 79.77777777777777,
+   "cost_usd_per_q": 0.001037511111111111,
+   "cost_usd_total": 0.0093376,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "multi-hop|C": {
+   "answers": 9,
+   "questions": 9,
+   "correctness": 3.111111111111111,
+   "correct_ge4": 0.5555555555555556,
+   "entity_recall": 0.5,
+   "entity_precision": 0.8666666666666666,
+   "entity_f1": 0.4740740740740741,
+   "faithfulness": 0.6666666666666667,
+   "citation_precision": 0.9333333333333333,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.4444444444444444,
+   "latency_median_s": 9.367,
+   "latency_p95_s": 12.575,
+   "llm_calls_per_q": 1.6666666666666667,
+   "tokens_in_per_q": 1408.4444444444443,
+   "tokens_out_per_q": 243.77777777777777,
+   "cost_usd_per_q": 0.0010319777777777778,
+   "cost_usd_total": 0.0092878,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "multi-hop|direct": {
+   "answers": 9,
+   "questions": 9,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 1.0,
+   "entity_precision": 0.8518518518518519,
+   "entity_f1": 0.911111111111111,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 0.002,
+   "latency_p95_s": 0.003,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "semantic|A": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 2.8333333333333335,
+   "correct_ge4": 0.3333333333333333,
+   "entity_recall": 0.26666666666666666,
+   "entity_precision": 0.6607142857142858,
+   "entity_f1": 0.2222222222222222,
+   "faithfulness": 0.6,
+   "citation_precision": 0.6,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.16666666666666666,
+   "latency_median_s": 5.191000000000001,
+   "latency_p95_s": 6.5275,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1281.5,
+   "tokens_out_per_q": 78.83333333333333,
+   "cost_usd_per_q": 0.0005815333333333333,
+   "cost_usd_total": 0.0034892,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "semantic|B": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 3.3333333333333335,
+   "correct_ge4": 0.3333333333333333,
+   "entity_recall": 0.35833333333333334,
+   "entity_precision": 0.6620370370370371,
+   "entity_f1": 0.32539682539682535,
+   "faithfulness": 0.38888888888888884,
+   "citation_precision": 0.5,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 5.333,
+   "latency_p95_s": 6.38475,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 3553.3333333333335,
+   "tokens_out_per_q": 93.0,
+   "cost_usd_per_q": 0.0012985,
+   "cost_usd_total": 0.007790999999999999,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "semantic|C": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": 2.3333333333333335,
+   "correct_ge4": 0.16666666666666666,
+   "entity_recall": 0.16666666666666666,
+   "entity_precision": 0.6666666666666666,
+   "entity_f1": 0.16666666666666666,
+   "faithfulness": 0.5,
+   "citation_precision": 0.4166666666666667,
+   "answers_with_sources": 1.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 9.497,
+   "latency_p95_s": 13.597999999999999,
+   "llm_calls_per_q": 2.1666666666666665,
+   "tokens_in_per_q": 1481.1666666666667,
+   "tokens_out_per_q": 184.83333333333334,
+   "cost_usd_per_q": 0.0009064333333333334,
+   "cost_usd_total": 0.0054386,
+   "invalid_citations_removed": 1,
+   "judge_pending": 0
+  },
+  "semantic|direct": {
+   "answers": 6,
+   "questions": 6,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": 1.0,
+   "entity_precision": 0.8833333333333334,
+   "entity_f1": 0.932996632996633,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": 0.0,
+   "refusal_rate_unanswerable": null,
+   "false_refusal_rate": 0.0,
+   "latency_median_s": 0.0015,
+   "latency_p95_s": 0.002,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "unanswerable|A": {
+   "answers": 3,
+   "questions": 3,
+   "correctness": 5.0,
+   "correct_ge4": 1.0,
+   "entity_recall": null,
+   "entity_precision": null,
+   "entity_f1": null,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": null,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": null,
+   "latency_median_s": 4.184,
+   "latency_p95_s": 4.22,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1310.6666666666667,
+   "tokens_out_per_q": 31.0,
+   "cost_usd_per_q": 0.00047069999999999995,
+   "cost_usd_total": 0.0014121,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "unanswerable|B": {
+   "answers": 3,
+   "questions": 3,
+   "correctness": 5.0,
+   "correct_ge4": 1.0,
+   "entity_recall": null,
+   "entity_precision": null,
+   "entity_f1": null,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": null,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": null,
+   "latency_median_s": 4.388,
+   "latency_p95_s": 4.6129999999999995,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 2166.3333333333335,
+   "tokens_out_per_q": 28.333333333333332,
+   "cost_usd_per_q": 0.0007207333333333334,
+   "cost_usd_total": 0.0021622,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "unanswerable|C": {
+   "answers": 3,
+   "questions": 3,
+   "correctness": 5.0,
+   "correct_ge4": 1.0,
+   "entity_recall": null,
+   "entity_precision": null,
+   "entity_f1": null,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": null,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": null,
+   "latency_median_s": 4.651,
+   "latency_p95_s": 4.9993,
+   "llm_calls_per_q": 1.0,
+   "tokens_in_per_q": 1000.3333333333334,
+   "tokens_out_per_q": 134.33333333333334,
+   "cost_usd_per_q": 0.0006359333333333333,
+   "cost_usd_total": 0.0019077999999999999,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  },
+  "unanswerable|direct": {
+   "answers": 3,
+   "questions": 3,
+   "correctness": null,
+   "correct_ge4": null,
+   "entity_recall": null,
+   "entity_precision": null,
+   "entity_f1": null,
+   "faithfulness": null,
+   "citation_precision": null,
+   "answers_with_sources": null,
+   "refusal_rate_unanswerable": 1.0,
+   "false_refusal_rate": null,
+   "latency_median_s": 0.002,
+   "latency_p95_s": 0.0029,
+   "llm_calls_per_q": 0.0,
+   "tokens_in_per_q": 0.0,
+   "tokens_out_per_q": 0.0,
+   "cost_usd_per_q": 0.0,
+   "cost_usd_total": 0.0,
+   "invalid_citations_removed": 0,
+   "judge_pending": 0
+  }
+ },
+ "raw_vs_resolved": {
+  "direct": {
+   "pairs": 30,
+   "correctness_raw": null,
+   "correctness_resolved": null,
+   "entity_recall_raw": 0.7444444444444445,
+   "entity_recall_resolved": 1.0,
+   "entity_f1_raw": 0.7098471487360376,
+   "entity_f1_resolved": 0.9431350542461655,
+   "faithfulness_raw": null,
+   "faithfulness_resolved": null,
+   "citation_precision_raw": null,
+   "citation_precision_resolved": null,
+   "latency_s_raw": 0.0022333333333333346,
+   "latency_s_resolved": 0.0046000000000000025,
+   "better_resolved": 0,
+   "better_raw": 0
+  },
+  "A": {
+   "pairs": 30,
+   "correctness_raw": 2.1666666666666665,
+   "correctness_resolved": 2.1666666666666665,
+   "entity_recall_raw": 0.2,
+   "entity_recall_resolved": 0.2074074074074074,
+   "entity_f1_raw": 0.18136390358612578,
+   "entity_f1_resolved": 0.18518518518518515,
+   "faithfulness_raw": 0.5833333333333333,
+   "faithfulness_resolved": 0.6666666666666666,
+   "citation_precision_raw": 0.625,
+   "citation_precision_resolved": 0.6666666666666666,
+   "latency_s_raw": 4.376866666666667,
+   "latency_s_resolved": 4.955966666666666,
+   "better_resolved": 1,
+   "better_raw": 1
+  },
+  "B": {
+   "pairs": 30,
+   "correctness_raw": 3.1333333333333333,
+   "correctness_resolved": 3.7666666666666666,
+   "entity_recall_raw": 0.4888888888888889,
+   "entity_recall_resolved": 0.5842592592592593,
+   "entity_f1_raw": 0.45483652150318826,
+   "entity_f1_resolved": 0.5808962642295976,
+   "faithfulness_raw": 0.4329545454545455,
+   "faithfulness_resolved": 0.5398550724637681,
+   "citation_precision_raw": 0.4696969696969697,
+   "citation_precision_resolved": 0.6086956521739131,
+   "latency_s_raw": 4.692366666666667,
+   "latency_s_resolved": 5.5891,
+   "better_resolved": 7,
+   "better_raw": 0
+  },
+  "C": {
+   "pairs": 30,
+   "correctness_raw": 3.033333333333333,
+   "correctness_resolved": 3.6,
+   "entity_recall_raw": 0.4537037037037037,
+   "entity_recall_resolved": 0.5740740740740741,
+   "entity_f1_raw": 0.4606701940035273,
+   "entity_f1_resolved": 0.5654320987654321,
+   "faithfulness_raw": 0.6208333333333333,
+   "faithfulness_resolved": 0.7301587301587301,
+   "citation_precision_raw": 0.825,
+   "citation_precision_resolved": 0.8174603174603173,
+   "latency_s_raw": 7.703600000000001,
+   "latency_s_resolved": 9.145199999999999,
+   "better_resolved": 9,
+   "better_raw": 4
+  }
+ },
+ "hardest": [
+  {
+   "question_id": "M04",
+   "category": "multi-hop",
+   "question": "Who founded the company that acquired Mellanox?",
+   "mean_correctness": 1.0,
+   "per_system": {
+    "A": 1,
+    "B": 1,
+    "C": 1
+   },
+   "refusals": 3,
+   "systems": 3,
+   "mean_entity_recall": 0.0,
+   "direct_entity_recall_resolved": 1.0,
+   "direct_entity_recall_raw": 0.0,
+   "answers": {
+    "A": "Not found in the knowledge graph.",
+    "B": "Not found in the knowledge graph.",
+    "C": "Not found in the knowledge graph."
+   }
+  },
+  {
+   "question_id": "M08",
+   "category": "multi-hop",
+   "question": "Who founded the company that invested in the developer of the Jamba model?",
+   "mean_correctness": 1.0,
+   "per_system": {
+    "A": 1,
+    "B": 1,
+    "C": 1
+   },
+   "refusals": 2,
+   "systems": 3,
+   "mean_entity_recall": 0.0,
+   "direct_entity_recall_resolved": 1.0,
+   "direct_entity_recall_raw": 0.0,
+   "answers": {
+    "A": "Not found in the knowledge graph.",
+    "B": "AI21 Labs, the developer of the Jamba model [c556ce04], received funding from Google [c556ce04]. Baidu was founded by Robin Li and Eric Xu [51e219c7].",
+    "C": "Not found in the knowledge graph."
+   }
+  },
+  {
+   "question_id": "G03",
+   "category": "aggregation",
+   "question": "Which organization has acquired the most companies?",
+   "mean_correctness": 2.3333333333333335,
+   "per_system": {
+    "A": 1,
+    "B": 1,
+    "C": 5
+   },
+   "refusals": 2,
+   "systems": 3,
+   "mean_entity_recall": 0.3333333333333333,
+   "direct_entity_recall_resolved": 1.0,
+   "direct_entity_recall_raw": 1.0,
+   "answers": {
+    "A": "Not found in the knowledge graph.",
+    "B": "Not found in the knowledge graph.",
+    "C": "Nvidia has acquired the most companies, with a total of 18 acquisitions [2fe5e44a, b200537e]."
+   }
+  },
+  {
+   "question_id": "G05",
+   "category": "aggregation",
+   "question": "Which person has worked at the most organizations?",
+   "mean_correctness": 2.3333333333333335,
+   "per_system": {
+    "A": 1,
+    "B": 1,
+    "C": 5
+   },
+   "refusals": 2,
+   "systems": 3,
+   "mean_entity_recall": 0.3333333333333333,
+   "direct_entity_recall_resolved": 1.0,
+   "direct_entity_recall_raw": 1.0,
+   "answers": {
+    "A": "Not found in the knowledge graph.",
+    "B": "Not found in the knowledge graph.",
+    "C": "Geoffrey Hinton has worked at the most organizations, with a total of 10 organizations including the University of Toronto, Google Brain, and the Vector Institute [0173fcc2]."
+   }
+  },
+  {
+   "question_id": "L03",
+   "category": "lookup",
+   "question": "Who founded Hugging Face?",
+   "mean_correctness": 2.3333333333333335,
+   "per_system": {
+    "A": 1,
+    "B": 5,
+    "C": 1
+   },
+   "refusals": 2,
+   "systems": 3,
+   "mean_entity_recall": 0.3333333333333333,
+   "direct_entity_recall_resolved": 1.0,
+   "direct_entity_recall_raw": 0.0,
+   "answers": {
+    "A": "Not found in the knowledge graph.",
+    "B": "Hugging Face was founded in 2016 by French entrepreneurs Cl\u00e9ment Delangue, Julien Chaumond, and Thomas Wolf.",
+    "C": "Not found in the knowledge graph."
+   }
+  }
+ ],
+ "examples": {
+  "direct": {
+   "good": [
+    {
+     "question_id": "S06",
+     "category": "semantic",
+     "question": "What is Geoffrey Hinton known for?",
+     "answer": "description: Geoffrey Hinton; entity: AlexNet description: Geoffrey Hinton; entity: Boltzmann machines description: Geoffrey Hinton; entity: DNNresearch Inc. description: Geoffrey Hinton; entity: t-SNE",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": null,
+     "refused": false
+    },
+    {
+     "question_id": "S03",
+     "category": "semantic",
+     "question": "What is the Transformer architecture?",
+     "answer": "description: a family of artificial neural network architectures based on the multi-head attention mechanism; entity: GPT-4 description: a family of artificial neural network architectures based on the multi-head attention mechanism; entity: GPT-3 description: a family of artificial neural network architectures based on the multi-head attention mechanism; entity: BERT description: a family of artificial neural network architectures based on the multi-head attention mechanism; entity: GPT-2 description: a family of artificial neural network architectures based on the multi-head attention mechan",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": null,
+     "refused": false
+    },
+    {
+     "question_id": "S02",
+     "category": "semantic",
+     "question": "What is Constitutional AI?",
+     "answer": "description: method for training a harmless AI assistant through self-improvement; entity: Anthropic",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": null,
+     "refused": false
+    }
+   ],
+   "bad": [
+    {
+     "question_id": "L05",
+     "category": "lookup",
+     "question": "Which company developed GPT-4?",
+     "answer": "entity: OpenAI entity: Microsoft",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 0.6666666666666666,
+     "faithfulness": null,
+     "refused": false
+    },
+    {
+     "question_id": "M01",
+     "category": "multi-hop",
+     "question": "Which people work at the organization that developed AlphaFold?",
+     "answer": "via: DeepMind; entity: Demis Hassabis via: DeepMind; entity: David Silver via: DeepMind; entity: Aja Huang via: DeepMind; entity: Arthur Mensch via: DeepMind; entity: Diego Rivas via: DeepMind; entity: Fan Hui via: DeepMind; entity: Igor Babuschkin via: DeepMind; entity: Jaan Tallinn via: DeepMind; entity: Koray Kavukcuoglu via: DeepMind; entity: Lila Ibrahim via: DeepMind; entity: Murray Shanahan via: DeepMind; entity: Naina Raisinghani",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 0.8,
+     "faithfulness": null,
+     "refused": false
+    },
+    {
+     "question_id": "M03",
+     "category": "multi-hop",
+     "question": "Which companies were acquired by the developer of Claude?",
+     "answer": "via: Anthropic; entity: Stainless via: Anthropic; entity: Bun",
+     "correctness": null,
+     "entity_recall": 1.0,
+     "entity_f1": 0.8,
+     "faithfulness": null,
+     "refused": false
+    }
+   ]
+  },
+  "A": {
+   "good": [
+    {
+     "question_id": "L05",
+     "category": "lookup",
+     "question": "Which company developed GPT-4?",
+     "answer": "GPT-4 was developed by OpenAI.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 1.0,
+     "refused": false
+    },
+    {
+     "question_id": "L01",
+     "category": "lookup",
+     "question": "Who developed Claude?",
+     "answer": "Claude is developed by the American software company Anthropic.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 1.0,
+     "refused": false
+    },
+    {
+     "question_id": "L02",
+     "category": "lookup",
+     "question": "Where is Cohere headquartered?",
+     "answer": "Cohere is headquartered in Toronto, Ontario, Canada.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 0.6666666666666666,
+     "faithfulness": 1.0,
+     "refused": false
+    }
+   ],
+   "bad": [
+    {
+     "question_id": "G01",
+     "category": "aggregation",
+     "question": "Which organization developed the most AI models?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "G02",
+     "category": "aggregation",
+     "question": "How many AI models did Mistral AI develop?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "G03",
+     "category": "aggregation",
+     "question": "Which organization has acquired the most companies?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    }
+   ]
+  },
+  "B": {
+   "good": [
+    {
+     "question_id": "M05",
+     "category": "multi-hop",
+     "question": "Which AI models were developed by the company that acquired Aleph Alpha?",
+     "answer": "The company that acquired Aleph Alpha is Cohere [666ca983]. The AI models developed by Cohere include Aya Vision [666ca983] and Takane [666ca983].",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 0.3333333333333333,
+     "refused": false
+    },
+    {
+     "question_id": "L06",
+     "category": "lookup",
+     "question": "Which companies has Mistral AI acquired?",
+     "answer": "Mistral AI has acquired the Austrian company Emmi AI and the Paris-based AI startup Koyeb.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 0.0,
+     "refused": false
+    },
+    {
+     "question_id": "L05",
+     "category": "lookup",
+     "question": "Which company developed GPT-4?",
+     "answer": "GPT-4 was developed by OpenAI.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 1.0,
+     "refused": false
+    }
+   ],
+   "bad": [
+    {
+     "question_id": "G03",
+     "category": "aggregation",
+     "question": "Which organization has acquired the most companies?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "G05",
+     "category": "aggregation",
+     "question": "Which person has worked at the most organizations?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "M04",
+     "category": "multi-hop",
+     "question": "Who founded the company that acquired Mellanox?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    }
+   ]
+  },
+  "C": {
+   "good": [
+    {
+     "question_id": "S02",
+     "category": "semantic",
+     "question": "What is Constitutional AI?",
+     "answer": "Constitutional AI is a method developed by Anthropic for training a harmless AI assistant through self-improvement.",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 1.0,
+     "refused": false
+    },
+    {
+     "question_id": "M07",
+     "category": "multi-hop",
+     "question": "Which people work at the company that developed Aya Vision?",
+     "answer": "The people who work at Cohere, the company that developed Aya Vision, include Ivan Zhang, Martin Kon, Aidan N. Gomez, and Jo\u00eblle Pineau [8af7b305, 666ca983].",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 0.5,
+     "refused": false
+    },
+    {
+     "question_id": "M06",
+     "category": "multi-hop",
+     "question": "Where is the organization that developed ChatGPT located?",
+     "answer": "ChatGPT was developed by OpenAI, an organization located in San Francisco, California [cd4fc97f].",
+     "correctness": 5,
+     "entity_recall": 1.0,
+     "entity_f1": 1.0,
+     "faithfulness": 1.0,
+     "refused": false
+    }
+   ],
+   "bad": [
+    {
+     "question_id": "L03",
+     "category": "lookup",
+     "question": "Who founded Hugging Face?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "L04",
+     "category": "lookup",
+     "question": "Who created the ImageNet dataset?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    },
+    {
+     "question_id": "M03",
+     "category": "multi-hop",
+     "question": "Which companies were acquired by the developer of Claude?",
+     "answer": "Not found in the knowledge graph.",
+     "correctness": 1,
+     "entity_recall": 0.0,
+     "entity_f1": 0.0,
+     "faithfulness": null,
+     "refused": true
+    }
+   ]
+  }
+ },
+ "errors": {
+  "answer_runs": 0,
+  "by_system": {
+   "direct": 0,
+   "A": 0,
+   "B": 0,
+   "C": 0
+  },
+  "judge_unresolved": 0
+ },
+ "totals": {
+  "questions": 30,
+  "by_category": {
+   "aggregation": 6,
+   "lookup": 6,
+   "multi-hop": 9,
+   "semantic": 6,
+   "unanswerable": 3
+  },
+  "direct_answer_changes": 20,
+  "answers": 240,
+  "llm_answers": 180,
+  "llm_calls": 225,
+  "tokens_in": 333559,
+  "tokens_out": 17829,
+  "answer_cost_usd": 0.1446402,
+  "judge": {
+   "calls": 103,
+   "tokens_in": 69854,
+   "tokens_out": 33525,
+   "cost_usd": 0.030593099999999998
+  }
+ },
+ "llm_usage": {
+  "benchmark answers|gemini-3.5-flash-lite": {
+   "requests": 225,
+   "ok": 225,
+   "tokens_in": 333559,
+   "tokens_out": 17829,
+   "latency_median_s": 0.997
+  },
+  "extraction / ER|gemini-3.5-flash-lite": {
+   "requests": 690,
+   "ok": 652,
+   "tokens_in": 873254,
+   "tokens_out": 497665,
+   "latency_median_s": 12.521
+  },
+  "gold pre-fill|gemini-3.5-flash": {
+   "requests": 22,
+   "ok": 3,
+   "tokens_in": 3786,
+   "tokens_out": 6193,
+   "latency_median_s": 15.285
+  },
+  "gold pre-fill|openai/gpt-oss-120b": {
+   "requests": 79,
+   "ok": 22,
+   "tokens_in": 32448,
+   "tokens_out": 39524,
+   "latency_median_s": 4.1905
+  },
+  "gold pre-fill|qwen/qwen3.8-27b": {
+   "requests": 1,
+   "ok": 1,
+   "tokens_in": 1632,
+   "tokens_out": 2048,
+   "latency_median_s": 4.904
+  },
+  "judge|openai/gpt-oss-120b": {
+   "requests": 94,
+   "ok": 93,
+   "tokens_in": 63531,
+   "tokens_out": 31136,
+   "latency_median_s": 1.078
+  },
+  "judge|qwen/qwen3.8-27b": {
+   "requests": 14,
+   "ok": 14,
+   "tokens_in": 7223,
+   "tokens_out": 2111,
+   "latency_median_s": 0.7615000000000001
+  },
+  "other|gemini-3.5-flash-lite": {
+   "requests": 37,
+   "ok": 37,
+   "tokens_in": 35457,
+   "tokens_out": 11918,
+   "latency_median_s": 3.484
+  }
+ },
+ "headline_g01": {
+  "resolved": "entity: DeepMind; n: 34",
+  "raw": "entity: Anthropic; n: 33"
+ },
+ "judge_agreement": null,
+ "inter_model_agreement": {
+  "kind": "inter-model agreement, not human validation",
+  "judge_model": "openai/gpt-oss-120b",
+  "second_model": "qwen/qwen3.8-27b",
+  "n_sampled": 15,
+  "errors": 1,
+  "correctness": {
+   "n": 14,
+   "exact": 1.0,
+   "within_1": 1.0,
+   "weighted_kappa": 1.0,
+   "spearman": 0.9999999999999999,
+   "mean_human": 3.7142857142857144,
+   "mean_judge": 3.7142857142857144,
+   "disagreements": []
+  },
+  "faithfulness": {
+   "n": 12,
+   "binary_agreement": 0.9166666666666666,
+   "mean_abs_diff": 0.13194444444444445
+  },
+  "citation_precision": {
+   "n": 11,
+   "binary_agreement": 0.9090909090909091,
+   "mean_abs_diff": 0.09090909090909091
+  },
+  "rows": [
+   {
+    "key": "G06|C|resolved|8e4213aa0c",
+    "system": "C",
+    "category": "aggregation",
+    "judge": {
+     "correctness": 4,
+     "faithfulness": 0.5,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 4,
+     "faithfulness": 0.75,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "S02|A|resolved|f0ddaeef20",
+    "system": "A",
+    "category": "semantic",
+    "judge": {
+     "correctness": 4,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 4,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "M08|B|raw|5d0d76556b",
+    "system": "B",
+    "category": "multi-hop",
+    "judge": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    }
+   },
+   {
+    "key": "G06|A|raw|8e4213aa0c",
+    "system": "A",
+    "category": "aggregation",
+    "judge": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    }
+   },
+   {
+    "key": "M05|C|raw|47a0d8f89d",
+    "system": "C",
+    "category": "multi-hop",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 0.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 0.3333333333333333,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "S03|C|raw|b126acac14",
+    "system": "C",
+    "category": "semantic",
+    "judge": {
+     "correctness": 3,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 3,
+     "faithfulness": null,
+     "citation_precision": null
+    }
+   },
+   {
+    "key": "L06|C|resolved|26214de218",
+    "system": "C",
+    "category": "lookup",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 0.5,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 0.5,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "L03|B|resolved|6f86ca1db5",
+    "system": "B",
+    "category": "lookup",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 0.0,
+     "citation_precision": null
+    }
+   },
+   {
+    "key": "G01|B|resolved|b9441291b9",
+    "system": "B",
+    "category": "aggregation",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "L02|A|resolved|cbac528680",
+    "system": "A",
+    "category": "lookup",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": null,
+     "citation_precision": null
+    }
+   },
+   {
+    "key": "S05|B|raw|67e0955f37",
+    "system": "B",
+    "category": "semantic",
+    "judge": {
+     "correctness": 3,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 3,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    }
+   },
+   {
+    "key": "G03|C|resolved|d247fd6606",
+    "system": "C",
+    "category": "aggregation",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 1.0,
+     "citation_precision": 1.0
+    }
+   },
+   {
+    "key": "S02|A|raw|f0ddaeef20",
+    "error": "'correctness'"
+   },
+   {
+    "key": "M03|B|resolved|53b3a9121e",
+    "system": "B",
+    "category": "multi-hop",
+    "judge": {
+     "correctness": 5,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 5,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    }
+   },
+   {
+    "key": "G06|A|resolved|8e4213aa0c",
+    "system": "A",
+    "category": "aggregation",
+    "judge": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    },
+    "second": {
+     "correctness": 1,
+     "faithfulness": 0.0,
+     "citation_precision": 0.0
+    }
+   }
+  ]
+ }
+}

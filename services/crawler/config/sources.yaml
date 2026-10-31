@@ -1,0 +1,96 @@
+# Crawler sources (Phase 1). Edit seeds here; re-runs skip documents already in bronze.
+#
+# Access policy (see README "Crawling policy"):
+#   official_api -> provider's documented API, governed by its API terms (rate limit, User-Agent).
+#                   robots.txt on export.arxiv.org and Wikipedia's /w/ targets page crawlers,
+#                   and both providers point programmatic users to these APIs.
+#   web          -> robots.txt is checked for every URL; Crawl-delay is honoured.
+
+defaults:
+  min_interval_s: 2.0        # per host, between requests
+  timeout_s: 60
+  max_retries: 3
+
+hosts:                       # per-host minimum interval (max'ed with robots Crawl-delay)
+  export.arxiv.org: 3.0      # arXiv API terms: 1 request / 3 s
+  en.wikipedia.org: 2.0      # 1.0 drew 429s on the first run
+  arxiv.org: 15.0            # robots.txt Crawl-delay
+
+arxiv:
+  enabled: true
+  access: official_api
+  endpoint: https://export.arxiv.org/api/query
+  query: 'all:"large language models"'
+  max_results: 100
+  page_size: 50
+  sort_by: relevance
+  # Landmark papers so the graph has well-known models/orgs/authors to connect.
+  # Quoted: unquoted YAML turns 2103.00020 into the float 2103.0002.
+  seed_ids: ["1706.03762", "1810.04805", "2005.14165", "2302.13971", "2307.09288", "2203.15556",
+             "2203.02155", "2005.11401", "2103.00020", "2204.02311", "2212.08073", "2303.08774",
+             "2310.06825", "2312.11805", "2305.18290", "2001.08361", "1910.10683", "2201.11903"]
+
+wikipedia:
+  enabled: true
+  access: official_api
+  endpoint: https://en.wikipedia.org/w/api.php
+  titles:
+    # organizations
+    - OpenAI
+    - Anthropic
+    - Google DeepMind
+    - Meta AI
+    - Microsoft Research
+    - Mistral AI
+    - Hugging Face
+    - Nvidia
+    - Cohere
+    - xAI (company)
+    - Stability AI
+    - Baidu
+    - AI21 Labs
+    - Allen Institute for AI
+    # models / technologies / datasets
+    - GPT-4
+    - ChatGPT
+    - Claude (language model)
+    - Gemini (language model)
+    - Llama (language model)
+    - BERT (language model)
+    - Transformer (deep learning architecture)
+    - Stable Diffusion
+    - DALL-E
+    - AlphaFold
+    - AlphaGo
+    - PaLM
+    - Large language model
+    - Retrieval-augmented generation
+    - Reinforcement learning from human feedback
+    - ImageNet
+    - Common Crawl
+    # people (public figures)
+    - Geoffrey Hinton
+    - Yann LeCun
+    - Yoshua Bengio
+    - Demis Hassabis
+    - Sam Altman
+    - Ilya Sutskever
+    - Dario Amodei
+    - Fei-Fei Li
+
+rss:
+  enabled: true
+  access: web
+  max_items_per_feed: 30
+  fetch_full_article: true   # fetch the linked page (robots-checked); falls back to feed content
+  feeds:
+    - {name: openai-news,      url: https://openai.com/news/rss.xml}
+    - {name: huggingface-blog, url: https://huggingface.co/blog/feed.xml}
+    - {name: mit-news-ai,      url: https://news.mit.edu/rss/topic/artificial-intelligence2}
+    - {name: techcrunch-ai,    url: https://techcrunch.com/category/artificial-intelligence/feed/}
+
+local:
+  enabled: true
+  access: local
+  path: /data/local           # repo ./data/local mounted read-only
+  extensions: [.pdf, .html, .htm]

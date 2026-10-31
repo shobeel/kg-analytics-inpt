@@ -1,0 +1,55 @@
+# Gold chunk 14/25   chunk_id: 9692486eeb77934b280e7391_0001   source: rss
+# title: Giving AI a “crystal clear” view of the materials world
+# url: https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; the materials model is unnamed, so its funders have no named source entity
+
+=== TEXT (read only) ===
+This is similar to aligning the visual and language regions of the brain.
+Following training, the researchers compared the predictions of two versions of the model: one
+trained on a dataset containing the AI-generated descriptions and the other trained on a dataset
+containing text from papers only. They found that the model trained on AI-generated descriptions
+successfully learned how to align geometric structures with text descriptions while the other did
+not.
+“We wanted to create an AI model that works broadly across materials,” Li says. “That’s why we
+decided to synthesize narratives rather than rely solely on existing papers. We found when we used
+that narrative dataset, the models are better at predicting the function.”
+Accelerating materials science
+The researchers then showed their model could be given a natural language query describing a
+property and identify crystalline materials with that property, outperforming a baseline.
+“There are sometimes these step changes within materials science around algorithmic integration
+toward useful tools, which the community uses to further advance the field,” Olivetti says. “This
+approach helps us see more deeply into three-dimensional structures and link structures to property
+and processing. I hope this can be one of those step changes.”
+Li compares the model to AlphaFold, an AI model that links protein structures with function that has
+helped advance biological research and drug development.
+The researchers believe their new approach can work with many crystalline materials, and they hope
+other material scientists will use it to accelerate their work.
+“Being able to see a three-dimensional crystal and how its atoms are connected is super
+foundational,” Li says. “I think this will be useful to anyone who practices materials science.”
+The work was supported, in part, by the U.S. Defense Threat Reduction Agency through the University
+Research Alliance; the U.S. Defense Advanced Research Projects Agency; and the National Research
+Foundation of Korea.
+
+=== ENTITIES ===
+Person | Li
+Person | Olivetti
+AIModel | AlphaFold
+Organization | U.S. Defense Threat Reduction Agency
+Organization | University Research Alliance
+Organization | U.S. Defense Advanced Research Projects Agency
+Organization | National Research Foundation of Korea
+
+=== RELATIONS ===
+
+=== END ===

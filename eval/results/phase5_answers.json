@@ -1,0 +1,587 @@
+[
+ {
+  "kind": "lookup",
+  "question": "Who developed Claude?",
+  "strategy": "A",
+  "strategy_name": "vector",
+  "kg_version": "resolved",
+  "answer": "Claude is developed by the American software company Anthropic.",
+  "sources": [
+   {
+    "doc_id": "ea92f8be998c34f2f6fcff2d",
+    "short_id": "ea92f8be",
+    "title": "Claude (AI)",
+    "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+    "evidence_text": "2, and Google's Gemini 3 Pro. Both Claude models were unable to finish the game. In November 2025, Anthropic tested Claude's ability to assist humans in programming a robot dog. In February 2026, Anthropic's researcher Nicholas Carlini reported that 16 Claude Opus 4.6 agents were able to write a C compiler in Rust from scratch, \"capable of compiling the Linux ...",
+    "cited": true
+   }
+  ],
+  "context": "## Passages (source text)\n[ea92f8be] Claude (AI): 2, and Google's Gemini 3 Pro. Both Claude models were unable to finish the game. In November 2025, Anthropic tested Claude's ability to assist humans in programming a robot dog. In February 2026, Anthropic's researcher Nicholas Carlini reported that 16 Claude Opus 4.6 agents were able to write a C compiler in Rust from scratch, \"capable of compiling the Linux kernel\". The experiment cost nearly $20,000; Carlini noted that even though the compiler is not very efficient, Opus 4.6 is the first model able to write it. Usage In December 2025, Claude was used to plan a route for NASA's Mars rover, Perseverance. NASA engineers used Claude Code to prepare a route of around 400 meters using the Rover Markup Language. In February 2026, Norway's $2.2 trillion sovereign wealth fund began using Claude to screen its portfolio for ESG risks, ...\n[ea92f8be] Claude (AI): Claude Developer Anthropic Release March 2023 (2023-03) Stable release Claude Fable 5.1 September 1, 2026 (2026-09-01) Claude Opus 5.5 September 22, 2026 (2026-09-22) Claude Sonnet 5.5 September 28, 2026 (2026-09-28) Claude Haiku 5.5 October 7, 2026 (2026-10-07) Platform Cloud computing Type Large language model Chatbot Generative pre-trained transformer Foundation model License Proprietary Website claude.ai Claude is a series of large language models (LLMs) developed by American software company Anthropic. Claude was released as an AI-based chatbot in March 2023. It is also used in AI-assisted software development. Anthropic sells Claude-based agentic tools including Claude Code, a terminal coding agent, and Claude Cowork, a similar tool for non-programmers. Claude is trained using a constitution, a technique developed by Anthropic to improve ethical and legal compliance. Since Claude 3, each generation has typically been released in three sizes, named Haiku (the least ...\n[ea92f8be] Claude (AI): New features included agent teams and Claude in PowerPoint. Sonnet 4.6 was released on February 17, 2026. Claude 4.7 Anthropic released Opus 4.7 on April 16, 2026. Some social media users reported that Claude Opus 4.7 is worse than the previous version, and refuses too often. In April 2026, Claude Code users filed 35 reports of unwarranted refusals, more than any previous month. Claude Mythos Preview The existence of a model named Claude Mythos became publicly known on March 26, 2026 due to leaked blog post drafts. On April 7, 2026, Anthropic announced Project Glasswing, the release of Mythos Preview to 11 companies and organizations to find and fix cybersecurity vulnerabilities. Anthropic did not make Mythos Preview generally available. Two weeks after the limited release, Mozilla announced that it had found and patched 271 security vulnerabilities in Firefox using Mythos ...\n[ea92f8be] Claude (AI): It was made generally available in May 2025 alongside Claude 4. Based on enterprise adoption, Anthropic reported a 5.5x increase in Claude Code revenue by July. On October 20, 2025, Anthropic launched a web version of Claude Code and a sandboxing feature. Coinciding with performance improvements tied to Claude Opus 4.5, Claude Code went viral during the 2025–2026 winter holidays when people had time to experiment with it, including many non-programmers who used it for vibe coding. In August 2025, Anthropic reported that cybercriminals it designated \"GTG-2002\" had used Claude Code in a data-extortion campaign against at least 17 organizations. In November 2025, Anthropic said that in September a China-based cybercrime group had used Claude Code to automate 80–90% of its espionage cyberattacks against 30 organizations. Claude Code is used by Microsoft and Google, and was used by OpenAI employees ...\n[ea92f8be] Claude (AI): According to developers, Cowork was mostly built by Claude Code. In August 2026, Cowork was made available in a sidebar of the Chrome browser. Claude Design Claude Design is a tool released by Anthropic as a preview for paying customers on April 17, 2026. It generates designs, prototypes, slides and marketing materials from natural-language prompts, uses Claude Opus, and can export to multiple formats. Claude Science Announced on June 30, 2026, the Claude Science service was released in public beta to paid subscribers, with an emphasis on biology research and drug development. Training Claude models are generative pre-trained transformers that have been trained to predict the next word in large amounts of text. Then, they have been fine-tuned using reinforcement learning from human feedback (RLHF) and constitutional AI in an attempt to enforce ethical guidelines. ClaudeBot searches the web for ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 1331,
+  "tokens_out": 33,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.111,
+  "latency_s": 1.48,
+  "wall_s": 0.111
+ },
+ {
+  "kind": "lookup",
+  "question": "Who developed Claude?",
+  "strategy": "B",
+  "strategy_name": "graphrag",
+  "kg_version": "resolved",
+  "answer": "Claude was developed by the American software company Anthropic.",
+  "sources": [
+   {
+    "doc_id": "ea92f8be998c34f2f6fcff2d",
+    "short_id": "ea92f8be",
+    "title": "Claude (AI)",
+    "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+    "evidence_text": "Claude is a series of large language models (LLMs) developed by American software company Anthropic.",
+    "cited": true
+   }
+  ],
+  "context": "## Linked entities\n- Claude (AIModel): AI model\n- Claude (Product): Large language model Chatbot Generative pre-trained transformer Foundation model\n## Facts (graph relations, each with its evidence sentence and source id)\n- (Claude:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude is a series of large language models (LLMs) developed by American software company Anthropic.\" [ea92f8be]\n- (Claude Code:Product) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude Code, Anthropic's coding assistant, transitioned from research preview to general availability.\" [6f8557a8]\n- (Claude 2:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"The next iteration, Claude 2, was launched to the public in July 2023.\" [6f8557a8]\n- (Claude Fable 5:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"On June 9, 2026, Anthropic released Claude Mythos 5 (the successor of Claude Mythos Preview) via Project Glasswing, and launched Claude Fable 5 to the public.\" [ea92f8be]\n- (Claude Mythos 5:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"On June 9, 2026, Anthropic released Claude Mythos 5 (the successor of Claude Mythos Preview) via Project Glasswing, and launched Claude Fable 5 to the public.\" [ea92f8be]\n- (Claude Mythos Preview:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"On April 7, 2026, Anthropic announced Project Glasswing, the release of Mythos Preview to 11 companies and organizations to find and fix cybersecurity vulnerabilities.\" [ea92f8be]\n- (Constitutional AI:Technology) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"According to Anthropic, Constitutional AI (CAI) is a framework developed to align AI systems with human values\" [6f8557a8]\n- (Claude 3 Sonnet:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"In March 2024, Anthropic released three language models: Claude 3 Opus, Claude 3 Sonnet, and Claude 3 Haiku\" [6f8557a8]\n- (Claude Cowork:Product) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Anthropic sells Claude-based agentic tools including Claude Code, a terminal coding agent, and Claude Cowork, a similar tool for non-programmers.\" [ea92f8be]\n- (Claude Design:Product) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude Design is a tool released by Anthropic as a preview for paying customers on April 17, 2026.\" [ea92f8be]\n- (Anthropic:Organization) -[DEVELOPED_BY]-> (Dario Amodei:Person) | evidence: \"In 2021, he and his sister Daniela Amodei founded Anthropic\" [1d8d9b51]\n- (Claude:Product) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Anthropic's flagship product line is the \"Claude\" series of large language models\" [6f8557a8]\n- (Cowork:Product) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"\"Cowork\" is an equivalent with a graphical user interface, intended to be simpler to use.\" [6f8557a8]\n- (Nvidia:Organization) -[COMPETES_WITH]-> (AMD:Organization) | evidence: \"In August 2025, Nvidia and competitor Advanced Micro Devices agreed to pay 15% of the revenues from certain chip sales in China\" [2fe5e44a]\n- (AMD:Organization) -[ACQUIRED]-> (World Labs:Organization) | evidence: \"In September 2026, AMD announced it was acquiring World Labs for $8.2 billion\" [ffa87c9f]\n- (AMD:Organization) -[ACQUIRED]-> (ATI:Organization) | evidence: \"In December 2006, Nvidia, along with its main rival in the graphics industry AMD (which had acquired ATI), received subpoenas from the United States Department of Justice regarding possible antitrust violations in the graphics card industry.\" [2fe5e44a]\n- (AMD:Organization) -[USES]-> (Claude:AIModel) | evidence: \"AMD announced a partnership with Anthropic for 2 gigawatts of their AMD Instinct MI450 GPUs, with AMD adopting Claude and investing up to $5 billion in Anthropic.\" [6f8557a8]\n- (Attie:AIModel) -[BASED_ON]-> (Claude:AIModel) | evidence: \"social media platform Bluesky released Attie, a Claude-based chatbot and curator.\" [ea92f8be]\n- (Claude:AIModel) -[TRAINED_ON]-> (Project Panama:Dataset) | evidence: \"Anthropic's Project Panama, internally described as an \"effort to destructively scan all the books in the world\", provides training data for Claude.\" [6f8557a8]\n- (Claude:AIModel) -[USES]-> (RLHF:Technology) | evidence: \"Anthropic's Claude\" [a665c398]\n- (Claude Fable 5.1:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude Fable 5.1 and Claude Mythos 5.1 were released on September 1, 2026.\" [ea92f8be]\n- (Claude Mythos 5.1:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude Fable 5.1 and Claude Mythos 5.1 were released on September 1, 2026.\" [ea92f8be]\n- (Claude Opus 5.5:AIModel) -[DEVELOPED_BY]-> (Anthropic:Organization) | evidence: \"Claude Opus 5.5, the first model in the Claude 5.5 series, was released on September 22, 2026.\" [ea92f8be]\n- (Cohere:Organization) -[FUNDED_BY]-> (AMD:Organization) | evidence: \"In July 2024 it was reported they received $500 million in funding from investors including Cisco, AMD and Fujitsu at a valuation of $5.5 billion.\" [666ca983]\n- (Li:Person) -[WORKS_AT]-> (AMD:Organization) | evidence: \"Li joining AMD as the company's chief scientist\" [ffa87c9f]\n- (Lisa Su:Person) -[WORKS_AT]-> (AMD:Organization) | evidence: \"reporting directly to CEO Lisa Su\" [ffa87c9f]\n- (World Labs:Organization) -[FUNDED_BY]-> (AMD:Organization) | evidence: \"In early 2026 World Labs raised an additional $1 billion in funding from investors including AMD, Nvidia, Autodesk, Emerson Collective, and Fidelity Management & Research.\" [ffa87c9f]\n- (ATI Technologies:Organization) -[ACQUIRED]-> (AMD:Organization) | evidence: \"Only two survived: Nvidia and ATI Technologies, the latter of which merged into AMD.\" [2fe5e44a]\n- (Anthropic:Organization) -[PARTNERS_WITH]-> (AMD:Organization) | evidence: \"AMD announced a partnership with Anthropic for 2 gigawatts of their AMD Instinct MI450 GPUs, with AMD adopting Claude and investing up to $5 billion in Anthropic.\" [6f8557a8]\n- (ChatGPT:AIModel) -[USES]-> (RLHF:Technology) | evidence: \"Some notable examples of RLHF-trained language models are OpenAI's ChatGPT\" [a665c398]\n- (Gemini:AIModel) -[USES]-> (RLHF:Technology) | evidence: \"Google's Gemini\" [a665c398]\n- (InstructGPT:AIModel) -[USES]-> (RLHF:Technology) | evidence: \"Some notable examples of RLHF-trained language models are OpenAI's ChatGPT (and its predecessor InstructGPT)\" [a665c398]\n- (Sparrow:AIModel) -[USES]-> (RLHF:Technology) | evidence: \"DeepMind's Sparrow\" [a665c398]\n## Passages (source text)\n[6f8557a8] Anthropic: Anthropic, PBC Headquarters at 500 Howard St, San Francisco Type Public benefit corporation Private Industry Artificial intelligence Founded January 26, 2021 (2021-01-26) Founders Dario Amodei Daniela Amodei Jared Kaplan Jack Clark Chris Olah Ben Mann Sam McCandlish Tom Brown Headquarters San Francisco, California, U.S. Key people Dario Amodei (CEO) Daniela Amodei (President) Ami Vora (CPO) Mariano-Florentino Cuéllar (Chief Global Affairs Officer) Products Claude Claude Code Claude Cowork Bun Revenue US$4.6 billion (2025) Net income $42 billion (2025) Number of employees 5,300 (September 2026) Website www.anthropic.com Anthropic, PBC is an American artificial intelligence (AI) public benefit corporation headquartered in San Francisco, California. Its flagship product is Claude, a series of proprietary large language models (LLMs). In January 2021, with the goal of promoting AI safety, Anthropic was founded by former members of OpenAI, including siblings Daniela Amodei and Dario Amodei, who ...\n[6f8557a8] Anthropic: In March 2026, Anthropic launched the Anthropic Institute, a think tank studying AI led by Jack Clark. Notable employees Dario Amodei: co-founder and CEO Daniela Amodei: co-founder and president Amanda Askell: philosopher working on Claude's character Nicholas Carlini: researcher Jack Clark: co-founder, head of public benefit, former head of policy Jared Kaplan: co-founder and chief science officer Mike Krieger: Chief Product Officer Jan Leike: co-lead of the Alignment Science team, former OpenAI alignment researcher Chris Olah: co-founder, interpretability research Andrej Karpathy: researcher John M. Jumper: Nobel Prize laureate, formerly at DeepMind Levent Alpöge: researcher in mathematics Product Claude Screenshot of a Claude start page in dark mode Developer Anthropic Type Large language model Chatbot Generative pre-trained transformer Foundation model Website claude.ai Anthropic's flagship product line is the \"Claude\" series of large language models, which some employees consider a reference to ...\n[000b68dc] Q&A: How AI came to model the “messy” human mind: Generative artificial intelligence models are rooted in ideas of mid-20th century engineers who thought some amount of irrationality was essential for a machine that could think like a human, contends Benjamin Lindquist, an assistant professor in the MIT History Section, who holds an MIT Schwarzman College of Computing shared position with the Department of Electrical Engineering and Computer Science (EECS) and is a principal investigator in the Laboratory for Information and Decision Systems. To mimic creative thinking, these AI pioneers intentionally injected randomness into algorithms designed to deterministically solve problems, Lindquist writes in a new paper that appears in the journal Past and Present. In the paper, he traces the origins of AI hallucinations back to this early research and suggests there will be inevitable tradeoffs between creativity and predictability when trying to build machines that mimic human behavior. MIT ...\n[1d8d9b51] Dario Amodei: Dario Amodei Amodei in 2023 Born 1983 (age 42–43) San Francisco, California, U.S. Education California Institute of Technology (attended) Stanford University (BS) Princeton University (MS, PhD) Known for Co-founder and CEO of Anthropic Spouse Camilla Clark (m. 2022) Relatives Daniela Amodei (sister) Awards Time 100 (2025) Scientific career Fields Machine learning, biophysics Workplaces Stanford Medicine OpenAI Thesis Network-Scale Electrophysiology: Measuring and Understanding the Collective Behavior of Neural Circuits (2011) Doctoral advisor Michael J. Berry William Bialek Website darioamodei.com Dario Amodei (born 1983) is an American artificial intelligence (AI) researcher and entrepreneur. In 2021, he and his sister Daniela Amodei founded Anthropic, the company behind the large language model series Claude. Before that, he was the vice president of research at OpenAI. At US$965 billion as of May 2026, Anthropic is one of the most valuable AI pure play companies, rivaled ...\n[ea92f8be] Claude (AI): Claude Developer Anthropic Release March 2023 (2023-03) Stable release Claude Fable 5.1 September 1, 2026 (2026-09-01) Claude Opus 5.5 September 22, 2026 (2026-09-22) Claude Sonnet 5.5 September 28, 2026 (2026-09-28) Claude Haiku 5.5 October 7, 2026 (2026-10-07) Platform Cloud computing Type Large language model Chatbot Generative pre-trained transformer Foundation model License Proprietary Website claude.ai Claude is a series of large language models (LLMs) developed by American software company Anthropic. Claude was released as an AI-based chatbot in March 2023. It is also used in AI-assisted software development. Anthropic sells Claude-based agentic tools including Claude Code, a terminal coding agent, and Claude Cowork, a similar tool for non-programmers. Claude is trained using a constitution, a technique developed by Anthropic to improve ethical and legal compliance. Since Claude 3, each generation has typically been released in three sizes, named Haiku (the least ...",
+  "cypher": null,
+  "entities_used": [
+   {
+    "id": "ent_6336dccfb79e729e",
+    "name": "Claude",
+    "label": "AIModel",
+    "matched": "Claude"
+   },
+   {
+    "id": "ent_f4a26e952adc89d9",
+    "name": "Claude",
+    "label": "Product",
+    "matched": "Claude"
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "retrieval": {
+   "triples": 33,
+   "aggregates": 0,
+   "passages": 5
+  },
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 3397,
+  "tokens_out": 48,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.101,
+  "latency_s": 3.138,
+  "wall_s": 0.101
+ },
+ {
+  "kind": "lookup",
+  "question": "Who developed Claude?",
+  "strategy": "C",
+  "strategy_name": "text2cypher",
+  "kg_version": "resolved",
+  "answer": "Claude was developed by the American software company Anthropic [ea92f8be].",
+  "sources": [
+   {
+    "doc_id": "ea92f8be998c34f2f6fcff2d",
+    "short_id": "ea92f8be",
+    "title": "Claude (AI)",
+    "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+    "evidence_text": "Claude is a series of large language models (LLMs) developed by American software company Anthropic.",
+    "cited": true
+   }
+  ],
+  "context": "[{\"model\": \"Claude\", \"developer\": \"Anthropic\", \"evidence\": \"Claude is a series of large language models (LLMs) developed by American software company Anthropic.\", \"doc_id\": \"ea92f8be\"}]",
+  "cypher": "MATCH (m:AIModel {kg_version: $kg_version})-[r:DEVELOPED_BY]->(o:Entity) WHERE r.kg_version = $kg_version AND (toLower(m.name) = 'claude' OR 'claude' IN [a IN m.aliases | toLower(a)]) RETURN m.name AS model, o.name AS developer, r.evidence_text AS evidence, r.source_doc_id AS doc_id LIMIT 10",
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "rows": 1,
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 1282,
+  "tokens_out": 175,
+  "llm_calls": 2,
+  "cache_hits": 2,
+  "retrieval_s": 0.019,
+  "latency_s": 5.028,
+  "wall_s": 0.019
+ },
+ {
+  "kind": "multi-hop",
+  "question": "Which people work at the organization that developed AlphaFold?",
+  "strategy": "A",
+  "strategy_name": "vector",
+  "kg_version": "resolved",
+  "answer": "Not found in the knowledge graph.",
+  "sources": [],
+  "context": "## Passages (source text)\n[099acf82] AlphaFold: Measures of this kind rely on authors citing the AlphaFold papers when they use the tool, a convention encouraged but not enforced by the maintainers of the AlphaFold Protein Structure Database. Attempts to validate these counts against the full text of papers suggest that citations to foundational AlphaFold papers can both overstate and understate how widely the tool is used. In an analysis of about 8,900 papers in the PubMed Central Open Access corpus that mentioned AlphaFold, roughly 30% cited none of three foundational AlphaFold papers, while only about half of the papers citing at least one of those three mentioned AlphaFold anywhere in their text. A smaller manual check of 100 papers from a curated protein-literature database found a similar shortfall, with fewer than half of those mentioning AlphaFold including a formal citation. Effects on research practice Some quantitative ...\n[099acf82] AlphaFold: Measured by the root-mean-square deviation (RMS-D) of the placement of the alpha-carbon atoms of the protein backbone chain, which tends to be dominated by the performance of the worst-fitted outliers, 88% of AlphaFold 2's predictions had an RMS deviation of less than 4 Å for the set of overlapped C-alpha atoms. 76% of predictions achieved better than 3 Å, and 46% had a C-alpha atom RMS accuracy better than 2 Å, with a median RMS deviation in its predictions of 2.1 Å for a set of overlapped CA atoms. AlphaFold 2 also achieved an accuracy in modelling surface side chains described as \"really really extraordinary\". To further validate AlphaFold 2, the conference organizers approached four leading experimental groups working on structures they found particularly challenging and had been unable to determine. In all four cases the three-dimensional models produced by ...\n[099acf82] AlphaFold: The source code and weights of AlphaFold 3 were made available for non-commercial use to the scientific community upon request in November 2024. It became publicly available in February 2025, still retaining the non-commercial restriction. Clones and derivatives A number of AlphaFold clones have also been published, mostly with permissive license terms. Clones for AlphaFold3 include ByteDance's Protenix (Apache 2.0 License), AlQuraishi Laboratory's OpenFold-3 (MIT license), and Boltz-1/2 (MIT license). There are also clones for older versions, though they became less relevant with the open-source release of AlphaFold 1 and 2 source codes. Still relevant are models, both open- and closed-source, that include modifications to the AlphaFold architecture. For AlphaFold 2, a notable example is ESMFold from Meta, which replaces the multiple sequence alignment with the latent space of a protein language model. Open-source tools that complement AlphaFold have also ...\n[099acf82] AlphaFold: As the iteration progresses, according to one report, the \"attention algorithm ... mimics the way a person might assemble a jigsaw puzzle: first connecting pieces in small clumps—in this case clusters of amino acids—and then searching for ways to join the clumps in a larger whole.\" The output of these iterations then informs the final structure prediction module, which also uses transformers, and is itself then iterated. In an example presented by DeepMind, the structure prediction module achieved a correct topology for the target protein on its first iteration, scored as having a GDT_TS of 78, but with a large number (90%) of stereochemical violations – i.e. unphysical bond angles or lengths. With subsequent iterations the number of stereochemical violations fell. By the third iteration the GDT_TS of the prediction was approaching 90, and by the eighth iteration the number ...\n[099acf82] AlphaFold: AlphaFold is an artificial intelligence (AI) program developed by DeepMind, a subsidiary of Alphabet, which performs predictions of protein structure. It is designed using deep learning techniques. AlphaFold 1 (2018) placed first in the overall rankings of the 13th Critical Assessment of Structure Prediction (CASP) in December 2018. It was particularly successful at predicting the most accurate structures for targets rated as most difficult by the competition organizers, where no existing template structures were available from proteins with partially similar sequences. AlphaFold 2 (2020) repeated this placement in the CASP14 competition in November 2020. It achieved a level of accuracy much higher than any other entry. It scored above 90 on CASP's global distance test (GDT) for approximately two-thirds of the proteins, a test measuring the similarity between a computationally predicted structure and the experimentally determined structure, where 100 represents ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "found": false,
+  "tokens_in": 1169,
+  "tokens_out": 31,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.067,
+  "latency_s": 4.223,
+  "wall_s": 0.067
+ },
+ {
+  "kind": "multi-hop",
+  "question": "Which people work at the organization that developed AlphaFold?",
+  "strategy": "B",
+  "strategy_name": "graphrag",
+  "kg_version": "resolved",
+  "answer": "Demis Hassabis, Shane Legg, and Mustafa Suleyman work at DeepMind, the organization that developed AlphaFold.",
+  "sources": [
+   {
+    "doc_id": "099acf8204ef35292926519b",
+    "short_id": "099acf82",
+    "title": "AlphaFold",
+    "url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "evidence_text": "DeepMind's AlphaFold placed first in the overall rankings",
+    "cited": true
+   },
+   {
+    "doc_id": "3700509af0b7f61d11d9c9c9",
+    "short_id": "3700509a",
+    "title": "Demis Hassabis",
+    "url": "https://en.wikipedia.org/wiki/Demis_Hassabis",
+    "evidence_text": "Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.",
+    "cited": true
+   }
+  ],
+  "context": "## Linked entities\n- AlphaFold (AIModel): DeepMind's tool AlphaFold won the 13th Critical Assessment of Techniques for Protein Structure Prediction\n## Facts (graph relations, each with its evidence sentence and source id)\n- (AlphaFold:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind's AlphaFold placed first in the overall rankings\" [099acf82]\n- (AlphaGo:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google.\" [4c37f46e]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (DeepMind:Organization) | evidence: \"the co-founder of DeepMind, Demis Hassabis\" [4c37f46e]\n- (AlphaFold 2:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind's new version, AlphaFold 2, won CASP14.\" [099acf82]\n- (Chinchilla:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Chinchilla is a language model developed by DeepMind.\" [522fe818]\n- (DeepNash:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In July 2022, DeepMind announced the development of DeepNash, a model-free multi-agent reinforcement learning system capable of playing the board game Stratego at the level of a human expert.\" [522fe818]\n- (Sparrow:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Sparrow is an artificial intelligence-powered chatbot developed by DeepMind to build safer machine learning systems by using a mix of human feedback and Google search suggestions.\" [522fe818]\n- (David Silver:Person) -[WORKS_AT]-> (DeepMind:Organization) | evidence: \"According to DeepMind's David Silver, the AlphaGo research project was formed around 2014\" [4c37f46e]\n- (Agent57:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In 2020, DeepMind published Agent57, an AI Agent which surpasses human level performance on all 57 games of the Atari 2600 suite.\" [522fe818]\n- (Flamingo:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind posted a blog post on 28 April 2022 on a single visual language model (VLM) named Flamingo that can accurately describe a picture of something with just a few training images.\" [522fe818]\n- (Gemini:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Gemini is a family of multimodal large language models (LLMs) developed by Google DeepMind\" [77e94bd2]\n- (Streams:Product) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind developed an app called Streams\" [522fe818]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Demis Hassabis:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Mustafa Suleyman:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Shane Legg:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Gatsby Computational Neuroscience Unit:Organization) | evidence: \"Hassabis met Legg when both were postdocs at the Gatsby Computational Neuroscience Unit\" [3700509a]\n- (AlphaFold:AIModel) -[DEVELOPED_BY]-> (Demis Hassabis:Person) | evidence: \"Breakthrough Prize in Life Sciences for developing AlphaFold, which accurately predicts protein structures\" [3700509a]\n- (AlphaFold:AIModel) -[TRAINED_ON]-> (Protein Data Bank:Dataset) | evidence: \"DeepMind is known to have trained the program on over 170,000 protein structures from the Protein Data Bank\" [099acf82]\n- (AlphaFold:AIModel) -[TRAINED_ON]-> (CASP13 dataset:Dataset) | evidence: \"It can be used to predict structure only on the CASP13 dataset\" [099acf82]\n- (AlphaFold:AIModel) -[USES]-> (SARS-CoV-2:Dataset) | evidence: \"AlphaFold has been used to predict structures of proteins of SARS-CoV-2, the causative agent of COVID-19.\" [099acf82]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Alphabet:Organization) | evidence: \"He served as its CEO until 2026, when he became Alphabet's chief scientist.\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Bullfrog Productions:Organization) | evidence: \"Hassabis began his computer games career at Bullfrog Productions\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Elixir Studios:Organization) | evidence: \"Hassabis left Lionhead in 1998 to found Elixir Studios\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Lionhead Studios:Organization) | evidence: \"Hassabis worked at Lionhead Studios.\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Isomorphic Labs:Organization) | evidence: \"Isomorphic Labs (2021–present)\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (University College London:Organization) | evidence: \"University College London (2009–2012)\" [3700509a]\n- (Demis Hassabis:Person) -[LOCATED_IN]-> (North London:Location) | evidence: \"Hassabis and his family live in North London.\" [3700509a]\n- (AlphaFill:Product) -[USES]-> (Protein Data Bank:Dataset) | evidence: \"This is achieved by searching the Protein Data Bank for similar structures and transplanting cofactors to analogous positions.\" [099acf82]\n- (Demis Hassabis:Person) -[LOCATED_IN]-> (London:Location) | evidence: \"London, England, UK\" [3700509a]\n## Passages (source text)\n[099acf82] AlphaFold: AlphaFold is an artificial intelligence (AI) program developed by DeepMind, a subsidiary of Alphabet, which performs predictions of protein structure. It is designed using deep learning techniques. AlphaFold 1 (2018) placed first in the overall rankings of the 13th Critical Assessment of Structure Prediction (CASP) in December 2018. It was particularly successful at predicting the most accurate structures for targets rated as most difficult by the competition organizers, where no existing template structures were available from proteins with partially similar sequences. AlphaFold 2 (2020) repeated this placement in the CASP14 competition in November 2020. It achieved a level of accuracy much higher than any other entry. It scored above 90 on CASP's global distance test (GDT) for approximately two-thirds of the proteins, a test measuring the similarity between a computationally predicted structure and the experimentally determined structure, where 100 represents ...\n[099acf82] AlphaFold: Measures of this kind rely on authors citing the AlphaFold papers when they use the tool, a convention encouraged but not enforced by the maintainers of the AlphaFold Protein Structure Database. Attempts to validate these counts against the full text of papers suggest that citations to foundational AlphaFold papers can both overstate and understate how widely the tool is used. In an analysis of about 8,900 papers in the PubMed Central Open Access corpus that mentioned AlphaFold, roughly 30% cited none of three foundational AlphaFold papers, while only about half of the papers citing at least one of those three mentioned AlphaFold anywhere in their text. A smaller manual check of 100 papers from a curated protein-literature database found a similar shortfall, with fewer than half of those mentioning AlphaFold including a formal citation. Effects on research practice Some quantitative ...\n[099acf82] AlphaFold: Measured by the root-mean-square deviation (RMS-D) of the placement of the alpha-carbon atoms of the protein backbone chain, which tends to be dominated by the performance of the worst-fitted outliers, 88% of AlphaFold 2's predictions had an RMS deviation of less than 4 Å for the set of overlapped C-alpha atoms. 76% of predictions achieved better than 3 Å, and 46% had a C-alpha atom RMS accuracy better than 2 Å, with a median RMS deviation in its predictions of 2.1 Å for a set of overlapped CA atoms. AlphaFold 2 also achieved an accuracy in modelling surface side chains described as \"really really extraordinary\". To further validate AlphaFold 2, the conference organizers approached four leading experimental groups working on structures they found particularly challenging and had been unable to determine. In all four cases the three-dimensional models produced by ...\n[099acf82] AlphaFold: As the iteration progresses, according to one report, the \"attention algorithm ... mimics the way a person might assemble a jigsaw puzzle: first connecting pieces in small clumps—in this case clusters of amino acids—and then searching for ways to join the clumps in a larger whole.\" The output of these iterations then informs the final structure prediction module, which also uses transformers, and is itself then iterated. In an example presented by DeepMind, the structure prediction module achieved a correct topology for the target protein on its first iteration, scored as having a GDT_TS of 78, but with a large number (90%) of stereochemical violations – i.e. unphysical bond angles or lengths. With subsequent iterations the number of stereochemical violations fell. By the third iteration the GDT_TS of the prediction was approaching 90, and by the eighth iteration the number ...\n[099acf82] AlphaFold: CASP, which was launched in 1994 to challenge the scientific community to produce their best protein structure predictions, found that GDT scores of only about 40 out of 100 can be achieved for the most difficult proteins by 2016. AlphaFold started competing in the 2018 CASP using an artificial intelligence (AI) deep learning technique. Algorithm DeepMind is known to have trained the program on over 170,000 protein structures from the Protein Data Bank, a public repository of protein sequences and structures. The program uses a form of attention network, a deep learning technique that focuses on having the AI identify parts of a larger problem, then piece it together to obtain the overall solution. The overall training was conducted on processing power between 100 and 200 GPUs. AlphaFold 1 (2018) AlphaFold 1 (2018) was built on work developed by various ...",
+  "cypher": null,
+  "entities_used": [
+   {
+    "id": "ent_6c840e3265dc7889",
+    "name": "AlphaFold",
+    "label": "AIModel",
+    "matched": "AlphaFold"
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "retrieval": {
+   "triples": 29,
+   "aggregates": 0,
+   "passages": 5
+  },
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 2833,
+  "tokens_out": 74,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.074,
+  "latency_s": 4.445,
+  "wall_s": 0.074
+ },
+ {
+  "kind": "multi-hop",
+  "question": "Which people work at the organization that developed AlphaFold?",
+  "strategy": "C",
+  "strategy_name": "text2cypher",
+  "kg_version": "resolved",
+  "answer": "People who work or have worked at DeepMind, the organization that developed AlphaFold, include Jaan Tallinn [522fe818], Igor Babuschkin [7dd0c888], Diego Rivas [18d6fa11], Naina Raisinghani [77e94bd2], Aja Huang [4c37f46e], David Silver [4c37f46e], Fan Hui [4c37f46e], Koray Kavukcuoglu [522fe818], Lila Ibrahim [522fe818], Arthur Mensch [61001d10], Demis Hassabis [4c37f46e], and Murray Shanahan [4c37f46e].",
+  "sources": [
+   {
+    "doc_id": "522fe818e7459bda870d314d",
+    "short_id": "522fe818",
+    "title": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+    "evidence_text": "Jaan Tallinn was an early investor and an adviser to the company.",
+    "cited": true
+   },
+   {
+    "doc_id": "7dd0c888981669c9ae09f7ca",
+    "short_id": "7dd0c888",
+    "title": "SpaceXAI",
+    "url": "https://en.wikipedia.org/wiki/SpaceXAI",
+    "evidence_text": "led by chief engineer Igor Babuschkin, formerly associated with Google DeepMind.",
+    "cited": true
+   },
+   {
+    "doc_id": "18d6fa11580979b971c1237c",
+    "short_id": "18d6fa11",
+    "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+    "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+    "evidence_text": "Diego Rivas, a Google DeepMind engineer, said during a press briefing.",
+    "cited": true
+   },
+   {
+    "doc_id": "77e94bd237be4a6ac06b79b0",
+    "short_id": "77e94bd2",
+    "title": "Gemini (language model)",
+    "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+    "evidence_text": "Product Manager at Google DeepMind.",
+    "cited": true
+   },
+   {
+    "doc_id": "4c37f46e62982808da51dd9b",
+    "short_id": "4c37f46e",
+    "title": "AlphaGo",
+    "url": "https://en.wikipedia.org/wiki/AlphaGo",
+    "evidence_text": "Aja Huang, one of the Deep Mind team",
+    "cited": true
+   },
+   {
+    "doc_id": "61001d1027c7b3944851a937",
+    "short_id": "61001d10",
+    "title": "Mistral AI",
+    "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+    "evidence_text": "Mensch, an expert in advanced AI systems, is a former employee of Google DeepMind",
+    "cited": true
+   }
+  ],
+  "context": "[{\"person\": \"Jaan Tallinn\", \"organization\": \"DeepMind\", \"evidence\": \"Jaan Tallinn was an early investor and an adviser to the company.\", \"doc_id\": \"522fe818\"}, {\"person\": \"Igor Babuschkin\", \"organization\": \"DeepMind\", \"evidence\": \"led by chief engineer Igor Babuschkin, formerly associated with Google DeepMind.\", \"doc_id\": \"7dd0c888\"}, {\"person\": \"Diego Rivas\", \"organization\": \"DeepMind\", \"evidence\": \"Diego Rivas, a Google DeepMind engineer, said during a press briefing.\", \"doc_id\": \"18d6fa11\"}, {\"person\": \"Naina Raisinghani\", \"organization\": \"DeepMind\", \"evidence\": \"Product Manager at Google DeepMind.\", \"doc_id\": \"77e94bd2\"}, {\"person\": \"Aja Huang\", \"organization\": \"DeepMind\", \"evidence\": \"Aja Huang, one of the Deep Mind team\", \"doc_id\": \"4c37f46e\"}, {\"person\": \"David Silver\", \"organization\": \"DeepMind\", \"evidence\": \"According to DeepMind's David Silver, the AlphaGo research project was formed around 2014\", \"doc_id\": \"4c37f46e\"}, {\"person\": \"Fan Hui\", \"organization\": \"DeepMind\", \"evidence\": \"Fan Hui, the Paris-based European champ who accepts an offer to serve as an advisor for the DeepMind team\", \"doc_id\": \"4c37f46e\"}, {\"person\": \"Koray Kavukcuoglu\", \"organization\": \"DeepMind\", \"evidence\": \"Koray Kavukcuoglu (SVP)\", \"doc_id\": \"522fe818\"}, {\"person\": \"Lila Ibrahim\", \"organization\": \"DeepMind\", \"evidence\": \"Lila Ibrahim (COO)\", \"doc_id\": \"522fe818\"}, {\"person\": \"Arthur Mensch\", \"organization\": \"DeepMind\", \"evidence\": \"Mensch, an expert in advanced AI systems, is a former employee of Google DeepMind\", \"doc_id\": \"61001d10\"}, {\"person\": \"Demis Hassabis\", \"organization\": \"DeepMind\", \"evidence\": \"the co-founder of DeepMind, Demis Hassabis\", \"doc_id\": \"4c37f46e\"}, {\"person\": \"Murray Shanahan\", \"organization\": \"DeepMind\", \"evidence\": \"senior research scientist at DeepMind\", \"doc_id\": \"4c37f46e\"}]",
+  "cypher": "MATCH (o:Organization {kg_version: $kg_version})<-[d:DEVELOPED_BY]-(a:AIModel), (p:Person {kg_version: $kg_version})-[w:WORKS_AT]->(o) WHERE d.kg_version = $kg_version AND w.kg_version = $kg_version AND (toLower(a.name) = 'alphafold' OR 'alphafold' IN [x IN a.aliases | toLower(x)]) RETURN p.name AS person, o.name AS organization, w.evidence_text AS evidence, w.source_doc_id AS doc_id LIMIT 25",
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "rows": 12,
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 1854,
+  "tokens_out": 420,
+  "llm_calls": 2,
+  "cache_hits": 2,
+  "retrieval_s": 0.029,
+  "latency_s": 6.903,
+  "wall_s": 0.029
+ },
+ {
+  "kind": "aggregation",
+  "question": "Which organization developed the most AI models?",
+  "strategy": "A",
+  "strategy_name": "vector",
+  "kg_version": "resolved",
+  "answer": "Not found in the knowledge graph.",
+  "sources": [],
+  "context": "## Passages (source text)\n[bc1a53e1] Allen Institute for AI: Allen Institute for AI Formation 2014 (2014) Founder Paul Allen Type Non-profit research institute Tax ID no. 82-4083177 Location Seattle, Washington, U.S. CEO Peter Clark (interim) Key people Chris Bretherton, Peter Clark, Yejin Choi, Oren Etzioni, Hannaneh Hajishirzi, Ani Kembhavi, Jes Lefcourt, Noah Smith, Dan Weld Website allenai.org The Allen Institute for AI (abbreviated Ai2) is a 501(c)(3) non-profit scientific research institute founded by late Microsoft co-founder and philanthropist Paul Allen in 2014. The institute seeks to conduct high-impact AI research and engineering in service of the common good. Ai2 is based in Seattle, and also has an active office in Tel Aviv, Israel. History Oren Etzioni was appointed by Paul Allen in September 2013 to direct the research at the institute. After leading the organization for nine years, Etzioni stepped down from his role as CEO on September 30, ...\n[000b68dc] Q&A: How AI came to model the “messy” human mind: We value and use these systems because they give answers that, most of the time, are correct. One of the things that was most interesting to me in this research was finding out that a lot of the early advocates of these systems valued them for exactly the opposite reason. They wanted a system that, on occasion, gave answers that deviated from their expectations. They already had systems that could deliver reasonable and expected answers. They saw neural networks as valuable because they could give unexpected, perhaps even strange and bizarre answers. One reason we might view these systems differently today could be because of how they operate. Early on, these systems were confined to laboratories, so there weren’t really any real-world consequences of a system that gives a strange, or wrong, output. But now there are legal and monetary ...\n[000b68dc] Q&A: How AI came to model the “messy” human mind: Generative artificial intelligence models are rooted in ideas of mid-20th century engineers who thought some amount of irrationality was essential for a machine that could think like a human, contends Benjamin Lindquist, an assistant professor in the MIT History Section, who holds an MIT Schwarzman College of Computing shared position with the Department of Electrical Engineering and Computer Science (EECS) and is a principal investigator in the Laboratory for Information and Decision Systems. To mimic creative thinking, these AI pioneers intentionally injected randomness into algorithms designed to deterministically solve problems, Lindquist writes in a new paper that appears in the journal Past and Present. In the paper, he traces the origins of AI hallucinations back to this early research and suggests there will be inevitable tradeoffs between creativity and predictability when trying to build machines that mimic human behavior. MIT ...\n[bc1a53e1] Allen Institute for AI: The teams in this group include EarthRanger, Skylight, Climate Modeling, and Wildlands. Generative AI Ai2 has been actively involved in the development of open-source artificial intelligence through the release of fully open large language models, datasets, and model training assets. Olmo model family On May 11, 2023, Ai2 announced they were developing OLMo, an open language model aiming to match the performance of other state-of-the-art language models. In February 2024, 1B and 7B parameter variants of the model were open-sourced, including code, model weights with intermediate snapshots and logs, and contents of their Dolma training dataset (a three-trillion-token English corpus drawn from web text, academic publications, code, books, social media, and encyclopedic sources), making it the most open state-of-the-art model available. In September 2024, Ai2 released OLMoE, the first mixture-of-experts model in the OLMo family, developed jointly with Contextual AI. ...\n[522fe818] Google DeepMind: Jaan Tallinn was an early investor and an adviser to the company. DeepMind needed a well-funded backer to pay its employees, provide compute resources and further expand. It was courted by Facebook, Musk, Google and some others. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. The company was afterwards renamed Google DeepMind and kept that name for about two years. In 2014, DeepMind received the \"Company of the Year\" award from Cambridge Computer Laboratory. Looking for opportunities to benefit society, DeepMind started a pilot program with the NHS to modernize its information systems which were often still using plain paper and fax machines. In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams. ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "found": false,
+  "tokens_in": 1223,
+  "tokens_out": 31,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.024,
+  "latency_s": 5.691,
+  "wall_s": 0.024
+ },
+ {
+  "kind": "aggregation",
+  "question": "Which organization developed the most AI models?",
+  "strategy": "B",
+  "strategy_name": "graphrag",
+  "kg_version": "resolved",
+  "answer": "DeepMind developed the most AI models, with a total of 34 AI models developed.",
+  "sources": [
+   {
+    "doc_id": "522fe818e7459bda870d314d",
+    "short_id": "522fe818",
+    "title": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+    "evidence_text": "DeepMind: 34 AI models developed",
+    "cited": true
+   }
+  ],
+  "context": "## Graph aggregates (counted over the whole knowledge graph)\n- DeepMind: 34 AI models developed (e.g. Agent57, AlphaCode, AlphaFold, AlphaFold 2) [522fe818] [099acf82] [4c37f46e]\n- Anthropic: 32 AI models developed (e.g. Claude, Claude 2, Claude 3, Claude 3.5 Sonnet) [ea92f8be] [6f8557a8] [a665c398]\n- OpenAI: 27 AI models developed (e.g. ChatGPT, ChatGPT agent, ChatGPT Health, ChatGPT Work) [6f8557a8] [0f285140] [939d943f]\n- Google: 23 AI models developed (e.g. 1.0 Nano, 1.0 Ultra, 2.0 Flash, AlphaChip) [77e94bd2] [522fe818] [cd4fc97f]\n- Mistral AI: 20 AI models developed (e.g. Codestral, Devstral 2, Devstral Small 2, Magistral Medium) [61001d10] [dcc1964c]\n- Nvidia: 20 AI models developed (e.g. A800 GPU, Alpamayo, Alpamayo 2.0, Alpamayo-R1) [2fe5e44a] [94a5f652] [d6e31d9e]\n- Meta: 9 AI models developed (e.g. ESMFold, Llama, Llama 2, Llama 3) [099acf82] [bc1a53e1] [ee794349]\n- xAI: 7 AI models developed (e.g. Aurora, Grok, Grok 1, Grok-1.5) [7dd0c888]\n## Passages (source text)\n[bc1a53e1] Allen Institute for AI: Allen Institute for AI Formation 2014 (2014) Founder Paul Allen Type Non-profit research institute Tax ID no. 82-4083177 Location Seattle, Washington, U.S. CEO Peter Clark (interim) Key people Chris Bretherton, Peter Clark, Yejin Choi, Oren Etzioni, Hannaneh Hajishirzi, Ani Kembhavi, Jes Lefcourt, Noah Smith, Dan Weld Website allenai.org The Allen Institute for AI (abbreviated Ai2) is a 501(c)(3) non-profit scientific research institute founded by late Microsoft co-founder and philanthropist Paul Allen in 2014. The institute seeks to conduct high-impact AI research and engineering in service of the common good. Ai2 is based in Seattle, and also has an active office in Tel Aviv, Israel. History Oren Etzioni was appointed by Paul Allen in September 2013 to direct the research at the institute. After leading the organization for nine years, Etzioni stepped down from his role as CEO on September 30, ...\n[000b68dc] Q&A: How AI came to model the “messy” human mind: We value and use these systems because they give answers that, most of the time, are correct. One of the things that was most interesting to me in this research was finding out that a lot of the early advocates of these systems valued them for exactly the opposite reason. They wanted a system that, on occasion, gave answers that deviated from their expectations. They already had systems that could deliver reasonable and expected answers. They saw neural networks as valuable because they could give unexpected, perhaps even strange and bizarre answers. One reason we might view these systems differently today could be because of how they operate. Early on, these systems were confined to laboratories, so there weren’t really any real-world consequences of a system that gives a strange, or wrong, output. But now there are legal and monetary ...\n[000b68dc] Q&A: How AI came to model the “messy” human mind: Generative artificial intelligence models are rooted in ideas of mid-20th century engineers who thought some amount of irrationality was essential for a machine that could think like a human, contends Benjamin Lindquist, an assistant professor in the MIT History Section, who holds an MIT Schwarzman College of Computing shared position with the Department of Electrical Engineering and Computer Science (EECS) and is a principal investigator in the Laboratory for Information and Decision Systems. To mimic creative thinking, these AI pioneers intentionally injected randomness into algorithms designed to deterministically solve problems, Lindquist writes in a new paper that appears in the journal Past and Present. In the paper, he traces the origins of AI hallucinations back to this early research and suggests there will be inevitable tradeoffs between creativity and predictability when trying to build machines that mimic human behavior. MIT ...\n[bc1a53e1] Allen Institute for AI: The teams in this group include EarthRanger, Skylight, Climate Modeling, and Wildlands. Generative AI Ai2 has been actively involved in the development of open-source artificial intelligence through the release of fully open large language models, datasets, and model training assets. Olmo model family On May 11, 2023, Ai2 announced they were developing OLMo, an open language model aiming to match the performance of other state-of-the-art language models. In February 2024, 1B and 7B parameter variants of the model were open-sourced, including code, model weights with intermediate snapshots and logs, and contents of their Dolma training dataset (a three-trillion-token English corpus drawn from web text, academic publications, code, books, social media, and encyclopedic sources), making it the most open state-of-the-art model available. In September 2024, Ai2 released OLMoE, the first mixture-of-experts model in the OLMo family, developed jointly with Contextual AI. ...\n[522fe818] Google DeepMind: Jaan Tallinn was an early investor and an adviser to the company. DeepMind needed a well-funded backer to pay its employees, provide compute resources and further expand. It was courted by Facebook, Musk, Google and some others. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. The company was afterwards renamed Google DeepMind and kept that name for about two years. In 2014, DeepMind received the \"Company of the Year\" award from Cambridge Computer Laboratory. Looking for opportunities to benefit society, DeepMind started a pilot program with the NHS to modernize its information systems which were often still using plain paper and fax machines. In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams. ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "retrieval": {
+   "triples": 0,
+   "aggregates": 8,
+   "passages": 5
+  },
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 1696,
+  "tokens_out": 42,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.036,
+  "latency_s": 7.658,
+  "wall_s": 0.036
+ },
+ {
+  "kind": "aggregation",
+  "question": "Which organization developed the most AI models?",
+  "strategy": "C",
+  "strategy_name": "text2cypher",
+  "kg_version": "resolved",
+  "answer": "DeepMind developed the most AI models, with a total of 34 models [522fe818, 099acf82, 4c37f46e].",
+  "sources": [
+   {
+    "doc_id": "522fe818e7459bda870d314d",
+    "short_id": "522fe818",
+    "title": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+    "evidence_text": "{\"organization\": \"DeepMind\", \"model_count\": 34, \"models\": [\"Agent57\", \"AlphaCode\", \"AlphaFold\", \"AlphaFold 2\", \"AlphaFold 3\", \"AlphaGenome\", \"AlphaGo\", \"AlphaGo Master\", \"AlphaGo Zero\", \"AlphaStar\"]}",
+    "cited": true
+   },
+   {
+    "doc_id": "099acf8204ef35292926519b",
+    "short_id": "099acf82",
+    "title": "AlphaFold",
+    "url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "evidence_text": "{\"organization\": \"DeepMind\", \"model_count\": 34, \"models\": [\"Agent57\", \"AlphaCode\", \"AlphaFold\", \"AlphaFold 2\", \"AlphaFold 3\", \"AlphaGenome\", \"AlphaGo\", \"AlphaGo Master\", \"AlphaGo Zero\", \"AlphaStar\"]}",
+    "cited": true
+   },
+   {
+    "doc_id": "4c37f46e62982808da51dd9b",
+    "short_id": "4c37f46e",
+    "title": "AlphaGo",
+    "url": "https://en.wikipedia.org/wiki/AlphaGo",
+    "evidence_text": "{\"organization\": \"DeepMind\", \"model_count\": 34, \"models\": [\"Agent57\", \"AlphaCode\", \"AlphaFold\", \"AlphaFold 2\", \"AlphaFold 3\", \"AlphaGenome\", \"AlphaGo\", \"AlphaGo Master\", \"AlphaGo Zero\", \"AlphaStar\"]}",
+    "cited": true
+   }
+  ],
+  "context": "[{\"organization\": \"DeepMind\", \"model_count\": 34, \"models\": [\"Agent57\", \"AlphaCode\", \"AlphaFold\", \"AlphaFold 2\", \"AlphaFold 3\", \"AlphaGenome\", \"AlphaGo\", \"AlphaGo Master\", \"AlphaGo Zero\", \"AlphaStar\"], \"doc_ids\": [\"522fe818\", \"099acf82\", \"4c37f46e\"]}, {\"organization\": \"Anthropic\", \"model_count\": 32, \"models\": [\"Claude\", \"Claude 2\", \"Claude 3\", \"Claude 3.5 Sonnet\", \"Claude 3 Haiku\", \"Claude 3 Opus\", \"Claude 3 Sonnet\", \"Claude Fable 5\", \"Claude Fable 5.1\", \"Claude Gov\"], \"doc_ids\": [\"ea92f8be\", \"6f8557a8\", \"a665c398\"]}, {\"organization\": \"OpenAI\", \"model_count\": 27, \"models\": [\"ChatGPT\", \"ChatGPT agent\", \"ChatGPT Health\", \"ChatGPT Work\", \"Codex\", \"DALL-E\", \"DALL-E 2\", \"DALL-E 3\", \"Deep Research\", \"GPT-1\"], \"doc_ids\": [\"6f8557a8\", \"0f285140\", \"939d943f\"]}, {\"organization\": \"Google\", \"model_count\": 23, \"models\": [\"1.0 Nano\", \"1.0 Ultra\", \"2.0 Flash\", \"AlphaChip\", \"Bard\", \"BERT\", \"DolphinGemma\", \"Gemini\", \"Gemini 2.0 Flash\", \"Gemini 2.5\"], \"doc_ids\": [\"77e94bd2\", \"522fe818\", \"cd4fc97f\"]}, {\"organization\": \"Mistral AI\", \"model_count\": 20, \"models\": [\"Codestral\", \"Devstral 2\", \"Devstral Small 2\", \"Magistral Medium\", \"Magistral Small\", \"Mathstral 7B\", \"Ministral 3\", \"Mistral 7B\", \"Mistral Large 3\", \"Mistral Large 4\"], \"doc_ids\": [\"61001d10\", \"dcc1964c\"]}, {\"organization\": \"Nvidia\", \"model_count\": 20, \"models\": [\"A800 GPU\", \"Alpamayo\", \"Alpamayo 2.0\", \"Alpamayo-R1\", \"B30A\", \"Blackwell\", \"Blackwell Ultra\", \"Cosmos\", \"Drive Thor\", \"Edify\"], \"doc_ids\": [\"2fe5e44a\", \"94a5f652\", \"d6e31d9e\"]}, {\"organization\": \"Meta\", \"model_count\": 9, \"models\": [\"ESMFold\", \"Llama\", \"Llama 2\", \"Llama 3\", \"Meta AI\", \"Muse\", \"Muse Glimmer\", \"Muse Spark Open\", \"No Language Left Behind\"], \"doc_ids\": [\"099acf82\", \"bc1a53e1\", \"ee794349\"]}, {\"organization\": \"xAI\", \"model_count\": 7, \"models\": [\"Aurora\", \"Grok\", \"Grok 1\", \"Grok-1.5\", \"Grok-3\", \"Grok-4\", \"Grok Heavy\"], \"doc_ids\": [\"7dd0c888\"]}, {\"organization\": \"Microsoft\", \"model_count\": 5, \"models\": [\"DALL-E\", \"GPT-4\", \"Microsoft Prometheus\", \"Microsoft ThinkingBox\", \"TRELLIS\"], \"doc_ids\": [\"8eca0ce7\", \"02c744c8\", \"82dab7e6\"]}, {\"organization\": \"Black Forest Labs\", \"model_count\": 4, \"models\": [\"black-forest-labs/flux-3-image-klein-base\", \"FLUX.3 Image Klein\", \"Flux Pro\", \"Flux3Transformer2DModel\"], \"doc_ids\": [\"eb674098\", \"61001d10\"]}]",
+  "cypher": "MATCH (m:AIModel {kg_version: $kg_version})-[r:DEVELOPED_BY]->(o:Organization) WHERE r.kg_version = $kg_version RETURN o.name AS organization, count(DISTINCT m) AS model_count, collect(DISTINCT m.name)[..10] AS models, collect(DISTINCT r.source_doc_id)[..3] AS doc_ids ORDER BY model_count DESC LIMIT 10",
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "cypher_errors": [
+   "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Variable `r` not defined (line 1, column 228 (offset: 227))\n\"MATCH (m:AIModel {kg_version: $kg_version})-[:DEVELOPED_BY {kg_version: $kg_version}]->(o:Organization) RETURN o.name AS organization, count(DISTINCT m) AS model_count, collect(DISTIN"
+  ],
+  "rows": 10,
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 3306,
+  "tokens_out": 326,
+  "llm_calls": 3,
+  "cache_hits": 3,
+  "retrieval_s": 0.079,
+  "latency_s": 14.149,
+  "wall_s": 0.079
+ },
+ {
+  "kind": "semantic",
+  "question": "What is DeepMind known for?",
+  "strategy": "A",
+  "strategy_name": "vector",
+  "kg_version": "resolved",
+  "answer": "DeepMind is known for its artificial intelligence research and products, including AlphaFold's breakthrough in protein folding, the development of AlphaGo, and AI systems like Gemini, Veo, Imagen, and Lyria [522fe818].",
+  "sources": [
+   {
+    "doc_id": "522fe818e7459bda870d314d",
+    "short_id": "522fe818",
+    "title": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+    "evidence_text": "Jaan Tallinn was an early investor and an adviser to the company. DeepMind needed a well-funded backer to pay its employees, provide compute resources and further expand. It was courted by Facebook, Musk, Google and some others. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. The company ...",
+    "cited": true
+   }
+  ],
+  "context": "## Passages (source text)\n[522fe818] Google DeepMind: Jaan Tallinn was an early investor and an adviser to the company. DeepMind needed a well-funded backer to pay its employees, provide compute resources and further expand. It was courted by Facebook, Musk, Google and some others. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. The company was afterwards renamed Google DeepMind and kept that name for about two years. In 2014, DeepMind received the \"Company of the Year\" award from Cambridge Computer Laboratory. Looking for opportunities to benefit society, DeepMind started a pilot program with the NHS to modernize its information systems which were often still using plain paper and fax machines. In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams. ...\n[522fe818] Google DeepMind: DeepMind Technologies Limited Headquarters at Platform 37, Kings Cross Central, London Trade name Google DeepMind Formerly DeepMind (2010–2023) Type Subsidiary Industry Artificial intelligence Founded 23 September 2010 (2010-09-23) (incorporation) 15 November 2010 (2010-11-15) (official launch) Founders Demis Hassabis Shane Legg Mustafa Suleyman Headquarters London , England Key people Demis Hassabis (Chairman) Koray Kavukcuoglu (SVP) Lila Ibrahim (COO) Products Gemini Veo (video) Nano Banana (image) Imagen (image) Lyria (music) AlphaFold AlphaGo Googlebook OS (AI core) Revenue £1.33 billion (2024) Operating income £217 million (2024) Net income £174 million (2024) Owner Alphabet Inc. Number of employees c. 6,000 (2025) Parent DeepMind Holdings Limited Subsidiaries Google AI Website deepmind.google DeepMind Technologies Limited, trading as Google DeepMind or simply DeepMind, is a British-American artificial intelligence (AI) research laboratory which is a subsidiary of Alphabet Inc. Founded in the UK in 2010, it was acquired ...\n[3700509a] Demis Hassabis: Based on this work and a follow-up functional magnetic resonance imaging (fMRI) study, Hassabis developed a new theoretical account of the episodic memory system identifying scene construction, the generation and online maintenance of a complex and coherent scene, as a key process underlying both memory recall and imagination. This work received widespread coverage in the mainstream media and was listed in the top 10 scientific breakthroughs of the year by the journal Science. He later generalised these ideas to advance the notion of a 'simulation engine of the mind' whose role it was to imagine events and scenarios to aid with better planning. DeepMind Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman. He served as its CEO until 2026, when he became Alphabet's chief scientist. Hassabis met Legg when both were postdocs at ...\n[522fe818] Google DeepMind: Similarly, New Scientist reported that while Google claims AlphaChip has produced “superhuman” chip layouts now used in production, external specialists called for transparent performance data to substantiate these assertions and enable fair comparisons with current state-of-the-art methods. Safety Google Research released a paper in 2016 regarding AI safety and avoiding undesirable behaviour during the AI learning process. In 2017 DeepMind released GridWorld, an open-source testbed for evaluating whether an algorithm learns to disable its kill switch or otherwise exhibits certain undesirable behaviours. The Robot Constitution is a security ruleset part of AutoRT set by DeepMind in January 2024 for its AI products. The rules are inspired by Isaac Asimov's Three Laws of Robotics. The rules are applied to the underlying large language models of the helper robots. Rule number 1 is a robot “may not injure a human being”. Weather ...\n[522fe818] Google DeepMind: Google subsequently collaborated with Trane Technologies to deploy similar RL-based systems on HVAC of facilities outside of Google. Protein folding In 2016, DeepMind turned its artificial intelligence to protein folding, a long-standing problem in molecular biology. In December 2018, DeepMind's AlphaFold won the 13th Critical Assessment of Techniques for Protein Structure Prediction (CASP) by successfully predicting the most accurate structure for 25 out of 43 proteins. \"This is a lighthouse project, our first major investment in terms of people and resources into a fundamental, very important, real-world scientific problem,\" Hassabis said to The Guardian. In 2020, in the 14th CASP, AlphaFold's predictions achieved an accuracy score regarded as comparable with lab techniques. Andriy Kryshtafovych, one of the panel of scientific adjudicators, described the achievement as \"truly remarkable\", and said the problem of predicting how proteins fold had been \"largely solved\". ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 1276,
+  "tokens_out": 75,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.028,
+  "latency_s": 3.564,
+  "wall_s": 0.028
+ },
+ {
+  "kind": "semantic",
+  "question": "What is DeepMind known for?",
+  "strategy": "B",
+  "strategy_name": "graphrag",
+  "kg_version": "resolved",
+  "answer": "DeepMind is known for developing various artificial intelligence models and systems such as AlphaGo, AlphaFold, Chinchilla, DeepNash, Sparrow, Agent57, and Flamingo [4c37f46e, 099acf82, 522fe818]. It is also known for training AlphaFold on over 170,000 protein structures from the Protein Data Bank [099acf82]. Additionally, DeepMind started a pilot program with the NHS to modernize information systems and co-developed the clinical task management app Streams [522fe818].",
+  "sources": [
+   {
+    "doc_id": "4c37f46e62982808da51dd9b",
+    "short_id": "4c37f46e",
+    "title": "AlphaGo",
+    "url": "https://en.wikipedia.org/wiki/AlphaGo",
+    "evidence_text": "It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google.",
+    "cited": true
+   },
+   {
+    "doc_id": "099acf8204ef35292926519b",
+    "short_id": "099acf82",
+    "title": "AlphaFold",
+    "url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "evidence_text": "DeepMind's AlphaFold placed first in the overall rankings",
+    "cited": true
+   },
+   {
+    "doc_id": "522fe818e7459bda870d314d",
+    "short_id": "522fe818",
+    "title": "Google DeepMind",
+    "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+    "evidence_text": "Chinchilla is a language model developed by DeepMind.",
+    "cited": true
+   }
+  ],
+  "context": "## Linked entities\n- DeepMind (Organization): British-American artificial intelligence research laboratory\n## Facts (graph relations, each with its evidence sentence and source id)\n- (AlphaGo:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google.\" [4c37f46e]\n- (AlphaFold:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind's AlphaFold placed first in the overall rankings\" [099acf82]\n- (Google:Organization) -[ACQUIRED]-> (DeepMind:Organization) | evidence: \"It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google.\" [4c37f46e]\n- (DeepMind:Organization) -[LOCATED_IN]-> (London:Location) | evidence: \"It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google.\" [4c37f46e]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (DeepMind:Organization) | evidence: \"the co-founder of DeepMind, Demis Hassabis\" [4c37f46e]\n- (AlphaFold 2:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind's new version, AlphaFold 2, won CASP14.\" [099acf82]\n- (Chinchilla:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Chinchilla is a language model developed by DeepMind.\" [522fe818]\n- (DeepNash:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In July 2022, DeepMind announced the development of DeepNash, a model-free multi-agent reinforcement learning system capable of playing the board game Stratego at the level of a human expert.\" [522fe818]\n- (Sparrow:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Sparrow is an artificial intelligence-powered chatbot developed by DeepMind to build safer machine learning systems by using a mix of human feedback and Google search suggestions.\" [522fe818]\n- (David Silver:Person) -[WORKS_AT]-> (DeepMind:Organization) | evidence: \"According to DeepMind's David Silver, the AlphaGo research project was formed around 2014\" [4c37f46e]\n- (Agent57:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In 2020, DeepMind published Agent57, an AI Agent which surpasses human level performance on all 57 games of the Atari 2600 suite.\" [522fe818]\n- (Flamingo:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind posted a blog post on 28 April 2022 on a single visual language model (VLM) named Flamingo that can accurately describe a picture of something with just a few training images.\" [522fe818]\n- (Gemini:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Gemini is a family of multimodal large language models (LLMs) developed by Google DeepMind\" [77e94bd2]\n- (Streams:Product) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind developed an app called Streams\" [522fe818]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Demis Hassabis:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Mustafa Suleyman:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (DeepMind:Organization) -[COMPETES_WITH]-> (OpenAI:Organization) | evidence: \"Reacting to its unveiling in December 2023, computer scientist Oren Etzioni predicted an arms race between Google Deepmind and OpenAI.\" [77e94bd2]\n- (DeepMind:Organization) -[DEVELOPED_BY]-> (Shane Legg:Person) | evidence: \"Hassabis co-founded the machine learning company DeepMind in 2010 with Shane Legg and Mustafa Suleyman.\" [3700509a]\n- (Gemini:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"Gemini, Google’s AI model, is also more closely integrated with Genie 4\" [18d6fa11]\n- (AlphaGo Master:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"DeepMind disclosed that the version of AlphaGo used in this Summit was AlphaGo Master\" [4c37f46e]\n- (Baidu:Organization) -[COMPETES_WITH]-> (Google:Organization) | evidence: \"In an ongoing competition in AI natural language processing called General Language Understanding Evaluation, otherwise known as GLUE, Baidu took a lead over Microsoft and Google in December 2019.\" [51e219c7]\n- (Google:Organization) -[ACQUIRED]-> (DNNresearch Inc.:Organization) | evidence: \"In March 2013, Google acquired DNNresearch Inc. for $44 million\" [0173fcc2]\n- (Gemini 3 Pro:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"On 18 November 2025, Google released Gemini 3 Pro, a reasoning model which is fully multimodal.\" [522fe818]\n- (Med-PaLM:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Google and DeepMind developed a version of PaLM 540B (with 540 billion parameters) called Med-PaLM\" [48b2fa26]\n- (AlphaCode:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In 2022, DeepMind unveiled AlphaCode, an AI-powered coding engine that creates computer programs at a rate comparable to that of an average programmer\" [522fe818]\n- (AlphaFold 3:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"AlphaFold 3 was co-developed by Google DeepMind and Isomorphic Labs\" [099acf82]\n- (AlphaStar:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In January 2019, DeepMind introduced AlphaStar, a program playing the real-time strategy game StarCraft II.\" [522fe818]\n- (Diego Rivas:Person) -[WORKS_AT]-> (DeepMind:Organization) | evidence: \"Diego Rivas, a Google DeepMind engineer, said during a press briefing.\" [18d6fa11]\n- (Genie 4:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"Google DeepMind released its newest world model, Genie 4, in research preview on Tuesday.\" [18d6fa11]\n- (Innovation Growth Lab:Organization) -[FUNDED_BY]-> (DeepMind:Organization) | evidence: \"A 2025 report by the Innovation Growth Lab, funded by Google DeepMind but conducted independently\" [099acf82]\n- (DeepMind:Organization) -[PARTNERS_WITH]-> (Royal Free London NHS Foundation Trust:Organization) | evidence: \"In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams.\" [522fe818]\n- (SIMA:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In March 2024, DeepMind introduced Scalable Instructable Multiword Agent, or SIMA, an AI agent capable of understanding and following natural language instructions to complete tasks across various 3D virtual environments.\" [522fe818]\n- (Google:Organization) -[PARTNERS_WITH]-> (Trane Technologies:Organization) | evidence: \"Google subsequently collaborated with Trane Technologies to deploy similar RL-based systems on HVAC of facilities outside of Google.\" [522fe818]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Gatsby Computational Neuroscience Unit:Organization) | evidence: \"Hassabis met Legg when both were postdocs at the Gatsby Computational Neuroscience Unit\" [3700509a]\n- (AlphaGenome:AIModel) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In 2025, Google DeepMind introduced AlphaGenome, a deep-learning model for predicting the effects of DNA sequences on gene regulation.\" [522fe818]\n- (AlphaGenome Atlas:Dataset) -[DEVELOPED_BY]-> (DeepMind:Organization) | evidence: \"In September 2026, DeepMind released the AlphaGenome Atlas, containing model predictions for approximately nine billion possible single-nucleotide substitutions across the human genome.\" [522fe818]\n- (AlphaGo:AIModel) -[USES]-> (Monte Carlo tree search:Technology) | evidence: \"AlphaGo and its successors use a Monte Carlo tree search algorithm to find its moves based on knowledge previously acquired by machine learning\" [4c37f46e]\n- (AlphaGo:AIModel) -[USES]-> (artificial neural network:Technology) | evidence: \"specifically by an artificial neural network (a deep learning method) by extensive training, both from human and computer play.\" [4c37f46e]\n- (AlphaGo:AIModel) -[USES]-> (machine learning:Technology) | evidence: \"AlphaGo and its successors use a Monte Carlo tree search algorithm to find its moves based on knowledge previously acquired by machine learning\" [4c37f46e]\n- (Med-PaLM:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"Google and DeepMind developed a version of PaLM 540B (with 540 billion parameters) called Med-PaLM\" [48b2fa26]\n- (PaLM-E:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"Google also extended PaLM using a vision transformer to create PaLM-E\" [48b2fa26]\n- (2.0 Flash:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"Developed by Google with a focus on multimodality, agentic capabilities, and speed.\" [77e94bd2]\n- (AI21 Labs:Organization) -[FUNDED_BY]-> (Google:Organization) | evidence: \"Investors include previous participants, alongside new ones such as Google and Nvidia.\" [c556ce04]\n- (Ahmed Katary:Person) -[WORKS_AT]-> (Google:Organization) | evidence: \"Google researchers Ahmed Katary ’23\" [02c744c8]\n- (Google:Organization) -[PARTNERS_WITH]-> (Anthropic:Organization) | evidence: \"Anthropic announced a cloud partnership with Google\" [6f8557a8]\n- (Bard:Product) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"Google's Bard\" [fdb069ff]\n- (DolphinGemma:AIModel) -[DEVELOPED_BY]-> (Google:Organization) | evidence: \"In April 2025, Google introduced DolphinGemma, a research artificial intelligence model designed to hopefully decode dolphin communication.\" [522fe818]\n- (Faruqi:Person) -[WORKS_AT]-> (Google:Organization) | evidence: \"He now works at Google\" [02c744c8]\n- (Stability AI:Organization) -[LOCATED_IN]-> (London:Location) | evidence: \"Stability AI Ltd is a UK-based artificial intelligence company, founded in 2019, best known for its text-to-image model Stable Diffusion and headquartered in London, England.\" [42821097]\n- (AlphaGo Master:AIModel) -[BASED_ON]-> (AlphaGo:AIModel) | evidence: \"DeepMind confirmed that the \"Magister\" and the \"Master\" were both played by an updated version of AlphaGo, called AlphaGo Master.\" [4c37f46e]\n- (AlphaGo:AIModel) -[BASED_ON]-> (deep reinforcement learning:Technology) | evidence: \"AlphaGo technology was developed based on deep reinforcement learning, making it different from the AI technologies then on the market.\" [522fe818]\n- (AlphaFold:AIModel) -[TRAINED_ON]-> (Protein Data Bank:Dataset) | evidence: \"DeepMind is known to have trained the program on over 170,000 protein structures from the Protein Data Bank\" [099acf82]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Alphabet:Organization) | evidence: \"He served as its CEO until 2026, when he became Alphabet's chief scientist.\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Bullfrog Productions:Organization) | evidence: \"Hassabis began his computer games career at Bullfrog Productions\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Elixir Studios:Organization) | evidence: \"Hassabis left Lionhead in 1998 to found Elixir Studios\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Lionhead Studios:Organization) | evidence: \"Hassabis worked at Lionhead Studios.\" [3700509a]\n- (Demis Hassabis:Person) -[LOCATED_IN]-> (North London:Location) | evidence: \"Hassabis and his family live in North London.\" [3700509a]\n- (AlphaTensor:AIModel) -[BASED_ON]-> (AlphaGo:AIModel) | evidence: \"In October 2022, DeepMind released AlphaTensor, which used reinforcement learning techniques similar to those in AlphaGo, to find novel algorithms for matrix multiplication.\" [522fe818]\n- (AlphaGo:AIModel) -[COMPETES_WITH]-> (Crazy Stone:Product) | evidence: \"In 500 games against other available Go programs, including Crazy Stone and Zen, AlphaGo running on a single computer won all but one.\" [4c37f46e]\n- (Zen:Product) -[COMPETES_WITH]-> (AlphaGo:AIModel) | evidence: \"In 500 games against other available Go programs, including Crazy Stone and Zen, AlphaGo running on a single computer won all but one.\" [4c37f46e]\n- (AlphaFold:AIModel) -[TRAINED_ON]-> (CASP13 dataset:Dataset) | evidence: \"It can be used to predict structure only on the CASP13 dataset\" [099acf82]\n- (AlphaFold:AIModel) -[DEVELOPED_BY]-> (Demis Hassabis:Person) | evidence: \"Breakthrough Prize in Life Sciences for developing AlphaFold, which accurately predicts protein structures\" [3700509a]\n- (AlphaFold:AIModel) -[USES]-> (SARS-CoV-2:Dataset) | evidence: \"AlphaFold has been used to predict structures of proteins of SARS-CoV-2, the causative agent of COVID-19.\" [099acf82]\n- (Demis Hassabis:Person) -[LOCATED_IN]-> (London:Location) | evidence: \"London, England, UK\" [3700509a]\n- (Meta AI:Organization) -[LOCATED_IN]-> (London:Location) | evidence: \"It has workspaces in Menlo Park, London, New York City, Paris, Seattle, Pittsburgh, Tel Aviv, and Montreal as of 2025.\" [9a011dab]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (Isomorphic Labs:Organization) | evidence: \"Isomorphic Labs (2021–present)\" [3700509a]\n- (Demis Hassabis:Person) -[WORKS_AT]-> (University College London:Organization) | evidence: \"University College London (2009–2012)\" [3700509a]\n- (AlphaGo Zero:AIModel) -[BASED_ON]-> (AlphaGo:AIModel) | evidence: \"In 2017, an improved version, AlphaGo Zero, defeated AlphaGo in a hundred out of a hundred games.\" [522fe818]\n- (AlphaGo:AIModel) -[DEVELOPED_BY]-> (Chinese Weiqi Association:Organization) | evidence: \"AlphaGo was awarded professional 9-dan by the Chinese Weiqi Association\" [4c37f46e]\n## Passages (source text)\n[522fe818] Google DeepMind: Jaan Tallinn was an early investor and an adviser to the company. DeepMind needed a well-funded backer to pay its employees, provide compute resources and further expand. It was courted by Facebook, Musk, Google and some others. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. The company was afterwards renamed Google DeepMind and kept that name for about two years. In 2014, DeepMind received the \"Company of the Year\" award from Cambridge Computer Laboratory. Looking for opportunities to benefit society, DeepMind started a pilot program with the NHS to modernize its information systems which were often still using plain paper and fax machines. In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams. ...",
+  "cypher": null,
+  "entities_used": [
+   {
+    "id": "ent_25d4b0915d8c3748",
+    "name": "DeepMind",
+    "label": "Organization",
+    "matched": "DeepMind"
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "retrieval": {
+   "triples": 69,
+   "aggregates": 0,
+   "passages": 5
+  },
+  "found": true,
+  "invalid_citations": [],
+  "tokens_in": 4387,
+  "tokens_out": 190,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.054,
+  "latency_s": 5.746,
+  "wall_s": 0.054
+ },
+ {
+  "kind": "semantic",
+  "question": "What is DeepMind known for?",
+  "strategy": "C",
+  "strategy_name": "text2cypher",
+  "kg_version": "resolved",
+  "answer": "DeepMind is known as a British-American artificial intelligence research laboratory.",
+  "sources": [
+   {
+    "doc_id": "099acf8204ef35292926519b",
+    "short_id": "099acf82",
+    "title": "AlphaFold",
+    "url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "evidence_text": "As the iteration progresses, according to one report, the \"attention algorithm ... mimics the way a person might assemble a jigsaw puzzle: first connecting pieces in small clumps—in this case clusters of amino acids—and then searching for ways to join the clumps in a larger whole.\" The output of these iterations then informs the final structure prediction module, which also ...",
+    "cited": false,
+    "kind": "entity_mention"
+   },
+   {
+    "doc_id": "099acf8204ef35292926519b",
+    "short_id": "099acf82",
+    "title": "AlphaFold",
+    "url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "evidence_text": "Measures of this kind rely on authors citing the AlphaFold papers when they use the tool, a convention encouraged but not enforced by the maintainers of the AlphaFold Protein Structure Database. Attempts to validate these counts against the full text of papers suggest that citations to foundational AlphaFold papers can both overstate and understate how widely the tool is used. ...",
+    "cited": false,
+    "kind": "entity_mention"
+   }
+  ],
+  "context": "[{\"organization\": \"DeepMind\", \"description\": \"British-American artificial intelligence research laboratory\", \"mention_count\": 55}]",
+  "cypher": "MATCH (o:Organization {kg_version: $kg_version}) WHERE toLower(o.name) = 'deepmind' OR 'deepmind' IN [a IN o.aliases | toLower(a)] RETURN o.name AS organization, o.description AS description, o.mention_count AS mention_count LIMIT 10",
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "cypher_errors": [
+   "CypherSyntaxError: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input 'WHERE': expected an expression, 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNION',"
+  ],
+  "rows": 1,
+  "found": true,
+  "invalid_citations": [
+   "66848"
+  ],
+  "tokens_in": 2337,
+  "tokens_out": 314,
+  "llm_calls": 3,
+  "cache_hits": 3,
+  "retrieval_s": 0.062,
+  "latency_s": 9.899,
+  "wall_s": 0.062
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Who is the CEO of INPT?",
+  "strategy": "A",
+  "strategy_name": "vector",
+  "kg_version": "resolved",
+  "answer": "Not found in the knowledge graph.",
+  "sources": [],
+  "context": "## Passages (source text)\n[4f33acf6] Who’s really in charge at Anthropic after the IPO?: Anthropic was founded in 2021 to ensure humanity can control AI and benefit from it in the long-term. As the frontier lab approaches its initial public offering, however, there’s one class of humanity that is being shut out of control: anyone who buys its stock on public markets. Complex structures that allow founders like Elon Musk or Mark Zuckerberg to control their public companies without owning most of them are nothing new in Silicon Valley. But Anthropic’s obsession with AI safety has resulted in a truly baroque style of corporate governance that will leave common shareholders with little say over most major decisions at the AI company, including who sits on its board. First, Anthropic is a public benefit company — a for-profit corporation legally allowed to weigh a public mission alongside profit — with the goal of promoting AI ...\n[4f33acf6] Who’s really in charge at Anthropic after the IPO?: At Anthropic, cracks in the founders’ unified front could lead to common shareholders having more say than expected, while employees can overrule the LTBT on board seats if they back the board over the assembled luminaries. The founders’ control won’t last forever: Ten years after the IPO, the founders can choose to end their control of the company, or their control will end automatically when fewer than three of them remain. At that point, the LTBT will continue until 85% of common shareholders vote to end it, or it decides to step down with approval from the board. If and when neither special class of shareholder exists any more — hopefully not because of an AI-driven catastrophe — common shareholders finally get control.\n[cd4fc97f] OpenAI: Chief Compliance Officer: Scott Schools, former chief compliance officer of Uber Chief Global Affairs Officer: Chris Lehane, former head of global policy at Airbnb Chief Economist: Aaron Chatterji, professor of business and public policy at Duke University's Fuqua School of Business Board of directors of the OpenAI nonprofit Bret Taylor (chairman), former chairman of Twitter's board of directors and co-CEO of Salesforce Sam Altman, CEO and co-founder Adam D'Angelo, co-founder and CEO of Quora Sue Desmond-Hellmann, former CEO of the Bill & Melinda Gates Foundation Nicole Seligman, attorney and former executive vice president of the Sony Corporation Paul Nakasone, former director of the National Security Agency (2018–2024) Zico Kolter, computer scientist Adebayo Ogunlesi, managing partner at Global Infrastructure Partners Principal individual investors Elon Musk, co-founder Peter Thiel, PayPal co-founder Jessica Livingston, a founding partner of Y Combinator Reid Hoffman, LinkedIn ...\n[f68985d1] Sam Altman: On July 10, 2015, he announced the return of Steve Huffman as CEO. He remained on its board until 2022. Altman invested in multiple rounds of funding for Reddit (in 2014, 2015, and 2021). Prior to Reddit's initial public offering in 2024, Altman was listed as its third-largest shareholder, with around 9% ownership. Worldcoin In 2019, Altman co-founded the for-profit company Tools For Humanity with Alex Blania (CEO) and others. The company promoted the Worldcoin cryptocurrency and eye-scanning systems to provide proof of personhood and authentication. However, it has engaged in deceptive marketing practices to drive sign-ups. By 2023, Tools For Humanity had scanned two million people's eyes and raised $250 million from several investors, including Andreessen Horowitz and Sam Bankman-Fried. Kenya was one of the first countries to register WorldCoin. The promise of free money led to rapid growth ...\n[f68985d1] Sam Altman: On September 12, 2026, Sam Altman publicly agreed with Anthropic CEO Dario Amodei's call to slow the development of advanced AI and advocated for independent evaluators to be embedded within AI companies. Deepening investment in OpenAI In 2018, Musk, a long-time personal friend of Altman's, resigned from his Board of Directors seat, citing \"a potential future conflict [of interest]\" with his role as CEO of Tesla due to Tesla's AI development for self-driving cars. In February 2024, Musk sued OpenAI and Altman, alleging they broke the company's founding agreement by prioritizing profit over benefit to humanity. OpenAI executives, including Altman, dismissed these claims in a blog post. The post said that the startup received only $45 million from Musk instead of his pledged $1 billion, and that Musk proposed to merge it with Tesla. In March 2019, Altman left Y ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "found": false,
+  "tokens_in": 1170,
+  "tokens_out": 31,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.019,
+  "latency_s": 3.442,
+  "wall_s": 0.019
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Who is the CEO of INPT?",
+  "strategy": "B",
+  "strategy_name": "graphrag",
+  "kg_version": "resolved",
+  "answer": "Not found in the knowledge graph.",
+  "sources": [],
+  "context": "## Passages (source text)\n[4f33acf6] Who’s really in charge at Anthropic after the IPO?: Anthropic was founded in 2021 to ensure humanity can control AI and benefit from it in the long-term. As the frontier lab approaches its initial public offering, however, there’s one class of humanity that is being shut out of control: anyone who buys its stock on public markets. Complex structures that allow founders like Elon Musk or Mark Zuckerberg to control their public companies without owning most of them are nothing new in Silicon Valley. But Anthropic’s obsession with AI safety has resulted in a truly baroque style of corporate governance that will leave common shareholders with little say over most major decisions at the AI company, including who sits on its board. First, Anthropic is a public benefit company — a for-profit corporation legally allowed to weigh a public mission alongside profit — with the goal of promoting AI ...\n[4f33acf6] Who’s really in charge at Anthropic after the IPO?: At Anthropic, cracks in the founders’ unified front could lead to common shareholders having more say than expected, while employees can overrule the LTBT on board seats if they back the board over the assembled luminaries. The founders’ control won’t last forever: Ten years after the IPO, the founders can choose to end their control of the company, or their control will end automatically when fewer than three of them remain. At that point, the LTBT will continue until 85% of common shareholders vote to end it, or it decides to step down with approval from the board. If and when neither special class of shareholder exists any more — hopefully not because of an AI-driven catastrophe — common shareholders finally get control.\n[cd4fc97f] OpenAI: Chief Compliance Officer: Scott Schools, former chief compliance officer of Uber Chief Global Affairs Officer: Chris Lehane, former head of global policy at Airbnb Chief Economist: Aaron Chatterji, professor of business and public policy at Duke University's Fuqua School of Business Board of directors of the OpenAI nonprofit Bret Taylor (chairman), former chairman of Twitter's board of directors and co-CEO of Salesforce Sam Altman, CEO and co-founder Adam D'Angelo, co-founder and CEO of Quora Sue Desmond-Hellmann, former CEO of the Bill & Melinda Gates Foundation Nicole Seligman, attorney and former executive vice president of the Sony Corporation Paul Nakasone, former director of the National Security Agency (2018–2024) Zico Kolter, computer scientist Adebayo Ogunlesi, managing partner at Global Infrastructure Partners Principal individual investors Elon Musk, co-founder Peter Thiel, PayPal co-founder Jessica Livingston, a founding partner of Y Combinator Reid Hoffman, LinkedIn ...\n[f68985d1] Sam Altman: On July 10, 2015, he announced the return of Steve Huffman as CEO. He remained on its board until 2022. Altman invested in multiple rounds of funding for Reddit (in 2014, 2015, and 2021). Prior to Reddit's initial public offering in 2024, Altman was listed as its third-largest shareholder, with around 9% ownership. Worldcoin In 2019, Altman co-founded the for-profit company Tools For Humanity with Alex Blania (CEO) and others. The company promoted the Worldcoin cryptocurrency and eye-scanning systems to provide proof of personhood and authentication. However, it has engaged in deceptive marketing practices to drive sign-ups. By 2023, Tools For Humanity had scanned two million people's eyes and raised $250 million from several investors, including Andreessen Horowitz and Sam Bankman-Fried. Kenya was one of the first countries to register WorldCoin. The promise of free money led to rapid growth ...\n[f68985d1] Sam Altman: On September 12, 2026, Sam Altman publicly agreed with Anthropic CEO Dario Amodei's call to slow the development of advanced AI and advocated for independent evaluators to be embedded within AI companies. Deepening investment in OpenAI In 2018, Musk, a long-time personal friend of Altman's, resigned from his Board of Directors seat, citing \"a potential future conflict [of interest]\" with his role as CEO of Tesla due to Tesla's AI development for self-driving cars. In February 2024, Musk sued OpenAI and Altman, alleging they broke the company's founding agreement by prioritizing profit over benefit to humanity. OpenAI executives, including Altman, dismissed these claims in a blog post. The post said that the startup received only $45 million from Musk instead of his pledged $1 billion, and that Musk proposed to merge it with Tesla. In March 2019, Altman left Y ...",
+  "cypher": null,
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "retrieval": {
+   "triples": 0,
+   "aggregates": 0,
+   "passages": 5
+  },
+  "found": false,
+  "tokens_in": 1170,
+  "tokens_out": 31,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.04,
+  "latency_s": 3.831,
+  "wall_s": 0.04
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Who is the CEO of INPT?",
+  "strategy": "C",
+  "strategy_name": "text2cypher",
+  "kg_version": "resolved",
+  "answer": "Not found in the knowledge graph.",
+  "sources": [],
+  "context": "(no rows)",
+  "cypher": "MATCH (p:Person {kg_version: $kg_version})-[r:WORKS_AT]->(o:Organization {kg_version: $kg_version}) WHERE r.kg_version = $kg_version AND (toLower(o.name) = 'inpt' OR 'inpt' IN [a IN o.aliases | toLower(a)]) RETURN p.name AS person, r.evidence_text AS evidence, r.source_doc_id AS doc_id LIMIT 10",
+  "entities_used": [],
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "graphrag-v1",
+  "rows": 0,
+  "found": false,
+  "tokens_in": 998,
+  "tokens_out": 120,
+  "llm_calls": 1,
+  "cache_hits": 1,
+  "retrieval_s": 0.008,
+  "latency_s": 3.507,
+  "wall_s": 0.008
+ }
+]

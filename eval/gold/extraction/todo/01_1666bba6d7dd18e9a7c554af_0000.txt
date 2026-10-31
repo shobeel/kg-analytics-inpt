@@ -1,0 +1,43 @@
+# Gold chunk 1/25   chunk_id: 1666bba6d7dd18e9a7c554af_0000   source: arxiv
+# title: Behavioral and Representational Evidence of Binomial Ordering Preferences in Large Language Models
+# url: https://arxiv.org/abs/2606.21645
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind annotation from the text only
+
+=== TEXT (read only) ===
+Behavioral and Representational Evidence of Binomial Ordering Preferences in Large Language Models
+Large language models (LLMs) can readily reproduce conventional expressions, yet their ability to
+model gradient frequency distributions remains underexplored. We investigate this using linguistic
+binomials, such as men and women, where both word permutations are grammatically valid but exhibit
+distinct, cross-linguistic variations in conventionality. We formalize binomial ordering as a
+distributional alignment problem, and construct a multilingual dataset of 600 binomial pairs across
+8 languages. With categorical and distributional metrics, we measure and compare the corpus-derived
+preferences with model-induced ordering probabilities of 6 open-weight LLMs. While models often
+behaviorally recover the dominant corpus-preferred order, particularly for strongly conventionalized
+pairs, they align less well with the exact corpus preference distributions. This suggests that
+apparent directional order overstates how faithfully LLMs capture the statistical nuances of
+language use. Sparse probing verifies that the concept of preference strength is partially encoded
+among middle-to-late layers, and steering along probe-derived directions alters model-induced
+ordering distributions, demonstrating that the statistical behavioral preference of LLMs can be
+mechanistically measured and manipulated via internal representations.
+
+=== ENTITIES ===
+Paper | Behavioral and Representational Evidence of Binomial Ordering Preferences in Large Language Models
+Technology | Large language models
+Technology | Sparse probing
+
+=== RELATIONS ===
+Behavioral and Representational Evidence of Binomial Ordering Preferences in Large Language Models | USES | Sparse probing
+Behavioral and Representational Evidence of Binomial Ordering Preferences in Large Language Models | USES | Large language models
+
+=== END ===

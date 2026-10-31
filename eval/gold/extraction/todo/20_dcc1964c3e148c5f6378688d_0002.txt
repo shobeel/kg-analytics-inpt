@@ -1,0 +1,107 @@
+# Gold chunk 20/25   chunk_id: dcc1964c3e148c5f6378688d_0002   source: wikipedia
+# title: Large language model
+# url: https://en.wikipedia.org/wiki/Large_language_model
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; naming-convention examples annotated as AIModel; GPT here is the GPT family
+
+=== TEXT (read only) ===
+For example, "Yarn-Llama-2-13b-128k" is Llama 2 13B extended to a 128K-token context with YaRN. In
+"Qwen2.5-7B-Instruct-1M", the "1M" counts tokens of context, not parameters. More coarsely, it can
+be named "long" to indicate the mere fact that the context length has been extended.
+Reasoning level. A reasoning language model may be trained specifically for certain levels of
+reasoning efforts. A commonly used series: none, minimal, low, medium, high, xhigh, max. The mere
+fact that a model is a reasoning language model can be marked by "Thinking", such as in
+Kimi-K2-Thinking.
+Domain or modality. A model may be specialized for specific applications or has certain input
+modalities. in its name. Common tags are Code, Coder (for programming), Math, VL (vision-language).
+For example, Code Llama, Qwen2.5-Coder-32B-Instruct, Qwen2.5-VL-7B-Instruct, CodeLlama-7b-hf.
+Release stage. "Preview" or "Exp" (experimental) marks a model released ahead of a stable version.
+For example, DeepSeek-V3.2-Exp.
+Downstream finetuning. LoRA (low-rank adaptation), QLoRA (quantized LoRA), distill (distilled from
+another model), uncensored (fewer refusal behaviors), merged (multiple finetuned weights merged into
+one weight).
+Weight format. The weights of a model can be stored in different formats. Examples include onnx
+(Open Neural Network Exchange), hf (Hugging Face transformers). The quantization level can be
+indicated by suffix such as FP8, AWQ, GGUF. For example, Qwen3-32B-AWQ is Qwen3-32B with its weights
+quantized to 4 bits by AWQ. See GGUF for examples.
+Dataset preprocessing
+Tokenization
+As machine learning algorithms process numbers rather than text, the text must be converted to
+numbers. In the first step, a vocabulary is decided upon, then integer indices are arbitrarily but
+uniquely assigned to each vocabulary entry, and finally, an embedding is associated with the integer
+index. Algorithms include byte-pair encoding (BPE) and WordPiece. There are also special tokens
+serving as control characters, such as [MASK] for masked-out token (as used in BERT), and [UNK]
+("unknown") for characters not appearing in the vocabulary. Also, some special symbols are used to
+denote special text formatting. For example, "Ġ" denotes a preceding whitespace in RoBERTa and GPT
+and "##" denotes continuation of a preceding word in BERT.
+For example, the BPE tokenizer used by the legacy version of GPT-3 would split tokenizer: texts ->
+series of numerical "tokens" as
+token izer : texts -> series of numerical " t ok ens "
+Tokenization also compresses the datasets. Because LLMs generally require input to be an array that
+is not jagged, the shorter texts must be "padded" until they match the length of the longest one.
+Byte-pair encoding
+As an example, consider a tokenizer based on byte-pair encoding. In the first step, all unique
+characters (including blanks and punctuation marks) are treated as an initial set of n-grams (i.e.
+initial set of uni-grams). Successively the most frequent pair of adjacent characters is merged into
+a bi-gram and all instances of the pair are replaced by it. All occurrences of adjacent pairs of
+(previously merged) n-grams that most frequently occur together are then again merged into even
+lengthier n-gram, until a vocabulary of prescribed size is obtained. After a tokenizer is trained,
+any text can be tokenized by it, as long as it does not contain characters not appearing in the
+initial-set of uni-grams.
+Dataset cleaning
+In the context of training LLMs, datasets are typically cleaned by removing low-quality, duplicated,
+or toxic data. Cleaned datasets can increase training efficiency and lead to improved downstream
+performance. A trained LLM can be used to clean datasets for training a further LLM.
+With the increasing proportion of LLM-generated content on the web, data cleaning in the future may
+include filtering out such content. LLM-generated content can pose a problem if the content is
+similar to human text (making filtering difficult) but of lower quality (degrading performance of
+models trained on it).
+Synthetic data
+
+=== ENTITIES ===
+AIModel | Yarn-Llama-2-13b-128k
+AIModel | Llama 2 13B
+AIModel | Qwen2.5-7B-Instruct-1M
+AIModel | Kimi-K2-Thinking
+AIModel | Code Llama
+AIModel | Qwen2.5-Coder-32B-Instruct
+AIModel | Qwen2.5-VL-7B-Instruct
+AIModel | CodeLlama-7b-hf
+AIModel | DeepSeek-V3.2-Exp
+AIModel | Qwen3-32B-AWQ
+AIModel | Qwen3-32B
+AIModel | BERT
+AIModel | RoBERTa
+AIModel | GPT
+AIModel | GPT-3
+Technology | YaRN
+Technology | LoRA
+Technology | QLoRA
+Technology | Open Neural Network Exchange
+Technology | GGUF
+Technology | AWQ
+Technology | FP8
+Technology | Byte-pair encoding
+Technology | WordPiece
+Technology | Tokenization
+Product | Hugging Face transformers
+
+=== RELATIONS ===
+Yarn-Llama-2-13b-128k | BASED_ON | Llama 2 13B
+Yarn-Llama-2-13b-128k | USES | YaRN
+Qwen3-32B-AWQ | BASED_ON | Qwen3-32B
+Qwen3-32B-AWQ | USES | AWQ
+QLoRA | BASED_ON | LoRA
+GPT-3 | USES | Byte-pair encoding
+
+=== END ===

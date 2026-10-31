@@ -1,0 +1,212 @@
+{
+ "model": "gemini-3.5-flash-lite",
+ "gold_chunks": 25,
+ "chunks_done": 25,
+ "missing_predictions": [],
+ "model_output": {
+  "chunks_scored": 25,
+  "chunks_skipped_not_done": 0,
+  "chunks_without_prediction": [],
+  "entity_strict": {
+   "tp": 230,
+   "fp": 35,
+   "fn": 96,
+   "precision": 0.8679,
+   "recall": 0.7055,
+   "f1": 0.7783
+  },
+  "entity_relaxed": {
+   "tp": 247,
+   "fp": 18,
+   "fn": 79,
+   "precision": 0.9321,
+   "recall": 0.7577,
+   "f1": 0.8359
+  },
+  "relation_strict": {
+   "tp": 58,
+   "fp": 22,
+   "fn": 117,
+   "precision": 0.725,
+   "recall": 0.3314,
+   "f1": 0.4549
+  },
+  "relation_relaxed": {
+   "tp": 60,
+   "fp": 20,
+   "fn": 115,
+   "precision": 0.75,
+   "recall": 0.3429,
+   "f1": 0.4706
+  },
+  "entity_strict_by_type": {
+   "AIModel": {
+    "tp": 54,
+    "fp": 21,
+    "fn": 3,
+    "precision": 0.72,
+    "recall": 0.9474,
+    "f1": 0.8182
+   },
+   "Dataset": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "Location": {
+    "tp": 9,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.9,
+    "recall": 0.75,
+    "f1": 0.8182
+   },
+   "Organization": {
+    "tp": 65,
+    "fp": 5,
+    "fn": 11,
+    "precision": 0.9286,
+    "recall": 0.8553,
+    "f1": 0.8904
+   },
+   "Paper": {
+    "tp": 5,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.7143,
+    "recall": 1.0,
+    "f1": 0.8333
+   },
+   "Person": {
+    "tp": 66,
+    "fp": 0,
+    "fn": 15,
+    "precision": 1.0,
+    "recall": 0.8148,
+    "f1": 0.898
+   },
+   "Product": {
+    "tp": 12,
+    "fp": 3,
+    "fn": 21,
+    "precision": 0.8,
+    "recall": 0.3636,
+    "f1": 0.5
+   },
+   "Technology": {
+    "tp": 15,
+    "fp": 3,
+    "fn": 43,
+    "precision": 0.8333,
+    "recall": 0.2586,
+    "f1": 0.3947
+   }
+  }
+ },
+ "kept_in_kg": {
+  "chunks_scored": 25,
+  "chunks_skipped_not_done": 0,
+  "chunks_without_prediction": [],
+  "entity_strict": {
+   "tp": 230,
+   "fp": 35,
+   "fn": 96,
+   "precision": 0.8679,
+   "recall": 0.7055,
+   "f1": 0.7783
+  },
+  "entity_relaxed": {
+   "tp": 247,
+   "fp": 18,
+   "fn": 79,
+   "precision": 0.9321,
+   "recall": 0.7577,
+   "f1": 0.8359
+  },
+  "relation_strict": {
+   "tp": 57,
+   "fp": 13,
+   "fn": 118,
+   "precision": 0.8143,
+   "recall": 0.3257,
+   "f1": 0.4653
+  },
+  "relation_relaxed": {
+   "tp": 57,
+   "fp": 13,
+   "fn": 118,
+   "precision": 0.8143,
+   "recall": 0.3257,
+   "f1": 0.4653
+  },
+  "entity_strict_by_type": {
+   "AIModel": {
+    "tp": 54,
+    "fp": 21,
+    "fn": 3,
+    "precision": 0.72,
+    "recall": 0.9474,
+    "f1": 0.8182
+   },
+   "Dataset": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "Location": {
+    "tp": 9,
+    "fp": 1,
+    "fn": 3,
+    "precision": 0.9,
+    "recall": 0.75,
+    "f1": 0.8182
+   },
+   "Organization": {
+    "tp": 65,
+    "fp": 5,
+    "fn": 11,
+    "precision": 0.9286,
+    "recall": 0.8553,
+    "f1": 0.8904
+   },
+   "Paper": {
+    "tp": 5,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.7143,
+    "recall": 1.0,
+    "f1": 0.8333
+   },
+   "Person": {
+    "tp": 66,
+    "fp": 0,
+    "fn": 15,
+    "precision": 1.0,
+    "recall": 0.8148,
+    "f1": 0.898
+   },
+   "Product": {
+    "tp": 12,
+    "fp": 3,
+    "fn": 21,
+    "precision": 0.8,
+    "recall": 0.3636,
+    "f1": 0.5
+   },
+   "Technology": {
+    "tp": 15,
+    "fp": 3,
+    "fn": 43,
+    "precision": 0.8333,
+    "recall": 0.2586,
+    "f1": 0.3947
+   }
+  }
+ }
+}

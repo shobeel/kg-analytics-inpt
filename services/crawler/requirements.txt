@@ -1,0 +1,4 @@
+# Crawler-only libs, installed on top of kg/pyspark:3.5.0 (which already has requests, pyyaml).
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4

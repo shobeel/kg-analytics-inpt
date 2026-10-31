@@ -1,0 +1,90 @@
+# Gold chunk 19/25   chunk_id: cd4fc97f4b89a1d53596b6c2_0014   source: wikipedia
+# title: OpenAI
+# url: https://en.wikipedia.org/wiki/OpenAI
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+OpenAI did not report the account to authorities at the time.
+The Wall Street Journal reported that the perpetrator "described scenarios [to ChatGPT] involving
+gun violence over the course of several days", and that these messages were "flagged by an automated
+review system" and "alarmed employees at OpenAI". A dozen employees debated whether to take action,
+some urging leaders to alert Canadian law enforcement.
+Canadian officials summoned OpenAI's safety team to Ottawa, criticizing their escalation protocols.
+The meeting highlighted concerns about how and when OpenAI reports potentially dangerous user
+behavior to authorities and intensified scrutiny of its safety-oversight processes. On February 23,
+BC Premier David Eby said, "it looks like OpenAI had the opportunity to prevent this tragedy".
+Families of the victims have filed lawsuits against OpenAI.
+Stalking lawsuit
+In 2026, a woman filed a lawsuit against OpenAI, alleging that ChatGPT played a role in enabling a
+prolonged stalking campaign against her. According to the complaint, her former partner became
+increasingly fixated and used the chatbot to generate messages and content that reinforced his
+behavior, including harassing and defamatory material. She had contacted OpenAI to report the issue,
+but the company did not prevent further misuse. The case has been cited as part of growing legal and
+public debate over the responsibility of AI companies to address harmful or abusive uses of their
+systems.
+Claim of bodily harm from medical guidance
+In July 2026, a 55-year-old pastor, Scott Winters, sued OpenAI and Sam Altman over allegations that
+medical advice delivered by ChatGPT led him to the verge of death. The lawsuit alleges ChatGPT
+persistently misdiagnosed Winters’ symptoms, discouraged him from seeking hospital care, and
+combined its assessments with references to his Christian faith. Winters later suffered a severe
+pulmonary embolism. He claims undue reliance on ChatGPT damaged his wellbeing, livelihood and
+housing, and requested financial compensation and mandated safeguards. OpenAI responded that ChatGPT
+should never substitute professional medical care, noting relevant disclaimers exist within the
+platform’s terms of use.
+Controversies
+Data sets annotation practices
+OpenAI has been criticized for outsourcing the annotation of data sets to Sama, a company based in
+San Francisco that employed workers in Kenya. These annotations were used to train an AI model to
+detect toxicity, which could then be used to moderate toxic content, notably from ChatGPT's training
+data and outputs. However, these pieces of text usually contained detailed descriptions of various
+types of violence, including sexual violence. OpenAI began sending snippets of data to Sama as early
+as November 2021. The four Sama employees interviewed by Time described themselves as mentally
+scarred. OpenAI paid Sama $12.50 per hour of work, and Sama was redistributing the equivalent of
+between $1.32 and $2.00 per hour post-tax to its annotators. Sama's spokesperson said that the
+$12.50 was also covering other implicit costs, among which were infrastructure expenses, quality
+assurance and management.
+Military and warfare
+OpenAI has been criticized for allowing ChatGPT to be used for "military and warfare" since January
+10, 2024, when its "usage policies" removed the ban on "activity that has high risk of physical
+harm, including", specifically, "weapons development" and "military and warfare". Its new policies
+prohibit "[using] our service to harm yourself or others" and to "develop or use weapons".
+Non-disparagement agreements
+Before May 2024, OpenAI required departing employees to sign a lifelong non-disparagement agreement
+forbidding them from criticizing OpenAI or acknowledging the existence of the agreement. Daniel
+Kokotajlo, a former employee, publicly stated that he forfeited his vested equity in OpenAI in order
+to leave without signing the agreement. Sam Altman stated that he was unaware of the equity
+cancellation provision, and that OpenAI never enforced it to cancel any employee's vested equity.
+However, leaked documents and emails refute this claim.
+
+=== ENTITIES ===
+Organization | OpenAI
+Organization | The Wall Street Journal
+Organization | Sama
+Organization | Time
+Product | ChatGPT
+Person | David Eby
+Person | Scott Winters
+Person | Sam Altman
+Person | Daniel Kokotajlo
+Location | Ottawa
+Location | San Francisco
+Location | Kenya
+
+=== RELATIONS ===
+ChatGPT | DEVELOPED_BY | OpenAI
+Sama | LOCATED_IN | San Francisco
+OpenAI | PARTNERS_WITH | Sama
+Daniel Kokotajlo | WORKS_AT | OpenAI
+
+=== END ===

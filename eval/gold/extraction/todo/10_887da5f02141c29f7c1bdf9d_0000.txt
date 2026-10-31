@@ -1,0 +1,41 @@
+# Gold chunk 10/25   chunk_id: 887da5f02141c29f7c1bdf9d_0000   source: arxiv
+# title: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+# url: https://arxiv.org/abs/1910.10683
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; the model (T5) is not named in this chunk
+
+=== TEXT (read only) ===
+Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on
+a downstream task, has emerged as a powerful technique in natural language processing (NLP). The
+effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and
+practice. In this paper, we explore the landscape of transfer learning techniques for NLP by
+introducing a unified framework that converts all text-based language problems into a text-to-text
+format. Our systematic study compares pre-training objectives, architectures, unlabeled data sets,
+transfer approaches, and other factors on dozens of language understanding tasks. By combining the
+insights from our exploration with scale and our new ``Colossal Clean Crawled Corpus'', we achieve
+state-of-the-art results on many benchmarks covering summarization, question answering, text
+classification, and more. To facilitate future work on transfer learning for NLP, we release our
+data set, pre-trained models, and code.
+
+=== ENTITIES ===
+Paper | Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+Technology | Transfer learning
+Technology | Natural language processing
+Dataset | Colossal Clean Crawled Corpus
+
+=== RELATIONS ===
+Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer | USES | Transfer learning
+Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer | USES | Colossal Clean Crawled Corpus
+
+=== END ===

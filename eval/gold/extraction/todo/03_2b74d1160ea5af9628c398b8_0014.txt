@@ -1,0 +1,115 @@
+# Gold chunk 3/25   chunk_id: 2b74d1160ea5af9628c398b8_0014   source: local
+# title: Constitutional AI 2212.08073
+# url: local://Constitutional_AI_2212.08073.pdf
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; cited first authors annotated as Person (named in the text), no relation stated for them
+
+=== TEXT (read only) ===
+We also leverage the fact that language models can make well-calibrated choices
+[Kadavath et al., 2022] to turn AI choices into calibrated preference labels. Scaling supervision
+has been
+widely discussed as a possibility for AI alignment, with specific proposals such as [Christiano et
+al., 2018,
+Irving et al., 2018] and recent empirical work like [Bowman et al., 2022].
+6 Discussion
+We have trained language assistants that are both helpful and harmless without using human feedback
+labels
+for harmlessness. We referred to the technique as ‘constitutional AI’ (CAI) since we used a
+‘constitution’ consisting of human-written principles. We established two methods: (1)
+Constitutional AI which ‘bootstraps’ a
+helpful RLHF’s instruction-following abilities to critique and revise its own responses so as to
+remove harmful content, and (2) RL with model-generated labels for harmlessness, which further
+improves harmlessness.
+We used this method to train models that are both harmless and non-evasive, partially resolving an
+issue in
+[Bai et al., 2022].
+By removing human feedback labels for harmlessness, we have moved further away from reliance on
+human
+supervision, and closer to the possibility of a self-supervised approach to alignment. However, in
+this work
+we still relied on human supervision in the form of helpfulness labels. We expect it is possible to
+achieve helpfulness and instruction-following without human feedback, starting from only a
+pretrained LM and extensive
+prompting, but we leave this for future work.
+Our ultimate goal is not to remove human supervision entirely, but to make it more efficient,
+transparent, and
+targeted. All of our methods can leverage chain-of-thought [Nye et al., 2021, Wei et al., 2022] type
+reasoning
+– for critiques in the SL stage, and for evaluating comparisons for the RL stage – and we expect
+that a small
+number of very high-quality human demonstrations of this reasoning [Scheurer et al., , Saunders et
+al., 2022]
+could be used to improve and focus performance. Natural language feedback is also more transparent,
+interpretable, and improveable as compared to a large dataset of human preference labels. We leave
+it to future
+work to study the effectiveness of this type of feedback.
+6.1 Future Directions
+In prior work we have focused on training AI assistants to helpful, harmless, and honest [Askell et
+al., 2021],
+but otherwise we have allowed their behavior to be determined by generalization patterns from
+pretraining
+that are not under our direct control.
+However, the constitutional methods we have discussed here are very general, and in principle might
+be
+applied to steer language models in a variety of ways. For example, we expect we could use these
+method to
+change the model’s writing style, tone, or personality, or alter its responses to specific
+categories of questions
+(e.g. to train an AI that heavily caveats certain categories of advice, or that adopts a specific
+persona). The
+constitutional approach should thus make it much easier to study how different AI behaviors tend to
+generalize
+and interfere, since by obviating human feedback, our methods lower the barrier to experimentation.
+For
+example, it should be possible to generate feedback labels along dozens of behavioral axes, and then
+study
+how preference models trained from these labels are correlated or anti-correlated. This is important
+for AI
+safety, since the generalization patterns imbued by pretraining are currently something of a black
+box whose
+correlations may have unforeseen consequences.
+Another remaining issue, and a major motivation for this work, is robustness—that is, can we make
+models
+essentially immune to red-team attacks? We hope that by making helpfulness and harmlessness more
+compatible, we will be able to significantly scale-up (automated) red teaming in order to improve
+robustness.
+Furthermore, we should be able to perform iterated ‘online’ training [Bai et al., 2022] with AI
+supervision,
+15
+where we update the preference model with new AI feedback in order to keep it on the same
+distribution as
+the policy produces. We saw that this was valuable with human feedback, and by using AI feedback we
+can
+fully automate the process.
+
+=== ENTITIES ===
+Technology | Constitutional AI
+Technology | RLHF
+Technology | Chain-of-thought
+Technology | Red teaming
+Person | Kadavath
+Person | Christiano
+Person | Irving
+Person | Bowman
+Person | Nye
+Person | Wei
+Person | Scheurer
+Person | Saunders
+Person | Askell
+Person | Bai
+
+=== RELATIONS ===
+Constitutional AI | USES | RLHF
+Constitutional AI | USES | Chain-of-thought
+
+=== END ===

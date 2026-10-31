@@ -1,0 +1,50 @@
+# Gold chunk 5/25   chunk_id: 53a833e373bb1997394589a0_0000   source: arxiv
+# title: The Philosopher's Stone: Trojaning Plugins of Large Language Models
+# url: https://arxiv.org/abs/2312.00374
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+The Philosopher's Stone: Trojaning Plugins of Large Language Models
+Open-source Large Language Models (LLMs) have recently gained popularity because of their comparable
+performance to proprietary LLMs. To efficiently fulfill domain-specialized tasks, open-source LLMs
+can be refined, without expensive accelerators, using low-rank adapters. However, it is still
+unknown whether low-rank adapters can be exploited to control LLMs. To address this gap, we
+demonstrate that an infected adapter can induce, on specific triggers,an LLM to output content
+defined by an adversary and to even maliciously use tools. To train a Trojan adapter, we propose two
+novel attacks, POLISHED and FUSION, that improve over prior approaches. POLISHED uses a superior LLM
+to align naïvely poisoned data based on our insight that it can better inject poisoning knowledge
+during training. In contrast, FUSION leverages a novel over-poisoning procedure to transform a
+benign adapter into a malicious one by magnifying the attention between trigger and target in model
+weights. In our experiments, we first conduct two case studies to demonstrate that a compromised LLM
+agent can use malware to control the system (e.g., a LLM-driven robot) or to launch a spear-phishing
+attack. Then, in terms of targeted misinformation, we show that our attacks provide higher attack
+effectiveness than the existing baseline and, for the purpose of attracting downloads, preserve or
+improve the adapter's utility. Finally, we designed and evaluated three potential defenses. However,
+none proved entirely effective in safeguarding against our attacks, highlighting the need for more
+robust defenses supporting a secure LLM supply chain.
+
+=== ENTITIES ===
+Paper | The Philosopher's Stone: Trojaning Plugins of Large Language Models
+Technology | Large language models
+Technology | Low-rank adapters
+Technology | POLISHED
+Technology | FUSION
+
+=== RELATIONS ===
+The Philosopher's Stone: Trojaning Plugins of Large Language Models | USES | Low-rank adapters
+The Philosopher's Stone: Trojaning Plugins of Large Language Models | USES | POLISHED
+The Philosopher's Stone: Trojaning Plugins of Large Language Models | USES | FUSION
+POLISHED | USES | Large language models
+
+=== END ===

@@ -1,0 +1,82 @@
+# Gold chunk 23/25   chunk_id: de9db6f384cbc788775550a9_0000   source: rss
+# title: Patch the Planet: global response coordination as agents uncover critical vulnerabilities
+# url: https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; the author ("we") is not named in the chunk; Patch the Planet is an initiative (no schema type)
+
+=== TEXT (read only) ===
+Patch the Planet: global response coordination as agents uncover critical vulnerabilities
+Loading...
+Over the past two months, we led a coalition of maintainers, researchers, and security providers to
+address critical vulnerabilities in PHP, an open-source programming language used to run websites
+and web applications. Calif identified a critical flaw using GPT‐5.6 Sol as part of our Patch the
+Planet(opens in a new window) initiative, with Wiz also independently discovering and reporting both
+vulnerabilities. PHP’s maintainers led the fixes and release, with our teams and partners like Wiz,
+Cloudflare, and others contributing research, technical support, and coordination to prepare
+protections ahead of disclosure.
+Given the severity of these flaws and PHP’s widespread use, we consider this one of the most
+impactful security issues in recent memory. It highlights how AI can uncover security flaws with
+internet-scale impact, but the same capabilities can also help attackers rapidly develop offensive
+tools and exploits.
+To our knowledge, frontier AI found these vulnerabilities before attackers did, opening a Defender’s
+Window for maintainers and security providers to prepare fixes and protections ahead of disclosure.
+To help more defenders use these capabilities, we’ve committed $1 billion in subsidized Daybreak
+access through Daybreak for Frontline Defenders, focused on organizations with limited security
+resources protecting essential services.
+As significant as they are, these bugs are among several significant vulnerabilities we’ve already
+found and are working to fix, and we expect similar findings to increase sharply in the coming
+months. Drawing on our experience thus far, we’re sharing a proposed approach, appropriate for the
+AI era, to responding to critical vulnerabilities in widely used software, and we’re asking the
+security community to help improve this framework. It brings together our models, security
+expertise, and maintainers to help turn findings into protection and build a response that can scale
+as AI capabilities advance.
+Coordinating a global response
+Getting a fix into use can mean adapting it for older releases, preparing provider mitigations, and
+updating systems across many organizations. A repeatable process helps those teams act quickly as
+more vulnerabilities are discovered.
+Through Patch the Planet, we contributed security expertise and model access to support the PHP
+response, and worked with maintainers and research partners to test fixes and prepare guidance. We
+also helped coordinate with infrastructure providers on protections for affected systems and engaged
+government cyber agencies to help guidance reach critical organizations. This supported the
+maintainer-led response and helped other defenders prepare.
+For some findings, researchers can work directly with the software’s maintainers to investigate the
+issue and develop a fix. Others need a wider response because they affect many products or because
+distributors and service providers need time (which may be in short supply if frontier capabilities
+are not too far ahead of those that are broadly available) to prepare updates and protections. In
+those cases, the proposed framework can help maintainers identify who needs to be involved and
+coordinate the work. The response can involve five stages:
+Validate and fix the upstream vulnerability. The maintainer, researchers, and essential technical
+partners confirm the finding, assess its impact, and develop and test a fix. This process includes
+adversarial testing with frontier models to look for ways around the patch and related variants of
+the vulnerability.
+Give affected organizations time to act. We propose a framework for considering which organizations
+need advance information to prepare protections, while maintainers decide whom to involve. We help
+with outreach, information-sharing agreements, and coordination between teams. A distributor might
+adapt a fix for an older release, a hosting provider might test a mitigation, and a security
+provider might prepare detection or prevention measures, including web application firewall (WAF)
+rules.
+
+=== ENTITIES ===
+Organization | Calif
+Organization | Wiz
+Organization | Cloudflare
+AIModel | GPT-5.6 Sol
+Technology | PHP
+Product | Daybreak
+Product | Daybreak for Frontline Defenders
+Technology | Web application firewall
+
+=== RELATIONS ===
+Calif | USES | GPT-5.6 Sol
+
+=== END ===

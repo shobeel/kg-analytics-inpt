@@ -1,0 +1,16 @@
+@page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #141b2d; max-width: none; margin: 0; }
+header#title-block-header { text-align: center; margin: 60mm 0 10mm; }
+h1.title { font-size: 24pt; margin-bottom: 6mm; }
+p.subtitle { font-size: 14pt; color: #454b5a; }
+.cover { text-align: center; page-break-after: always; margin-top: 20mm; font-size: 11.5pt; }
+.cover em { display: block; margin-top: 30mm; font-size: 9.5pt; color: #454b5a; }
+h2 { font-size: 15pt; margin-top: 9mm; border-bottom: 1px solid #d5dae3; padding-bottom: 1.5mm; page-break-after: avoid; }
+h3 { font-size: 12pt; margin-top: 6mm; page-break-after: avoid; }
+table { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 3mm 0 4mm; page-break-inside: avoid; }
+th, td { border: 1px solid #d5dae3; padding: 1.2mm 2mm; text-align: left; vertical-align: top; }
+th { background: #eef2f7; }
+img { max-width: 100%; display: block; margin: 3mm auto; page-break-inside: avoid; }
+figure { margin: 0; page-break-inside: avoid; }
+figcaption { text-align: center; font-size: 9pt; color: #454b5a; margin-bottom: 3mm; }
+code { font-size: 9pt; background: #f3f5f8; padding: 0 1mm; }

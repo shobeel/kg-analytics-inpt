@@ -1,0 +1,110 @@
+# Gold chunk 8/25   chunk_id: 77e94bd237be4a6ac06b79b0_0004   source: wikipedia
+# title: Gemini (language model)
+# url: https://en.wikipedia.org/wiki/Gemini_(language_model)
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; table variants (Nano-1, Nano-2, Pro, Ultra, Mini) not annotated as separate models (bare variant names)
+
+=== TEXT (read only) ===
+Technical specifications
+As Gemini is multimodal, each context window can contain multiple forms of input. The different
+modes can be interleaved and do not have to be presented in a fixed order, allowing for a multimodal
+conversation. For example, the user might open the conversation with a mix of text, picture, video,
+and audio, presented in any order, and Gemini might reply with the same free ordering. Input images
+may be of different resolutions, while video is inputted as a sequence of images. Audio is sampled
+at 16 kHz and then converted into a sequence of tokens by the Universal Speech Model. Gemini's
+dataset is multimodal and multilingual, consisting of "web documents, books, and code, and
+includ[ing] image, audio, and video data".
+Gemini and Gemma models are decoder-only transformers, with modifications to allow efficient
+training and inference on TPUs. The 1.0 generation uses multi-query attention. However, no
+whitepapers were published for Gemini 2.0, 2.5, and 3.
+Technical specifications of Gemini models Generation Variant Release date Parameters Context length
+Notes
+1.0 Nano-1 6 December 2023 1.8B 32,768 Distilled from "larger Gemini models", 4-bit quantized
+Nano-2 6 December 2023 3.25B
+Pro 13 December 2023 Not publicly known
+Ultra 8 February 2024 Not publicly known
+1.5 Pro 15 February 2024 Not publicly known 10,000,000 1 million tokens in production API
+Mini 14 May 2024 Not publicly known
+Reception
+MIT Technology Review described speculation about Gemini's launch as "peak AI hype". Hugh Langley of
+Business Insider described Gemini as a make-or-break moment for Google, writing: "If Gemini dazzles,
+it will help Google change the narrative that it was blindsided by Microsoft and OpenAI. If it
+disappoints, it will embolden critics who say Google has fallen behind."
+Reacting to its unveiling in December 2023, computer scientist Oren Etzioni predicted an arms race
+between Google Deepmind and OpenAI. Computer scientist Alexei Efros praised the potential of
+Gemini's multimodal approach. Professors Percy Liang, Emily Bender and Michael Madden cautioned that
+it was difficult to interpret benchmark scores without insight into the training data used. Writing
+for Fast Company, Mark Sullivan opined that Google had the opportunity to challenge the iPhone's
+dominant market share, believing that Apple was unlikely to have the capacity to develop
+functionality similar to Gemini with its Siri virtual assistant. Google shares increased by 5.3
+percent the day after Gemini's launch.
+Google faced criticism for a demonstrative video of Gemini which was presented as a genuine
+demonstration of the real-time interaction capabilities of the model, but was actually edited to
+seem so. There were, however, minor disclaimers put up by Google elsewhere (outside the video),
+warning that it was not actually recorded in real time.
+Gemini 2.5 Pro Experimental debuted at the top position on the LMArena leaderboard, a benchmark
+measuring human preference. The model achieved high results across various AI benchmarks, including
+Humanity's Last Exam. Initial reviews mention its improved reasoning capabilities and performance
+gains compared to previous versions. Published benchmarks also showed areas where contemporary
+models from competitors like Anthropic, xAI, or OpenAI held advantages.
+
+=== ENTITIES ===
+AIModel | Gemini
+AIModel | Gemma
+AIModel | Gemini 2.0
+AIModel | Gemini 2.5
+AIModel | Gemini 3
+AIModel | Gemini 2.5 Pro Experimental
+AIModel | Universal Speech Model
+Technology | Transformer
+Technology | Multi-query attention
+Product | TPU
+Product | iPhone
+Product | Siri
+Organization | MIT Technology Review
+Organization | Business Insider
+Organization | Google
+Organization | Microsoft
+Organization | OpenAI
+Organization | Google Deepmind
+Organization | Fast Company
+Organization | Apple
+Organization | Anthropic
+Organization | xAI
+Person | Hugh Langley
+Person | Oren Etzioni
+Person | Alexei Efros
+Person | Percy Liang
+Person | Emily Bender
+Person | Michael Madden
+Person | Mark Sullivan
+Dataset | LMArena
+Dataset | Humanity's Last Exam
+
+=== RELATIONS ===
+Gemini | DEVELOPED_BY | Google
+Gemini | BASED_ON | Transformer
+Gemma | BASED_ON | Transformer
+Gemini | USES | Universal Speech Model
+Gemini | USES | TPU
+Gemini | USES | Multi-query attention
+Hugh Langley | WORKS_AT | Business Insider
+Mark Sullivan | WORKS_AT | Fast Company
+Siri | DEVELOPED_BY | Apple
+Google | COMPETES_WITH | Microsoft
+Google | COMPETES_WITH | OpenAI
+Google Deepmind | COMPETES_WITH | OpenAI
+Google | COMPETES_WITH | Anthropic
+Google | COMPETES_WITH | xAI
+
+=== END ===

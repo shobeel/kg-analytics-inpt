@@ -1,0 +1,35 @@
+# Gold chunk 9/25   chunk_id: 85f66a6419d173a7d68d58f8_0000   source: arxiv
+# title: Scaling Laws for Neural Language Models
+# url: https://arxiv.org/abs/2001.08361
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+Scaling Laws for Neural Language Models
+We study empirical scaling laws for language model performance on the cross-entropy loss. The loss
+scales as a power-law with model size, dataset size, and the amount of compute used for training,
+with some trends spanning more than seven orders of magnitude. Other architectural details such as
+network width or depth have minimal effects within a wide range. Simple equations govern the
+dependence of overfitting on model/dataset size and the dependence of training speed on model size.
+These relationships allow us to determine the optimal allocation of a fixed compute budget. Larger
+models are significantly more sample-efficient, such that optimally compute-efficient training
+involves training very large models on a relatively modest amount of data and stopping significantly
+before convergence.
+
+=== ENTITIES ===
+Paper | Scaling Laws for Neural Language Models
+Technology | Scaling laws
+
+=== RELATIONS ===
+
+=== END ===

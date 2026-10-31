@@ -1,0 +1,11 @@
+# Installed on the driver and every Spark executor (same image).
+pandas==2.0.3
+pyarrow==15.0.2
+neo4j==5.26.0
+graphdatascience==1.13
+python-dotenv==1.0.1
+# Phase 1 silver job (runs inside executor UDFs) + tests
+pypdf==5.1.0
+langdetect==1.0.9
+pytest==8.3.4
+trafilatura==2.0.0

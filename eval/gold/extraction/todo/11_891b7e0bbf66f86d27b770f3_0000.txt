@@ -1,0 +1,33 @@
+# Gold chunk 11/25   chunk_id: 891b7e0bbf66f86d27b770f3_0000   source: rss
+# title: Build more responsive apps with the Decisions API
+# url: https://openai.com/index/decisions-api
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+Loading...
+Expression palette
+Live decisions
+Watch as the Decisions API chooses a facial expression based on what each of you says.
+Your words
+Watch the reaction as you speak.
+Assistant’s words
+Watch the face as the assistant replies.
+I rehearsed my audition for my cat. She walked out halfway through.
+
+=== ENTITIES ===
+Product | Decisions API
+
+=== RELATIONS ===
+
+=== END ===

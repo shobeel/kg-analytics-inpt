@@ -1,0 +1,95 @@
+# Gold chunk 4/25   chunk_id: 4c37f46e62982808da51dd9b_0005   source: wikipedia
+# title: AlphaGo
+# url: https://en.wikipedia.org/wiki/AlphaGo
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; "Lee" is Lee Sedol but only "Lee" appears; Chinook/Deep Blue/Watson typed Product
+
+=== TEXT (read only) ===
+Most observers at the beginning of the 2016 matches expected Lee to beat AlphaGo.
+With games such as checkers (that has been solved by the Chinook computer engine), chess, and now Go
+won by computers, victories at popular board games can no longer serve as major milestones for
+artificial intelligence in the way that they used to. Deep Blue's Murray Campbell called AlphaGo's
+victory "the end of an era... board games are more or less done and it's time to move on."
+When compared with Deep Blue or Watson, AlphaGo's underlying algorithms are potentially more
+general-purpose and may be evidence that the scientific community is making progress towards
+artificial general intelligence. Some commentators believe AlphaGo's victory makes for a good
+opportunity for society to start preparing for the possible future impact of machines with general
+purpose intelligence. As noted by entrepreneur Guy Suter, AlphaGo only knows how to play Go and
+doesn't possess general-purpose intelligence; "[It] couldn't just wake up one morning and decide it
+wants to learn how to use firearms." AI researcher Stuart Russell said that AI systems such as
+AlphaGo have progressed quicker and become more powerful than expected, and we must therefore
+develop methods to ensure they "remain under human control". Some scholars, such as Stephen Hawking,
+warned (in May 2015 before the matches) that some future self-improving AI could gain actual general
+intelligence, leading to an unexpected AI takeover; other scholars disagree: AI expert Jean-Gabriel
+Ganascia believes that "Things like 'common sense'... may never be reproducible", and says "I don't
+see why we would speak about fears. On the contrary, this raises hopes in many domains such as
+health and space exploration." Computer scientist Richard Sutton said "I don't think people should
+be scared... but I do think people should be paying attention."
+In China, AlphaGo was a "Sputnik moment" which helped convince the Chinese government to prioritize
+and dramatically increase funding for artificial intelligence.
+In 2017, the DeepMind AlphaGo team received the inaugural IJCAI Marvin Minsky medal for Outstanding
+Achievements in AI. "AlphaGo is a wonderful achievement, and a perfect example of what the Minsky
+Medal was initiated to recognise", said Professor Michael Wooldridge, Chair of the IJCAI Awards
+Committee. "What particularly impressed IJCAI was that AlphaGo achieves what it does through a
+brilliant combination of classic AI techniques as well as the state-of-the-art machine learning
+techniques that DeepMind is so closely associated with. It's a breathtaking demonstration of
+contemporary AI, and we are delighted to be able to recognise it with this award."
+Go community
+Go is a popular game in China, Japan and Korea, and the 2016 matches were watched by perhaps a
+hundred million people worldwide. Many top Go players characterized AlphaGo's unorthodox plays as
+seemingly-questionable moves that initially befuddled onlookers, but made sense in hindsight: "All
+but the very best Go players craft their style by imitating top players. AlphaGo seems to have
+totally original moves it creates itself." AlphaGo appeared to have unexpectedly become much
+stronger, even when compared with its October 2015 match where a computer had beaten a Go
+professional for the first time ever without the advantage of a handicap. The day after Lee's first
+defeat, Jeong Ahram, the lead Go correspondent for one of South Korea's biggest daily newspapers,
+said "Last night was very gloomy... Many people drank alcohol." The Korea Baduk Association, the
+organization that oversees Go professionals in South Korea, awarded AlphaGo an honorary 9-dan title
+for exhibiting creative skills and pushing forward the game's progress.
+China's Ke Jie, an 18-year-old generally recognized as the world's best Go player at the time,
+initially claimed that he would be able to beat AlphaGo, but declined to play against it for fear
+that it would "copy my style". As the matches progressed, Ke Jie went back and forth, stating that
+"it is highly likely that I (could) lose" after analysing the first three matches, but regaining
+confidence after AlphaGo displayed flaws in the fourth match.
+
+=== ENTITIES ===
+AIModel | AlphaGo
+Person | Lee
+Product | Chinook
+Product | Deep Blue
+Product | Watson
+Person | Murray Campbell
+Person | Guy Suter
+Person | Stuart Russell
+Person | Stephen Hawking
+Person | Jean-Gabriel Ganascia
+Person | Richard Sutton
+Person | Michael Wooldridge
+Person | Jeong Ahram
+Person | Ke Jie
+Organization | DeepMind
+Organization | IJCAI
+Organization | Korea Baduk Association
+Location | China
+Location | Japan
+Location | Korea
+Location | South Korea
+
+=== RELATIONS ===
+AlphaGo | DEVELOPED_BY | DeepMind
+Deep Blue | DEVELOPED_BY | Murray Campbell
+Michael Wooldridge | WORKS_AT | IJCAI
+Korea Baduk Association | LOCATED_IN | South Korea
+Ke Jie | LOCATED_IN | China
+
+=== END ===

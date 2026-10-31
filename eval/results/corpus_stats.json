@@ -1,0 +1,18 @@
+{
+ "documents": 271,
+ "documents_by_source": {
+  "arxiv": 118,
+  "rss": 110,
+  "wikipedia": 39,
+  "local": 4
+ },
+ "chunks": 642,
+ "entities": {
+  "raw": 4403,
+  "resolved": 4071
+ },
+ "relation_edges": {
+  "raw": 2104,
+  "resolved": 2055
+ }
+}

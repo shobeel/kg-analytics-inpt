@@ -1,0 +1,9 @@
+# Extraction-only libs on top of kg/pyspark:3.5.0. No torch/transformers: embeddings use
+# fastembed (ONNX Runtime). numpy is pinned to the base image's version so pandas/pyarrow keep working.
+numpy==1.24.4
+openai==1.58.1
+pydantic==2.10.4
+fastembed==0.5.1
+rapidfuzz==3.11.0
+fastapi==0.115.6
+uvicorn==0.34.0

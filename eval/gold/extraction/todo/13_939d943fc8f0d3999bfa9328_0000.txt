@@ -1,0 +1,97 @@
+# Gold chunk 13/25   chunk_id: 939d943fc8f0d3999bfa9328_0000   source: rss
+# title: How OpenAI turned its coding tools into dots, an always-on personal assistant
+# url: https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+The always-on AI personal assistant, which keeps working in the background even when you aren’t
+asking it to, is this year’s answer to the question of how people will actually use deep learning
+models. The startup Instinct became an overnight sensation, and Meta put the full force of its
+marketing behind its assistant, Muse.
+OpenAI wasn’t going to be left out. The company released dots, its assistant offering, at its
+developer day in late September. Alexander Embiricos, who leads OpenAI’s enterprise product team,
+joined us at TechCrunch Disrupt this month to explain where the product came from — starting with
+the question of why so many companies seem to be turning to cutesy mascots as avatars for their
+trillion-parameter matrix multiplication machines.
+“There’s kind of this convergent evolution happening,” Embiricos said of the efforts to build AI
+assistants. “As we were working on the product, we realized if we could frame this as, it’s an
+entity and it’s a single conversation, not many different conversations....it starts to become
+intuitive.”
+The assistant is available in the ChatGPT desktop and mobile apps to subscribers on the Pro tier or
+higher, with plans starting at $100 a month. Once it is connected to your calendar, email, computer
+and other tools, the agent tries to help you get your work done.
+Embiricos points out that you could achieve much of dots’ functionality with Open AI’s Codex app,
+its coding tool, released at the beginning of this year. But that requires more work and hand-
+holding. He recalled celebrating when his wife started leaving her computer on all night so that her
+agents could keep working.
+“On the product team, what I think about is, how do we make this intuitive and useful to people?” he
+told Disrupt attendees. “A lot of that isn’t building some new piece of tech into the product; it’s
+how you frame it to the user and how it feels.”
+The path from chatbot to coding tool to personal assistant
+Making the technology feel intuitive meant repackaging the functionality of the company’s models
+into something more accessible, a path it was already on as it spun ChatGPT Work out of the agentic
+coding tools it had built for software engineers. Even the name — a play on the negative space
+inside of OpenAI’s logo — is intended “to feel like just something that could eventually be
+ubiquitous.” (Asked when he learned that rival AI entrepreneur Elon Musk owns the dot.com URL,
+Embiricos said, “I found out very late.”)
+The idea of a persistent agent is that it doesn’t need prompting. For OpenAI, that means more token
+usage, and for users, a more pro-active assistant “that’s sort of thinking about you and thinking
+how to help you,” as Embiricos put it.
+In our testing, the assistant’s ability to think ahead is apparent and often useful, but it isn’t
+quite there yet. It will flag calendar conflicts and upcoming deadlines, but not necessarily in the
+most timely fashion.
+“The first time it told me about one of those [conflicts] — this is like early in development — it
+told me three minutes before the thing,” Embiricos says of his dot. “It’s like, ‘Hey, this thing is
+coming up. You might want to do something about it.’ I only have three minutes!”
+Embiricos expects the timing to improve over time, but the proactive approach is key to the product.
+“I was hearing about an engineer at a drone delivery startup, and they were saying, ‘We had this
+outage, and by the time I noticed that the outage was going on, my dot had already noticed the
+outage was happening, had already analyzed the outage, and had come to me with useful information
+for how we could resolve the outage.’”
+Giving dot the keys
+As with most AI agent use cases, there’s a tension between the personal information an AI model
+needs to be useful and exactly how much personal data you are exposing to a software company. Muse
+has been criticized for the profiles it builds of your family and friends, which the software uses
+to know, say, what kind of restaurant you might want to go to with a specific pal, but could also
+add incredible value to Meta’s advertising business. Does dots collect similar data?
+“Yes, we have a thing that we built into dots, which we call proactive research,” Embiricos said.
+“On a cadence, it will think about what it knows about you, what is the conversation that it’s had,
+and then what have you given it access to that it can think about, and then it will go and research,
+‘What could I do to be more helpful to you?’ And then, basically, it will propose that.”
+It’s difficult to separate the data needs of the agent from that of its parent corporation. Hark, a
+startup developing its own AI personal assistant, is explicit in pointing out that it doesn’t
+collect data to fuel an advertising business the way that OpenAI and Meta do.
+
+=== ENTITIES ===
+Organization | Instinct
+Organization | Meta
+Organization | OpenAI
+Organization | TechCrunch
+Organization | Hark
+Product | Muse
+Product | dots
+Product | ChatGPT
+Product | Codex
+Product | ChatGPT Work
+Person | Alexander Embiricos
+Person | Elon Musk
+
+=== RELATIONS ===
+Muse | DEVELOPED_BY | Meta
+dots | DEVELOPED_BY | OpenAI
+Codex | DEVELOPED_BY | OpenAI
+ChatGPT Work | DEVELOPED_BY | OpenAI
+Alexander Embiricos | WORKS_AT | OpenAI
+
+=== END ===

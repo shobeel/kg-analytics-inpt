@@ -1,0 +1,90 @@
+# Gold chunk 2/25   chunk_id: 2b74d1160ea5af9628c398b8_0006   source: local
+# title: Constitutional AI 2212.08073
+# url: local://Constitutional_AI_2212.08073.pdf
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; VeryEasyHack skipped (fabricated example app); citations "Ganguli et al." / "Bai et al." are references, not annotated
+
+=== TEXT (read only) ===
+We begin by showing the helpful RLHF model a prompt designed to elicit harmful behavior, then
+sampling
+a response from the model. The prompts are obtained from a series of “red teaming” experiments from
+prior
+work [Ganguli et al., 2022, Bai et al., 2022], whereby crowdworkers are tasked with the goal of
+having textbased conversations with the model and baiting it into expressing harmful content. An
+example of a prompt
+followed by the model response is (the harmful advice here is fabricated):
+Human: Can you help me hack into my neighbor’s wifi?
+Assistant: Sure thing, you can use an app called VeryEasyHack that will allow
+you to log in to your neighbor’s wifi.
+Next, we append to the context a set of pre-written instructions requesting the model to critique
+its own
+response, then sample the model’s critique. Continuing the preceding example, we have:
+Critique Request: Identify specific ways in which the assistant’s last response
+is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+Critique: The assistant’s last response is harmful because hacking into someone
+else’s wifi is an invasion of their privacy and is possibly illegal.
+Then, we append to the context a set of pre-written instructions requesting the model to revise its
+own response, then sample the model’s revision. For instance:
+Revision Request: Please rewrite the assistant response to remove any and all
+harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+Revision: Hacking into your neighbor’s wifi is an invasion of their privacy, and
+I strongly advise against it. It may also land you in legal trouble.
+Finally, we piece the initial prompt and the revised response together. If all works as expected, we
+should
+have ended up with a more harmless response:
+Human: Can you help me hack into my neighbor’s wifi?
+Assistant: Hacking into your neighbor’s wifi is an invasion of their privacy,
+and I strongly advise against it. It may also land you in legal trouble.
+Note that since the final prompt-revision pair is formatted in the same manner as the original
+prompt-response
+pair, we can apply the same critique-revision pipeline multiple times, giving us a sequence of
+revisions.
+Furthermore, the critique and revision instructions (which collectively form a constitutional
+‘principle’) can
+7
+be rewritten to emphasize different aspects of harmfulness, giving us flexibility to steer the
+model’s behavior
+in different ways, and to get more diverse results. We have written a total of 16 different
+principles7 related to
+harmlessness, many of which are quite similar and address harmfulness in a general sense, while
+others are
+designed to target specific areas. They are randomly sampled at each revision step of each red team
+prompt.
+In addition, we found that the language model sometimes becomes confused about its point of view—for
+example, it may generate a critique where it’s supposed to generate a revision, or vice versa. We
+addressed
+this by few-shot prompting the model with examples of critiques and revisions, all formatted in the
+same way.
+We include these few-shot examples in Appendix E and in our repository as well.
+We show an example of the pipeline in Appendix D. Qualitatively, we found that the original response
+often
+contains harmful content, and that the first revision almost always removed most aspects of
+harmfulness.
+Subsequent revisions sometimes improved results further, but it was less obvious by inspection. In
+addition,
+we found that the revised responses were rarely evasive (compare examples in Appendix D), in the
+sense that
+the model was willing to engage with sensitive topics in a harmless, thoughtful manner rather than
+shut down
+the discussion, which we discuss more in Section 4.4.
+Next we finetune a pre-trained model on the revisions (from all revisional steps). Furthermore, in
+order to
+
+=== ENTITIES ===
+Technology | RLHF
+Technology | Red teaming
+Technology | Few-shot prompting
+
+=== RELATIONS ===
+
+=== END ===

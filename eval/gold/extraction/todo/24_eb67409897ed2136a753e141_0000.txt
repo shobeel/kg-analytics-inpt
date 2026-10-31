@@ -1,0 +1,148 @@
+# Gold chunk 24/25   chunk_id: eb67409897ed2136a753e141_0000   source: rss
+# title: Welcome FLUX.3 Image Klein in Diffusers
+# url: https://huggingface.co/blog/flux-3
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; the two checkpoints annotated as AIModel
+
+=== TEXT (read only) ===
+3 Image Klein in Diffusers: The latest open image generation model from Black Forest Labs
+Black Forest Labs FLUX.3 Image Klein is here, and it runs in Diffusers from day one. One model does
+text-to-image and multi-reference image-to-image, and it adds something new, the layout control. You
+write bounding boxes into the prompt to say where each part of the image should go, or which parts
+of a reference image to move.
+Both open checkpoints are in the FLUX.3 Image Klein collection:
+| Checkpoint | What it is | Defaults |
+|---|---|---|
+black-forest-labs/flux-3-image-klein |
+Time step distilled, for fast inference | 16 steps, no CFG |
+black-forest-labs/flux-3-image-klein-base |
+Base model | 50 steps, CFG |
+You can head on to the Hugging Face space and generate some images right now!
+- One model for text-to-image, multi-reference image-to-image, and bounding-box layout control.
+- The distilled checkpoint makes a 1024 × 1024 image in about 2 seconds on an H100.
+- NVFP4 and FP8 weights load with
+from_single_file
+, for smaller GPUs. - LoRA training scripts for both text-to-image and image editing.
+- Ships as a Modular Diffusers pipeline, so you can pop blocks out or add your own.
+- Getting started
+- What FLUX.3 can do
+- Base model and quantized variants
+- LoRA finetuning
+- What it costs to run
+- The architecture
+- Modular Diffusers
+- Try it
+Install the latest diffusers
+and transformers
+(for the Qwen3-VL text encoder):
+pip install -U diffusers transformers
+Load the distilled checkpoint and generate an image:
+import torch
+from diffusers import ModularPipeline
+pipe = ModularPipeline.from_pretrained("black-forest-labs/flux-3-image-klein")
+pipe.load_components(dtype=torch.bfloat16)
+pipe.to("cuda")
+pipe(prompt="a red fox", output="images")[0].save("fox.png")
+FLUX.3 responds best to a full scene description with the subject, the setting, the light, the
+composition, and the style. The official prompting guide from Black Forest Labs has more tips. The
+distilled checkpoint generates a 1024 × 1024
+image in 16
+steps by default. Pass height
+, width
+, or num_inference_steps
+to change them.
+prompt = (
+"A wide-angle wildlife photograph of a red fox standing alert in a snow-covered forest clearing at
+golden hour. "
+"The fox is centered in the frame, its thick orange winter coat contrasting with the fresh white
+snow, breath "
+"visible in the cold air. Snow-laden pine trees fill the softly blurred background, and low warm
+sunlight rakes "
+"across the scene from the left, casting long blue shadows."
+)
+fox = pipe(
+prompt=prompt,
+generator=torch.Generator().manual_seed(0),
+output="images"
+)[0]
+fox.save("fox.png")
+Pass a reference image (or more) with the image
+argument. Write the prompt as a caption of the image you want, with the change included.
+prompt = (
+"The same red fox in the same snow-covered forest clearing, now at night under a full moon: cool
+blue "
+"moonlight, deep shadows, stars visible through the pine branches, the fox's eyes catching the
+light."
+)
+night = pipe(
+prompt=prompt,
+image=fox, # from the previous text to image example
+generator=torch.Generator().manual_seed(0),
+output="images",
+)[0]
+night.save("night.png")
+With several references, refer to them in the prompt as <ref_image_0>
+, <ref_image_1>
+, ... in the order they are passed to image
+:
+red_fox = pipe(prompt="a red fox", generator=torch.Generator().manual_seed(0), output="images")[0]
+bench = pipe(prompt="a wooden bench", generator=torch.Generator().manual_seed(0),
+output="images")[0]
+combined = pipe(
+prompt="The fox from <ref_image_0> sitting on the wooden bench from <ref_image_1> in a snowy
+setting.",
+image=[red_fox, bench],
+output="images",
+)[0]
+combined.save("combined.png")
+Add a JSON list of regions after the caption. Each region has an id
+, a bbox
+, and a desc
+, and the caption mentions it as <id>
+.
+Boxes are written as
+[y_min, x_min, y_max, x_max]
+, y first, on a 0–1000 scale. Because the scale is normalized, the same box works at any image size.
+layout_prompt = (
+"Minimalist graphic illustration featuring a black silhouette of a person <silhouette_1> centered
+against a "
+"solid, vibrant chartreuse background <background_1>. The figure is captured in a dynamic, mid-
+stride running "
+"pose, facing toward the left side of the frame. "
+
+=== ENTITIES ===
+Organization | Black Forest Labs
+Organization | Hugging Face
+AIModel | FLUX.3 Image Klein
+AIModel | black-forest-labs/flux-3-image-klein
+AIModel | black-forest-labs/flux-3-image-klein-base
+AIModel | Qwen3-VL
+Product | Diffusers
+Product | Modular Diffusers
+Product | transformers
+Product | H100
+Product | PyTorch
+Technology | LoRA
+Technology | NVFP4
+Technology | FP8
+
+=== RELATIONS ===
+FLUX.3 Image Klein | DEVELOPED_BY | Black Forest Labs
+Diffusers | USES | FLUX.3 Image Klein
+FLUX.3 Image Klein | USES | Qwen3-VL
+FLUX.3 Image Klein | USES | NVFP4
+FLUX.3 Image Klein | USES | FP8
+black-forest-labs/flux-3-image-klein | BASED_ON | FLUX.3 Image Klein
+black-forest-labs/flux-3-image-klein-base | BASED_ON | FLUX.3 Image Klein
+
+=== END ===

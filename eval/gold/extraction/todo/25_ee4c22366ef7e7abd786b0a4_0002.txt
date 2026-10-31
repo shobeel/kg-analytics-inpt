@@ -1,0 +1,78 @@
+# Gold chunk 25/25   chunk_id: ee4c22366ef7e7abd786b0a4_0002   source: rss
+# title: Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)
+# url: https://openai.com/index/scaling-storage-one-billion-users-part-two
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; ChatGPT only appears in the title, not in the chunk text
+
+=== TEXT (read only) ===
+However, since we started with a default container, many legacy critical use cases were
+unfortunately stuck there without a data migration. To protect critical services that still relied
+on data in the shared default container, we often advised teams to create separate containers for
+new services or major product features. As we scaled, pressure on the default container grew and
+production incidents also grew. We began to provision containers for any new service or large
+product feature just to protect the default container from more load.
+This saved us from many site-wide outages, limiting the blast radius to feature or service
+degradation outages. However, the overhead of provisioning new containers eventually caught up to
+us:
+Lack of stable aggregate growth
+In the old shared default container, any particular new use case going from 0 QPS to 1 million QPS
+was unlikely to significantly shift the total aggregate usage. On an isolated container however, a
+new use case going from 0 to 1 million QPS might represent 1,000x more load than the baseline
+attributed to only internal dogfooding.
+With dedicated containers, teams now needed to remember to pre-provision containers to the expected
+level of throughput for their launches. Product teams would often ship their features to production
+and forget to pre-scale and we’d sit in SEV rooms on launch day attempting to scale up containers
+last minute.
+This is a core workload mixing benefit of multi-tenant systems that we lose in favor of better
+isolation with this container strategy.
+Capacity planning
+Over time, monitoring usage of dedicated containers also required intimate product knowledge of when
+traffic would shift or grow.
+We can provide a basic control plane script to scale up the provisioned throughput for each
+container based on growth trends, but without the stable aggregate growth, scaling these correctly
+required essentially every product team at OpenAI to be involved in capacity planning.
+This failed to scale organizationally with a wide variance in how much diligence each service’s
+owning team paid to their Azure Cosmos DB provisioning.
+Phase III: Using multi-tenancy by default, with data movement capability
+As the organization grew, those operational problems became difficult to scale. No lone, central
+team doing planning resulted in many teams planning poorly. As a result, we ended up shifting back
+towards a multi-tenant solution and worked closely with the Azure team to engineer fixes for our
+original multi-tenancy issues with a shared-tenancy design:
+Hot key throttling
+Throttling the hottest keys first prevents noisy neighbors from consuming all of the available
+throughput for a given physical partition. This reduces the noisy neighbor effect, where one hot key
+can have a site-wide blast radius.
+Quality of Service (QoS)
+Request tiering QoS similarly prevents offline workloads, such as bulk inserts or data extracts from
+utilizing all of the throughput for a given physical partition. By assigning the requests for these
+workloads a lower priority, they are throttled first, preventing throttling on higher priority,
+interactive requests that serve end users.
+Serverless mode
+Azure Cosmos DB already had a serverless mode that would’ve fixed our weak partitions problem with
+the provisioned mode. However, there was a major downside: it scaled based on storage usage only and
+limited RU usage to 5K RU/s per physical partition. This would solve our weak partitions problem,
+but prevent us from scaling up RU-heavy use cases.
+A new improved serverless mode Azure Cosmos DB team built for us allowed every physical partition to
+scale up to 10K RU/s and introduced RU-usage-based splits in addition to storage-usage-based splits
+allowed us to stop monitoring and scaling up containers manually.
+
+=== ENTITIES ===
+Organization | OpenAI
+Organization | Azure
+Product | Azure Cosmos DB
+
+=== RELATIONS ===
+OpenAI | USES | Azure Cosmos DB
+OpenAI | PARTNERS_WITH | Azure
+
+=== END ===

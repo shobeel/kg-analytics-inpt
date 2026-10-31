@@ -1,0 +1,176 @@
+# Gold chunk 7/25   chunk_id: 6f8557a8ff87bf5ae84464db_0000   source: wikipedia
+# title: Anthropic
+# url: https://en.wikipedia.org/wiki/Anthropic
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; WORKS_AT includes former employment the text states (Dario Amodei, Jan Leike, John Schulman at OpenAI); Fable/Opus/Sonnet/Haiku are Claude tiers
+
+=== TEXT (read only) ===
+Anthropic, PBC
+Headquarters at 500 Howard St, San Francisco
+Type Public benefit corporation
+Private
+Industry Artificial intelligence
+Founded January 26, 2021 (2021-01-26)
+Founders Dario Amodei
+Daniela Amodei
+Jared Kaplan
+Jack Clark
+Chris Olah
+Ben Mann
+Sam McCandlish
+Tom Brown
+Headquarters San Francisco, California, U.S.
+Key people Dario Amodei (CEO)
+Daniela Amodei (President)
+Ami Vora (CPO)
+Mariano-Florentino Cuéllar (Chief Global Affairs Officer)
+Products Claude
+Claude Code
+Claude Cowork
+Bun
+Revenue US$4.6 billion (2025)
+Net income
+$42 billion (2025)
+Number of employees
+5,300 (September 2026)
+Website www.anthropic.com
+Anthropic, PBC is an American artificial intelligence (AI) public benefit corporation headquartered
+in San Francisco, California. Its flagship product is Claude, a series of proprietary large language
+models (LLMs). In January 2021, with the goal of promoting AI safety, Anthropic was founded by
+former members of OpenAI, including siblings Daniela Amodei and Dario Amodei, who are president and
+CEO, respectively. The company is privately held but plans an initial public offering in November
+2026. Valued at $965 billion in a May 2026 Series H capital raise, Anthropic is the world's most
+valuable AI pure play, rivaled by OpenAI.
+Anthropic develops the LLM Claude in four tiers: Fable, Opus, Sonnet, and Haiku. Claude is
+accessible via an online chatbot, an API, and Anthropic's agent harnesses: Claude Code, Cowork,
+Design, and Science. Its model class Claude Mythos, a less restricted version of Fable, is available
+only to approved US organizations with a cybersecurity and life sciences focus. Anthropic's Project
+Panama, internally described as an "effort to destructively scan all the books in the world",
+provides training data for Claude. Before Project Panama, Anthropic downloaded pirated books and was
+sued, settling in 2025 a copyright infringement lawsuit from authors for $1.5 billion.
+Anthropic conducts LLM research including on mechanistic interpretability, safety, alignment, and
+societal impact. Notable researchers working at Anthropic include Andrej Karpathy, John M. Jumper,
+Jan Leike, Chris Olah, Amanda Askell, and Levent Alpöge.
+Anthropic partners with cloud providers including Palantir. From 2024, Claude was used by the US
+Department of Defense (DoD) and the Intelligence Community. In 2026, Claude was used in the Iran war
+and the US intervention in Venezuela. In February, the DoD demanded the use of Claude for all lawful
+purposes, but Anthropic refused to drop restrictions against mass domestic surveillance and fully
+autonomous weapons. The dispute led the Trump administration to phase out Anthropic products from
+government use; the DoD completed this in October. Throughout 2026, Anthropic accused Chinese
+competitors including DeepSeek, Moonshot AI, Alibaba Cloud, and Z.ai of distilling Claude for their
+models.
+History
+Anthropic was founded in January 2021 by seven former employees of OpenAI, including siblings
+Daniela Amodei and Dario Amodei, the latter of whom was OpenAI's Vice President of Research. They
+raised $124 million in May 2021. In the summer of 2022, Anthropic finished training the first
+version of Claude but did not immediately release it, citing a need for further internal safety
+testing and a desire to avoid initiating a potentially hazardous race to develop increasingly
+powerful AI systems. It was released in March 2023.
+In 2024, Anthropic hired several notable employees from OpenAI, including Jan Leike and John
+Schulman. In May 2025, the company announced Claude 4. It also introduced new API capabilities,
+including the Model Context Protocol (MCP) connector. The company hosted its inaugural developer
+conference that month. Also in May, Anthropic launched a web search API that enables Claude to
+access real-time information from the internet. Claude Code, Anthropic's coding assistant,
+transitioned from research preview to general availability.
+In July 2025, Anthropic signed a two-year contract with the US Department of Defense for $200
+million. Anthropic LLMs became integrated with the Pentagon's classified intelligence networks and
+with Palantir's data platform. Anthropic stipulated that the Pentagon not use its technologies for
+mass surveillance of Americans, or to create fully autonomous weapons.
+
+=== ENTITIES ===
+Organization | Anthropic
+Location | San Francisco
+Location | California
+Location | U.S.
+Person | Dario Amodei
+Person | Daniela Amodei
+Person | Jared Kaplan
+Person | Jack Clark
+Person | Chris Olah
+Person | Ben Mann
+Person | Sam McCandlish
+Person | Tom Brown
+Person | Ami Vora
+Person | Mariano-Florentino Cuéllar
+Person | Andrej Karpathy
+Person | John M. Jumper
+Person | Jan Leike
+Person | Amanda Askell
+Person | Levent Alpöge
+Person | John Schulman
+AIModel | Claude
+AIModel | Fable
+AIModel | Opus
+AIModel | Sonnet
+AIModel | Haiku
+AIModel | Claude Mythos
+AIModel | Claude 4
+Product | Claude Code
+Product | Claude Cowork
+Product | Bun
+Dataset | Project Panama
+Technology | Model Context Protocol
+Technology | Large language models
+Organization | OpenAI
+Organization | Palantir
+Organization | US Department of Defense
+Organization | DeepSeek
+Organization | Moonshot AI
+Organization | Alibaba Cloud
+Organization | Z.ai
+Location | Iran
+Location | Venezuela
+
+=== RELATIONS ===
+Anthropic | LOCATED_IN | San Francisco
+San Francisco | LOCATED_IN | California
+California | LOCATED_IN | U.S.
+Anthropic | DEVELOPED_BY | Dario Amodei
+Anthropic | DEVELOPED_BY | Daniela Amodei
+Anthropic | DEVELOPED_BY | Jared Kaplan
+Anthropic | DEVELOPED_BY | Jack Clark
+Anthropic | DEVELOPED_BY | Chris Olah
+Anthropic | DEVELOPED_BY | Ben Mann
+Anthropic | DEVELOPED_BY | Sam McCandlish
+Anthropic | DEVELOPED_BY | Tom Brown
+Dario Amodei | WORKS_AT | Anthropic
+Daniela Amodei | WORKS_AT | Anthropic
+Ami Vora | WORKS_AT | Anthropic
+Mariano-Florentino Cuéllar | WORKS_AT | Anthropic
+Andrej Karpathy | WORKS_AT | Anthropic
+John M. Jumper | WORKS_AT | Anthropic
+Jan Leike | WORKS_AT | Anthropic
+Chris Olah | WORKS_AT | Anthropic
+Amanda Askell | WORKS_AT | Anthropic
+Levent Alpöge | WORKS_AT | Anthropic
+John Schulman | WORKS_AT | Anthropic
+Dario Amodei | WORKS_AT | OpenAI
+Jan Leike | WORKS_AT | OpenAI
+John Schulman | WORKS_AT | OpenAI
+Claude | DEVELOPED_BY | Anthropic
+Claude Code | DEVELOPED_BY | Anthropic
+Claude Cowork | DEVELOPED_BY | Anthropic
+Claude Mythos | DEVELOPED_BY | Anthropic
+Claude 4 | DEVELOPED_BY | Anthropic
+Claude Mythos | BASED_ON | Fable
+Claude | TRAINED_ON | Project Panama
+Anthropic | PARTNERS_WITH | Palantir
+Anthropic | PARTNERS_WITH | US Department of Defense
+US Department of Defense | USES | Claude
+Anthropic | COMPETES_WITH | OpenAI
+Anthropic | COMPETES_WITH | DeepSeek
+Anthropic | COMPETES_WITH | Moonshot AI
+Anthropic | COMPETES_WITH | Alibaba Cloud
+Anthropic | COMPETES_WITH | Z.ai
+
+=== END ===

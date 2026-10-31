@@ -1,0 +1,102 @@
+# Gold chunk 21/25   chunk_id: dcc1964c3e148c5f6378688d_0003   source: wikipedia
+# title: Large language model
+# url: https://en.wikipedia.org/wiki/Large_language_model
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind
+
+=== TEXT (read only) ===
+A trained LLM can be used to clean datasets for training a further LLM.
+With the increasing proportion of LLM-generated content on the web, data cleaning in the future may
+include filtering out such content. LLM-generated content can pose a problem if the content is
+similar to human text (making filtering difficult) but of lower quality (degrading performance of
+models trained on it).
+Synthetic data
+Training of largest language models might need more linguistic data than naturally available, or
+that the naturally occurring data is of insufficient quality. In these cases, synthetic data might
+be used.
+Training
+An LLM is a type of foundation model trained on language. LLMs can be trained in different ways. In
+particular, GPT models are first pretrained to predict the next word on a large amount of data,
+before being fine-tuned.
+Cost
+Substantial infrastructure is necessary for training the largest models. The tendency towards larger
+models is visible in the list of large language models. For example, the training of GPT-2 (i.e. a
+1.5-billion-parameter model) in 2019 cost $50,000, while training of the PaLM (i.e. a 540-billion-
+parameter model) in 2022 cost $8 million, and Megatron-Turing NLG 530B (in 2021) cost around $11
+million. The qualifier "large" in "large language model" is inherently vague, as there is no
+definitive threshold for the number of parameters required to qualify as "large".
+Fine-tuning
+Before being fine-tuned, most LLMs are next-token predictors. The fine-tuning shapes the LLM's
+behavior via techniques like reinforcement learning from human feedback (RLHF) or constitutional AI.
+Instruction fine-tuning is a form of supervised learning used to teach LLMs to follow user
+instructions. In 2022, OpenAI demonstrated InstructGPT, a version of GPT-3 similarly fine-tuned to
+follow instructions.
+RLHF involves training a reward model to predict which text humans prefer. Then, the LLM can be
+fine-tuned through reinforcement learning to better satisfy this reward model.
+Inference
+Inference is the process of providing input to a trained large language model and receiving
+generated output, such as text, images, code, or other files.
+Hosted inference runs a language model on remote AI data centers and makes the output available to
+users over the Internet.
+Some open-weight language models can be downloaded and run locally on a personal computer. The model
+files are stored on local storage, while during inference the model weights and other data are held
+in memory for processing.
+Architecture
+LLMs are generally based on the transformer architecture, which leverages an attention mechanism
+that enables the model to process relationships between all elements in a sequence simultaneously,
+regardless of their distance from each other. Peng et al. (2023) proposed RWKV, a recurrent neural
+network-based alternative.
+Attention mechanism and context window
+In order to find out which tokens are relevant to each other within the scope of the context window,
+the attention mechanism calculates "soft" weights for each token, more precisely for its embedding,
+by using multiple attention heads, each with its own "relevance" for calculating its own soft
+weights. For example, the small (i.e. 117M parameter sized) GPT-2 model has had twelve attention
+heads and a context window of only 1k tokens.
+Autoregressive models, such as GPTs, are trained to guess how a sequence continues; for example,
+whether the word sequence "I like to eat" is more likely to be followed by the word "bread" or the
+word "rocks". Masked models, such as BERT, are trained to guess parts that are missing from a
+sequence, such as whether the missing word in "I like to ___ roses" is more likely to be the word
+"smell" or the word "eat". The model's predictions are based on the properties of sequences within
+its training dataset.
+Mixture of experts
+
+=== ENTITIES ===
+Technology | Large language model
+Technology | Synthetic data
+AIModel | GPT
+AIModel | GPT-2
+AIModel | PaLM
+AIModel | Megatron-Turing NLG 530B
+AIModel | InstructGPT
+AIModel | GPT-3
+AIModel | BERT
+Technology | RWKV
+Technology | Reinforcement learning from human feedback
+Technology | Constitutional AI
+Technology | Instruction fine-tuning
+Technology | Reward model
+Technology | Transformer
+Technology | Attention mechanism
+Organization | OpenAI
+Person | Peng
+
+=== RELATIONS ===
+InstructGPT | BASED_ON | GPT-3
+InstructGPT | DEVELOPED_BY | OpenAI
+InstructGPT | USES | Instruction fine-tuning
+RWKV | DEVELOPED_BY | Peng
+Reinforcement learning from human feedback | USES | Reward model
+Transformer | USES | Attention mechanism
+Large language model | BASED_ON | Transformer
+
+=== END ===

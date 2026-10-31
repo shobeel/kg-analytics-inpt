@@ -1,0 +1,165 @@
+# Gold chunk 18/25   chunk_id: cd4fc97f4b89a1d53596b6c2_0009   source: wikipedia
+# title: OpenAI
+# url: https://en.wikipedia.org/wiki/OpenAI
+# annotated blind from the TEXT only (no pre-fill, no extraction-model output was shown)
+# Correct the pre-filled ENTITIES and RELATIONS so they match what the TEXT states.
+# Delete wrong lines, fix names/types, add missing items. One item per line, fields separated by " | ".
+#   entity:    Type | Name
+#   relation:  Source name | RELATION | Target name      (names must be listed under ENTITIES)
+# Entity types: Organization, Person, AIModel, Paper, Technology, Dataset, Product, Location
+# Relations:    DEVELOPED_BY, WORKS_AT, AUTHORED, CITES, USES, TRAINED_ON, COMPETES_WITH, PARTNERS_WITH, FUNDED_BY, ACQUIRED, LOCATED_IN, BASED_ON
+# Direction rules and examples: README.md in this folder. When finished set "status: done".
+
+status: done
+annotator: model
+notes: blind; board membership and executive roles annotated as WORKS_AT; "former" roles kept (the text states them)
+
+=== TEXT (read only) ===
+Chief Compliance Officer: Scott Schools, former chief compliance officer of Uber
+Chief Global Affairs Officer: Chris Lehane, former head of global policy at Airbnb
+Chief Economist: Aaron Chatterji, professor of business and public policy at Duke University's Fuqua
+School of Business
+Board of directors of the OpenAI nonprofit
+Bret Taylor (chairman), former chairman of Twitter's board of directors and co-CEO of Salesforce
+Sam Altman, CEO and co-founder
+Adam D'Angelo, co-founder and CEO of Quora
+Sue Desmond-Hellmann, former CEO of the Bill & Melinda Gates Foundation
+Nicole Seligman, attorney and former executive vice president of the Sony Corporation
+Paul Nakasone, former director of the National Security Agency (2018–2024)
+Zico Kolter, computer scientist
+Adebayo Ogunlesi, managing partner at Global Infrastructure Partners
+Principal individual investors
+Elon Musk, co-founder
+Peter Thiel, PayPal co-founder
+Jessica Livingston, a founding partner of Y Combinator
+Reid Hoffman, LinkedIn co-founder
+Firing of Altman
+On November 17, 2023, Sam Altman was removed as CEO when OpenAI's board of directors (composed of
+Helen Toner, Ilya Sutskever, Adam D'Angelo and Tasha McCauley) cited a lack of confidence in him.
+Chief Technology Officer Mira Murati took over as interim CEO. Greg Brockman, the president of
+OpenAI, was also removed as chairman of the board and resigned from the company's presidency shortly
+thereafter. Three senior OpenAI researchers subsequently resigned: director of research and GPT-4
+lead Jakub Pachocki, head of AI risk Aleksander Mądry, and researcher Szymon Sidor.
+On November 18, 2023, there were reportedly talks of Altman returning as CEO amid pressure placed
+upon the board by investors such as Microsoft and Thrive Capital, who objected to Altman's
+departure. Although Altman himself spoke in favor of returning to OpenAI, he has since stated that
+he considered starting a new company and bringing former OpenAI employees with him if talks to
+reinstate him did not work out. Altman insisted multiple times that all board members who supported
+his removal should resign; the board members agreed "in principle" to resign if Altman returned. On
+November 19, 2023, negotiations with Altman to return failed and Murati was replaced by Emmett Shear
+as interim CEO. The board initially contacted Anthropic CEO Dario Amodei (a former OpenAI executive)
+about replacing Altman, and proposed a merger of the two companies, but both offers were declined.
+On November 20, 2023, Microsoft CEO Satya Nadella announced Altman and Brockman would be joining
+Microsoft to lead a new advanced AI research team, but added that they were still committed to
+OpenAI despite recent events. Before the partnership with Microsoft was finalized, Altman gave the
+board another opportunity to negotiate with him. About 738 of OpenAI's 770 employees, including
+Murati and Sutskever, signed an open letter stating they would quit their jobs and join Microsoft if
+the board did not rehire Altman and then resign. This prompted OpenAI investors to consider legal
+action against the board as well. In response, OpenAI management sent an internal memo to employees
+stating that negotiations with Altman and the board had resumed and would take some time.
+On November 21, 2023, after continued negotiations, Altman and Brockman returned to the company in
+their prior roles along with a reconstructed board made up of new members Bret Taylor (as chairman)
+and Lawrence Summers, with D'Angelo remaining. According to subsequent reporting, shortly before
+Altman's firing, some employees raised concerns to the board about how he had handled the safety
+implications of a recent internal AI capability discovery. On November 29, 2023, OpenAI announced
+that an anonymous Microsoft employee had joined the board as a non-voting member to observe the
+company's operations; Microsoft resigned from the board in July 2024.
+
+=== ENTITIES ===
+Organization | OpenAI
+Organization | Uber
+Organization | Airbnb
+Organization | Duke University
+Organization | Fuqua School of Business
+Organization | Twitter
+Organization | Salesforce
+Organization | Quora
+Organization | Bill & Melinda Gates Foundation
+Organization | Sony Corporation
+Organization | National Security Agency
+Organization | Global Infrastructure Partners
+Organization | PayPal
+Organization | Y Combinator
+Organization | LinkedIn
+Organization | Microsoft
+Organization | Thrive Capital
+Organization | Anthropic
+AIModel | GPT-4
+Person | Scott Schools
+Person | Chris Lehane
+Person | Aaron Chatterji
+Person | Bret Taylor
+Person | Sam Altman
+Person | Adam D'Angelo
+Person | Sue Desmond-Hellmann
+Person | Nicole Seligman
+Person | Paul Nakasone
+Person | Zico Kolter
+Person | Adebayo Ogunlesi
+Person | Elon Musk
+Person | Peter Thiel
+Person | Jessica Livingston
+Person | Reid Hoffman
+Person | Helen Toner
+Person | Ilya Sutskever
+Person | Tasha McCauley
+Person | Mira Murati
+Person | Greg Brockman
+Person | Jakub Pachocki
+Person | Aleksander Mądry
+Person | Szymon Sidor
+Person | Emmett Shear
+Person | Dario Amodei
+Person | Satya Nadella
+Person | Lawrence Summers
+
+=== RELATIONS ===
+Scott Schools | WORKS_AT | OpenAI
+Chris Lehane | WORKS_AT | OpenAI
+Aaron Chatterji | WORKS_AT | OpenAI
+Bret Taylor | WORKS_AT | OpenAI
+Sam Altman | WORKS_AT | OpenAI
+Adam D'Angelo | WORKS_AT | OpenAI
+Sue Desmond-Hellmann | WORKS_AT | OpenAI
+Nicole Seligman | WORKS_AT | OpenAI
+Paul Nakasone | WORKS_AT | OpenAI
+Zico Kolter | WORKS_AT | OpenAI
+Adebayo Ogunlesi | WORKS_AT | OpenAI
+Helen Toner | WORKS_AT | OpenAI
+Ilya Sutskever | WORKS_AT | OpenAI
+Tasha McCauley | WORKS_AT | OpenAI
+Mira Murati | WORKS_AT | OpenAI
+Greg Brockman | WORKS_AT | OpenAI
+Jakub Pachocki | WORKS_AT | OpenAI
+Aleksander Mądry | WORKS_AT | OpenAI
+Szymon Sidor | WORKS_AT | OpenAI
+Emmett Shear | WORKS_AT | OpenAI
+Lawrence Summers | WORKS_AT | OpenAI
+Dario Amodei | WORKS_AT | OpenAI
+Dario Amodei | WORKS_AT | Anthropic
+Scott Schools | WORKS_AT | Uber
+Chris Lehane | WORKS_AT | Airbnb
+Aaron Chatterji | WORKS_AT | Fuqua School of Business
+Fuqua School of Business | PARTNERS_WITH | Duke University
+Bret Taylor | WORKS_AT | Twitter
+Bret Taylor | WORKS_AT | Salesforce
+Adam D'Angelo | WORKS_AT | Quora
+Quora | DEVELOPED_BY | Adam D'Angelo
+OpenAI | DEVELOPED_BY | Sam Altman
+OpenAI | DEVELOPED_BY | Elon Musk
+Sue Desmond-Hellmann | WORKS_AT | Bill & Melinda Gates Foundation
+Nicole Seligman | WORKS_AT | Sony Corporation
+Paul Nakasone | WORKS_AT | National Security Agency
+Adebayo Ogunlesi | WORKS_AT | Global Infrastructure Partners
+OpenAI | FUNDED_BY | Elon Musk
+OpenAI | FUNDED_BY | Peter Thiel
+OpenAI | FUNDED_BY | Jessica Livingston
+OpenAI | FUNDED_BY | Reid Hoffman
+OpenAI | FUNDED_BY | Microsoft
+OpenAI | FUNDED_BY | Thrive Capital
+PayPal | DEVELOPED_BY | Peter Thiel
+Jessica Livingston | WORKS_AT | Y Combinator
+LinkedIn | DEVELOPED_BY | Reid Hoffman
+Satya Nadella | WORKS_AT | Microsoft
+
+=== END ===
