@@ -1,6 +1,6 @@
 # AI-Powered Knowledge Graph Analytics Platform
 
-INPT Big Data Analytics project (Hamza, Mohamed). We crawl about 270 public documents about the AI ecosystem
+INPT Big Data Analytics project (Hamza, Mohamed, zakaria). We crawl about 270 public documents about the AI ecosystem
 (arXiv, Wikipedia, tech news, a few PDFs) into an HDFS data lake, clean and chunk them with Spark, extract
 entities and relations with a free-tier LLM, merge duplicate entities, and load the result into one Neo4j
 knowledge graph, in two versions: `raw` (no entity resolution) and `resolved`. On that graph we compare
